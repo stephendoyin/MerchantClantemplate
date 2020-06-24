@@ -1,5 +1,12 @@
 .transaction .main-nav{
     background-color: #fff;
+    padding: 0 10px;
+}
+
+@media only screen and (min-width: 850px){
+    .transaction .main-nav{
+        padding: 0 10%;
+    } 
 }
 
 .header-bottom{
@@ -7,7 +14,16 @@
 }
 
 .menu, .menu * {
-    padding: 0 70px;
+    padding: 0 10px;
+}
+
+
+@media only screen and (max-width: 940px){
+    .menu-li{
+        display: none;
+    }
+    
+   
 }
 
 .menu>li>a {
@@ -54,6 +70,33 @@
     font-size: 22px;
 } 
 
-.menu-icon{
-    padding: 19px 10px;
+a.menu-icon{
+    padding: 19px 0px !important;
+    display: block;
+}
+
+@media only screen and (min-width: 940px){
+    a.menu-icon{
+        padding: 19px 0px !important;
+        display: none;
+    }
+}
+
+
+.sidebar-shop .widget-title a.no-after::after {
+    display: none;
+}
+
+.modal{
+    display: none;
+    padding-top: 30px;
+}
+
+.modal.show{
+    display: block;
+    background: rgba(0, 0, 0, .5);
+}
+
+textarea.form-control {
+    min-height: 120px;
 }
