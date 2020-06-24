@@ -119,3 +119,8 @@ textarea.form-control {
 .align-center{
     align-self: center;
 }
+
+.product-action a {
+    transform: translateX(0) !important;
+    opacity: 1 !important;
+}
