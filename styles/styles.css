@@ -100,3 +100,22 @@ a.menu-icon{
 textarea.form-control {
     min-height: 120px;
 }
+
+.custom-title {
+    margin: 0;
+    color: #21293c;
+    font-family: "Open Sans",sans-serif;
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 1.4;
+    text-transform: uppercase;
+}
+
+.custom-text{
+    font-size: 1.2rem;
+    line-height: .3rem !important;
+}
+
+.align-center{
+    align-self: center;
+}
