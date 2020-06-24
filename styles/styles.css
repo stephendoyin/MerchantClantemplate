@@ -87,14 +87,18 @@ a.menu-icon{
     display: none;
 }
 
-.modal{
+.modal, .modal-two{
     display: none;
-    padding-top: 30px;
+    background: rgba(0, 0, 0, .5);
 }
 
-.modal.show{
-    display: block;
+.mfp-container{
     background: rgba(0, 0, 0, .5);
+}
+
+.modal.show, .modal-two.show{
+    display: block;
+    
 }
 
 textarea.form-control {
@@ -123,4 +127,11 @@ textarea.form-control {
 .product-action a {
     transform: translateX(0) !important;
     opacity: 1 !important;
+}
+
+.icn-img{
+    width: 36px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 15px
 }
