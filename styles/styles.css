@@ -338,3 +338,19 @@ textarea.form-control {
 .product-action .btn-add-cart {
     padding: 1px 1rem;
 }
+
+.btn--close{
+    width: 24px;
+    z-index: 88;
+    position: absolute;
+    height: 24px;
+    cursor: pointer;
+    right: 19px;
+    top: 5px;
+    background: transparent;
+    color: #777;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+}
