@@ -298,3 +298,43 @@ textarea.form-control {
 @media only screen and (max-width: 990px){
     .progress{ margin-bottom: 20px; }
 }
+
+
+
+
+.product-action .btn-add-cart {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border: 1px solid #ddd;
+    padding: 0 1rem;
+    font: 1.4rem "Oswald",sans-serif;
+    line-height: 32px;
+    margin: 0 2px;
+    cursor: pointer;
+    transition: all .25s ease;
+}
+
+
+.product-action .btn-icon-wish, .product-default .btn-quickview {
+    display: flex;
+    border: 1px solid #ddd;
+    font-size: 1.6rem;
+    margin: 0 2px;
+    width: 36px;
+    height: 36px;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: all .25s ease;
+    transform: translateX(200%);
+}
+
+
+.old-price-no-strike {
+    text-decoration: none;
+}
+
+.product-action .btn-add-cart {
+    padding: 1px 1rem;
+}
