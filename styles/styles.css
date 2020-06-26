@@ -3,11 +3,6 @@
     padding: 0 10px;
 }
 
-@media only screen and (min-width: 850px){
-    .transaction .main-nav{
-        padding: 0 10%;
-    } 
-}
 
 .header-bottom{
     box-shadow: 0 2px 10px rgba(0, 0, 0, .5);
@@ -24,6 +19,32 @@
     }
     
    
+}
+
+.price-box {
+    margin-bottom: 1.2rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.price-box span{
+    white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 90%;
+  padding: 0 5%;
+  margin: 0 auto;
+}
+
+.product-details{
+    position: relative;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: inline-block;
+    
+    margin: 0 auto;
 }
 
 .menu>li>a {
@@ -92,8 +113,12 @@ a.menu-icon{
     background: rgba(0, 0, 0, .5);
     height: 100%;
     overflow: auto;
+    padding: 34px;
 }
 
+.mfp-wrap.mfp-ready .mfp-content {
+    margin-top: 3rem;
+}
 
 .modal-one.show, .modal-two.show{
     display: block !important;
@@ -353,4 +378,11 @@ textarea.form-control {
     justify-content: center;
     align-items: center;
     font-size: 16px;
+}
+
+
+.modal-items-container{
+    min-height: 200px;
+    max-height: 70vh;
+    overflow: auto;
 }
