@@ -57,7 +57,7 @@
 
                 <div class="price-box">
                     <span class="old-price">$81.00</span>
-                    <span class="product-price">$101.00</span>
+                    <span class="product-price text-center">$101.00</span>
                 </div><!-- End .price-box -->
 
                 <div class="product-desc">

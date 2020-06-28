@@ -386,3 +386,32 @@ textarea.form-control {
     max-height: 70vh;
     overflow: auto;
 }
+
+.modal-transaction-img{
+    border-radius: 50%;
+    max-width: 150px;
+}
+
+.toolbox select.form-control:not([size]):not([multiple]) {
+    height: 34px;
+}
+
+.modal-product-title{
+    color: #777;
+    font-weight: 600;
+    font-size: 1.8rem;
+}
+
+.modal-tra-name{
+    color: #08c;
+    font-weight: 600;
+}
+
+h2.modal-product-title span {
+    font-weight: 400;
+    font-size: 1.4rem;
+}
+
+.modal-product-details{
+    background: #f7f7f7;
+}
