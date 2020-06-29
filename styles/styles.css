@@ -452,7 +452,8 @@ h2.modal-product-title span {
     right: 20px;
     height: 28px;
     width: 28px;
-    background: #fff;
+    background: #f7f7f7;
+    border: .5px solid #1abc9c;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -470,9 +471,13 @@ h2.modal-product-title span {
     left: 0;
     right: 0;
     position: absolute;
-    background: rgba(0,0,0,.1);
+    
+}
+
+.product-default .product--overlay{
+    display: block;
 }
 
 .product-default:hover .product--overlay{
-    display: block;
+    background: rgba(0,0,0,.1);
 }
