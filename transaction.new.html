@@ -903,14 +903,14 @@
                         </div>
                            
                         
-                        <div class="info-section mb-4">
+                        <div class="info-section info-section-bg ">
                             <div class="container">
-                                <div class="row">
+                                <div class="row row-sm ">
                                     
                                     
-                                    <div class="col-md-8 pl-5">
-                                        <div class="row">
-                                            <div class="col-9 mx-auto">
+                                    <div class="col-md-7 pl-5 ">
+                                        <div class="row pb-4">
+                                            <div class="col-10 mx-auto align-self-center">
                                                 <h2 class="py-2 m-0 currency">
                                                     45000
                                                 </h2>
@@ -926,9 +926,9 @@
                                     </div><!-- End .col-md-4 -->
             
 
-                                    <div class="col-md-4">
+                                    <div class="col-md-5 ">
 
-                                        
+                                        <!-- <img src="assets/images/money-ex1.png" alt=""> -->
 
                                     </div><!-- End .col-md-4 -->
 
@@ -939,6 +939,47 @@
                             
                         
 
+   
+                        <br>
+
+                   
+
+                        
+                        <div class="info-section info-bg mb-4">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-6">
+
+                                        <img src="assets/images/m" alt="">
+                                    </div><!-- End .col-md-4 -->
+                                    
+                                    <div class="col-md-6 pb-4">
+                                        <div class="align-self-center">
+                                            <h2 class="pb-2 m-0">
+                                                <span class="currency">45500</span><span class="small">/ month</span>
+                                            </h2>
+                                            <p >
+                                                For 4 months
+                                            </p>
+                                            <button class="btn btn-primary">
+                                                View 
+                                            </button>
+                                        </div>
+                                    </div><!-- End .col-md-4 -->
+            
+                                    
+                                </div><!-- End .row -->
+                            </div><!-- End .container -->
+                        </div>
+
+                        <div class="info-section mb-4">
+                            <div class="container">
+                                <div class="row">
+
+                                </div>
+                            </div>
+                        </div>
+                            
                         <div class="info-section">
                             <div class="container">
                                 <div class="row">
@@ -947,27 +988,27 @@
                                             <i class="icon-pencil"></i>
             
                                             <div class="feature-box-content">
-                                                <h3>Create an Item<span>Add more items</span></h3>
+                                                <h3>Edit Order<span>Add more items</span></h3>
                                             </div><!-- End .feature-box-content -->
                                         </div><!-- End .feature-box -->
                                     </div><!-- End .col-md-4 -->
                                     
                                     <div class="col-md-4">
                                         <div class="feature-box feature-box-simple text-center">
-                                            <i class="icon-export"></i>
+                                            <i class="icon-cancel"></i>
             
                                             <div class="feature-box-content">
-                                                <h3>share a link<span>Copy &amp; Share</span></h3>
+                                                <h3>Delete Order<span>Copy &amp; Share</span></h3>
                                             </div><!-- End .feature-box-content -->
                                         </div><!-- End .feature-box -->
                                     </div><!-- End .col-md-4 -->
             
                                     <div class="col-md-4">
                                         <div class="feature-box feature-box-simple text-center">
-                                            <i class="icon-reply"></i>
+                                            <i class="icon-doc"></i>
             
                                             <div class="feature-box-content">
-                                                <h3>Get Repayment <span>Stressfree</span></h3>
+                                                <h3>Customer Details <span>Stressfree</span></h3>
                                             </div><!-- End .feature-box-content -->
                                         </div><!-- End .feature-box -->
                                     </div><!-- End .col-md-4 -->
@@ -975,28 +1016,6 @@
                             </div><!-- End .container -->
                         </div>
 
-                        <br>
-
-                        <div class="info-section">
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        
-                                    </div><!-- End .col-md-4 -->
-                                    
-                                    <div class="col-md-6">
-                                        <div class="">
-                                            <img>
-            
-                                            <div class="">
-                                                <h3>share a link<span>Copy &amp; Share</span></h3>
-                                            </div><!-- End .feature-box-content -->
-                                        </div><!-- End .feature-box -->
-                                    </div><!-- End .col-md-4 -->
-            
-                                </div><!-- End .row -->
-                            </div><!-- End .container -->
-                        </div>
 
                         <nav class="toolbox toolbox-pagination">
                             <div class="toolbox-item toolbox-show">
@@ -1138,7 +1157,7 @@
 
         currency.forEach(element => {
            currencyFormat = Number(element.innerHTML.trim()).toLocaleString();
-           element.innerHTML = `&#8358;${currencyFormat}`;
+           element.innerHTML = `&#8358;${currencyFormat.trim()}`;
         });
     </script>
     <script src="assets/js/jquery.min.js"></script>
