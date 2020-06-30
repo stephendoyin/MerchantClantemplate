@@ -389,7 +389,6 @@ textarea.form-control {
 
 .modal-transaction-img{
     border-radius: 50%;
-    max-width: 150px;
 }
 
 .toolbox select.form-control:not([size]):not([multiple]) {
@@ -410,6 +409,7 @@ textarea.form-control {
 h2.modal-product-title span {
     font-weight: 400;
     font-size: 1.4rem;
+    white-space: normal;
 }
 
 .modal-product-details{
@@ -433,6 +433,12 @@ h2.modal-product-title span {
 @media only screen and (max-width: 650px){
     .info-section-bg{
         background: #f7f7f7;
+    }
+}
+@media only screen and (max-width: 460px){
+    .info-bg{
+        
+        background-position: 5% center;
     }
 }
 
