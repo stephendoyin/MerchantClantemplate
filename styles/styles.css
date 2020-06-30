@@ -487,3 +487,7 @@ h2.modal-product-title span {
 .product-default:hover .product--overlay{
     background: rgba(0,0,0,.1);
 }
+
+#m-container{
+    display: block;
+}
