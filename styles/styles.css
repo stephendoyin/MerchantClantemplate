@@ -354,3 +354,7 @@ h2.modal-product-title span {
     color: #08c;
     font-size: 2.4rem;
 }
+
+.product-title-small{
+    font-size: 3rem;
+}
