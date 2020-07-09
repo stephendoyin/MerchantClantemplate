@@ -391,3 +391,14 @@ h2.modal-product-title span {
   justify-content: center;
   align-items: center;
 }
+
+@media only screen and (max-width: 767px) {
+  .left-content {
+    display: none;
+  }
+
+  .form-con {
+    position: relative;
+    width: 85%;
+  }
+}
