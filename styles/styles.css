@@ -348,3 +348,46 @@ h2.modal-product-title span {
     width: auto;
   }
 }
+
+.rotated-container {
+  height: 126%;
+  width: 104%;
+  transform: rotate(6deg) translate(-13%, -12%);
+  background: transparent;
+  transform-origin: 0% 100%;
+  position: relative;
+}
+
+.bg-trans {
+  height: 100%;
+  width: 100%;
+  /* background: url(../assets/images/sign-bg.png);
+  background: #ceefff; */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.form-con {
+  position: relative;
+  width: 70%;
+}
+
+.form-con .form-control {
+  min-width: 100%;
+}
+
+.left-content {
+  position: relative;
+  background: linear-gradient(
+      rgba(0, 136, 204, 0.789),
+      rgba(0, 136, 204, 0.768)
+    ),
+    url(../assets/images/sign-bg.png);
+  /* background: #08c; */
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
