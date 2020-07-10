@@ -407,7 +407,7 @@ h2.modal-product-title span {
   height: 0;
 }
 
-@media only screen and (max-width: 991px) {
+/* @media only screen and (max-width: 991px) {
   .col,
   .col-1,
   .col-10,
@@ -485,7 +485,7 @@ h2.modal-product-title span {
     padding-right: 5%;
     padding-left: 5%;
   }
-}
+} */
 
 .modal form .form-group {
   max-width: 100%;
@@ -499,4 +499,48 @@ h2.modal-product-title span {
   width: auto;
   padding: 0 5% 0 0;
   margin: 0;
+}
+
+@media screen and (min-width: 992px) {
+  .banner.banner-cat {
+    height: 230px;
+  }
+}
+
+div.sticky-wrapper {
+  min-height: 58.6px !important;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.08);
+  position: relative;
+}
+
+.header-bottom-constant {
+  top: 0px !important;
+  position: fixed;
+  right: 0;
+  left: 0;
+  padding: 0;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.08);
+  z-index: 1040;
+  height: 58.6px;
+}
+
+.menu,
+.menu * {
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+}
+
+.transaction .main-nav {
+  padding: 0 0px;
+}
+
+.info-section {
+  padding-top: 50px;
+  background: #eee;
+  padding-bottom: 20px;
+  margin-top: 20px;
+}
+
+.mobile-menu-toggler {
+  margin-top: 8px;
 }
