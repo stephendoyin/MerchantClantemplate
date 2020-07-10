@@ -54,7 +54,7 @@
   </head>
 
   <body class="loaded transaction">
-    <div class="modal modal-one">
+    <div class="modal show modal-one">
       <div class="mfp-bg mfp-ajax-product mfp-ready"></div>
       <div
         class="mfp-wrap mfp-close-btn-in mfp-auto-cursor mfp-ajax-product mfp-ready"
@@ -84,11 +84,10 @@
                     </div>
                     <!-- End .form-group -->
 
-                    <div class="form-group required form-group-sm">
-                      <label>Products category</label>
+                    <div class="form-group form-group-sm">
+                      <label>Products Category</label>
                       <div class="select-custom">
                         <select class="form-control form-control-sm">
-                          <option value="CA">Category 1</option>
                           <option value="CA">Category 1</option>
                           <option value="CA">Category 1</option>
                           <option value="CA">Category 1</option>
@@ -100,7 +99,6 @@
                       </div>
                       <!-- End .select-custom -->
                     </div>
-                    <!-- End .form-group -->
 
                     <div class="form-group required mt-2">
                       <label for="acc-mname">Product Price</label>
@@ -112,10 +110,17 @@
                       />
                     </div>
                     <!-- End .form-group -->
-
-                    <div class="row align-items-end mt-4">
+                    <div class="row mt-4 mb-1">
+                      <div class="col-12">
+                        <small class="text-danger">
+                          *Add product images by clicking on the thumbnails
+                          below
+                        </small>
+                      </div>
+                    </div>
+                    <div class="row align-items-end">
                       <div class="col-12 col-sm-8">
-                        <div class="product-slider-container product-item">
+                        <div class="product-slider-container">
                           <div
                             class="product-single-carousel owl-carousel owl-theme"
                           >
@@ -156,50 +161,35 @@
                           </span>
                         </div>
                       </div>
-                      <!-- <div class="col-12 col-sm-5">
-                        <button class="btn btn-primary mb-1">
-                          Add Image
-                        </button>
-                      </div> -->
-                    </div>
-                    <div class="row">
-                      <div class="col-12">
-                        <small class="text-danger">
-                          *Add product images by clicking on the thumbnails
-                          below
-                        </small>
+
+                      <div class="col-12 mt-2">
+                        <small>Added 1 images of 5</small>
                       </div>
                     </div>
 
                     <div
-                      class="prod-thumbnail row owl-dots"
+                      class="prod-thumbnail owl-dots"
                       id="carousel-custom-dots"
                     >
-                      <div class="col-2 owl-dot">
+                      <div class="owl-dot">
                         <img src="assets/images/products/zoom/product-1.jpg" />
                       </div>
-                      <div class="col-2 owl-dot">
+                      <div class="owl-dot">
                         <img src="assets/images/add-item.png" />
                       </div>
-                      <div class="col-2 owl-dot">
+                      <div class="owl-dot">
                         <img src="assets/images/add-item.png" />
                       </div>
-                      <div class="col-2 owl-dot">
+                      <div class="owl-dot">
                         <img src="assets/images/add-item.png" />
                       </div>
-                      <div class="col-2 owl-dot">
+                      <div class="owl-dot">
                         <img src="assets/images/add-item.png" />
                       </div>
                     </div>
 
-                    <div class="row">
-                      <div class="col-12">
-                        Added 1 images of 5
-                      </div>
-                    </div>
-
-                    <div class="form-group required mt-2">
-                      <label for="acc-mname" class="font-weight-bold"
+                    <div class="form-group required mt-4 mb-3">
+                      <label for="acc-mname" class="font-weight-bold mb-1"
                         >Do you want to sell on credit?</label
                       >
                       <div class="row">
@@ -210,8 +200,11 @@
                             id="outright-p"
                             value="1"
                             class="radio mr-2"
+                            checked
                           />
-                          <label for="outright-p">No, Outright payment</label>
+                          <label for="outright-p " class="font-weight-normal"
+                            >No, Outright payment</label
+                          >
                         </div>
                         <div class="col-sm-12 col-md-6">
                           <input
@@ -221,7 +214,9 @@
                             value="1"
                             class="radio mr-2"
                           />
-                          <label for="credit-p">Yes, Sell on credit</label>
+                          <label for="credit-p" class="font-weight-normal"
+                            >Yes, Sell on credit</label
+                          >
                         </div>
                       </div>
                     </div>
@@ -249,7 +244,7 @@
                     </div>
 
                     <div class="row mt-4 mb-3">
-                      <div class="col-4 text-center border-right align-center">
+                      <div class="col-5 text-left border-right align-center">
                         <h2 class="custom-title">
                           &#8358;20,000
                         </h2>
@@ -257,7 +252,7 @@
                           Upfront Payment of purchase
                         </span>
                       </div>
-                      <div class="col-4 text-center align-center border-right">
+                      <div class="col-4 text-left align-center border-right">
                         <h2 class="custom-title">
                           &#8358;141,700
                         </h2>
@@ -265,7 +260,7 @@
                           Balance over 3 Months
                         </span>
                       </div>
-                      <div class="col-4 text-center align-center">
+                      <div class="col-3 text-right align-center">
                         <h2 class="custom-title">
                           &#8358;161,700
                         </h2>

@@ -544,3 +544,11 @@ div.sticky-wrapper {
 .mobile-menu-toggler {
   margin-top: 8px;
 }
+
+small {
+  font-family: poppins, "sans-serif";
+}
+
+.modal .prod-thumbnail {
+  max-width: 400px;
+}
