@@ -550,5 +550,14 @@ small {
 }
 
 .modal .prod-thumbnail {
-  max-width: 400px;
+  max-width: 370px;
+}
+
+.modal select.form-control-sm:not([size]):not([multiple]) {
+  height: 6rem;
+}
+
+.small,
+small {
+  font-size: 90%;
 }
