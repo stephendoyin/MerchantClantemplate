@@ -532,7 +532,7 @@ div.sticky-wrapper {
 }
 
 .info-section-colored {
-  rgb(249, 249, 249);
+  background: rgb(249, 249, 249);
 }
 
 .mobile-menu-toggler {
@@ -590,5 +590,5 @@ small {
 }
 
 .info-section p {
-  line-height: 1.6;
+  line-height: 1.7;
 }

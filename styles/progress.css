@@ -150,6 +150,6 @@
   }
 }
 
-.progress {
-  height: 100% !important;
+div.progress {
+  height: 150px !important;
 }
