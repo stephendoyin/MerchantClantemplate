@@ -525,10 +525,14 @@ div.sticky-wrapper {
 }
 
 .info-section {
-  padding-top: 50px;
+  padding-top: 26px;
   background: #eee;
   padding-bottom: 20px;
   margin-top: 20px;
+}
+
+.info-section-colored {
+  rgb(249, 249, 249);
 }
 
 .mobile-menu-toggler {
@@ -583,4 +587,8 @@ small {
   .product-list .product-details {
     max-width: calc(100% - 350px);
   }
+}
+
+.info-section p {
+  line-height: 1.6;
 }
