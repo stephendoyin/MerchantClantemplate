@@ -189,14 +189,18 @@ textarea.form-control {
   position: absolute;
   height: 24px;
   cursor: pointer;
-  right: 19px;
-  top: 5px;
+  right: 10px;
+  top: 2px;
+  display: none;
   background: transparent;
   color: #777;
-  display: flex;
   justify-content: center;
   align-items: center;
   font-size: 16px;
+}
+
+.thumb-col .col-2:hover .btn--close {
+  display: flex;
 }
 
 .modal-items-container {
@@ -591,4 +595,9 @@ small {
 
 .info-section p {
   line-height: 1.7;
+}
+
+.feature-box {
+  margin-bottom: 4rem;
+  margin-top: 4rem;
 }
