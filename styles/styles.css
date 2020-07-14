@@ -601,3 +601,8 @@ small {
   margin-bottom: 4rem;
   margin-top: 4rem;
 }
+
+.modal.modal-small .mfp-container .mfp-content,
+.login-popup.mfp-wrap .mfp-content {
+  max-width: 399px;
+}
