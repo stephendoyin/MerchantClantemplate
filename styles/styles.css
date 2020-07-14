@@ -607,3 +607,12 @@ small {
 .login-popup.mfp-wrap .mfp-content {
   max-width: 399px;
 }
+
+.count-label {
+  display: inline;
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+  padding: 5px 10px;
+  font-size: 1.4rem;
+}
