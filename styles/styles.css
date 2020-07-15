@@ -646,3 +646,49 @@ small {
 .table th {
   padding: 1.75rem;
 }
+
+.custom-nav-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: stretch;
+}
+
+.custom-nav {
+  width: 25%;
+  position: relative;
+  text-align: center;
+}
+
+.custom-nav-label {
+  text-transform: uppercase;
+  width: 100%;
+  font-size: 1.1rem;
+}
+
+.icon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  color: #fff;
+  background: #ccc;
+  border-radius: 50%;
+  width: 40px;
+  position: relative;
+  z-index: 4;
+}
+
+.custom-nav:before {
+  content: "";
+  height: 2px;
+  background: #ccc;
+  top: 20px;
+  left: 50%;
+  width: 100%;
+  z-index: 0;
+  position: absolute;
+}
+
+.custom-nav:last-child:before {
+  display: none;
+}
