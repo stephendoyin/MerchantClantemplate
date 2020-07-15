@@ -607,6 +607,10 @@ small {
 .login-popup.mfp-wrap .mfp-content {
   max-width: 399px;
 }
+.modal.modal-select .mfp-container .mfp-content,
+.login-popup.mfp-wrap .mfp-content {
+  max-width: 599px;
+}
 
 .count-label {
   display: inline;
@@ -620,4 +624,8 @@ small {
 .antext {
   font-size: 1.5rem;
   font-weight: 400;
+}
+
+.cm {
+  margin-top: 15px;
 }
