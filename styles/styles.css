@@ -676,6 +676,7 @@ small {
   width: 40px;
   position: relative;
   z-index: 4;
+  font-size: 1.3rem;
 }
 
 .custom-nav:before {
@@ -689,6 +690,28 @@ small {
   position: absolute;
 }
 
+.custom-nav-passed:before {
+  background: var(--green);
+}
+.custom-nav-passed + .custom-nav .icon-container {
+  background: var(--yellow);
+}
 .custom-nav:last-child:before {
   display: none;
+}
+.btn-custom {
+  display: block;
+  width: 100%;
+}
+
+@media only screen and (min-width: 500px) {
+  .btn-custom {
+    display: inline-block;
+    width: auto;
+  }
+}
+
+.modal-prompt .mfp-ajax-product.mfp-wrap .mfp-content,
+.login-popup.mfp-wrap .mfp-content {
+  max-width: 605px;
 }
