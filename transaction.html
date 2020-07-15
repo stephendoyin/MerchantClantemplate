@@ -54,7 +54,7 @@
   </head>
 
   <body class="transaction">
-    <div class="modal show modal-one">
+    <div class="modal modal-one">
       <div class="mfp-bg mfp-ajax-product mfp-ready"></div>
       <div
         class="mfp-wrap mfp-close-btn-in mfp-auto-cursor mfp-ajax-product mfp-ready"
@@ -549,7 +549,7 @@
                     </div>
 
                     <button class="mb-3 mt-2 btn btn-md btn-primary">
-                      checkout
+                      save &amp; checkout
                     </button>
                   </form>
                   <!-- End .product-single-details -->
@@ -568,7 +568,7 @@
 
       <!-- end modal -->
     </div>
-    <div class="modal modal-two">
+    <div class="modal modal-disp show modal-two">
       <div class="mfp-bg mfp-ajax-product mfp-ready"></div>
       <div
         class="mfp-wrap mfp-close-btn-in mfp-auto-cursor mfp-ajax-product mfp-ready"
@@ -581,63 +581,81 @@
               class="product-single-container product-single-default product-quick-view container"
             >
               <div class="row">
-                <div class="col-12 col-md-8 mx-auto">
-                  <form class="product-single-details">
-                    <h1 class="product-title">Customer Details</h1>
+                <div class="col-12 col-md-10 mx-auto">
+                  <div class="product-single-details">
+                    <h3 class="mb-2 mt-2">Customer Details</h3>
 
-                    <div class="form-group required mt-2">
-                      <label for="acc-mname">Name</label>
-                      <input
-                        type="text"
-                        readonly
-                        class="form-control"
-                        id="acc-mname"
-                        value="Femi Bejide"
-                        name="acc-mname"
-                      />
+                    <div class="row">
+                      <div class="col-md-6">
+                        <div class="card">
+                          <div class="card-header">
+                            Name
+                          </div>
+                          <div class="card-body">
+                            Femi Bejide
+                            <img
+                              src="assets/images/tick-success.svg"
+                              class="tick-success"
+                              alt=""
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="card">
+                          <div class="card-header">
+                            Address
+                          </div>
+                          <div class="card-body">
+                            <address>
+                              25, Ferarri Street, Dolphin Estate Abule Ado,
+                              ilasa
+                            </address>
+                            <img
+                              src="assets/images/tick-success.svg"
+                              class="tick-success"
+                              alt=""
+                            />
+                          </div>
+                        </div>
+                      </div>
                     </div>
-                    <!-- End .form-group -->
 
-                    <div class="form-group required mt-2">
-                      <label for="acc-mname">Adress</label>
-                      <textarea
-                        id="contact-message"
-                        readonly
-                        class="form-control"
-                        name="contact-message"
-                        required=""
-                      >
-25, Ferarri Street, Dolphin Estate Abule Ado, ilasa</textarea
-                      >
+                    <div class="row">
+                      <div class="col-md-6">
+                        <div class="card">
+                          <div class="card-header">
+                            Income
+                          </div>
+                          <div class="card-body">
+                            1,000,000 / Month
+                            <img
+                              src="assets/images/tick-success.svg"
+                              class="tick-success"
+                              alt=""
+                            />
+                          </div>
+                        </div>
+                        <!-- End .card -->
+                      </div>
+                      <div class="col-md-6">
+                        <div class="card">
+                          <div class="card-header">
+                            Loan
+                          </div>
+                          <div class="card-body">
+                            1,000,000 / Month
+                            <img
+                              src="assets/images/tick-success.svg"
+                              class="tick-success"
+                              alt=""
+                            />
+                          </div>
+                        </div>
+                        <!-- End .form-group -->
+                      </div>
                     </div>
-                    <!-- End .form-group -->
-
-                    <div class="form-group required mt-2">
-                      <label for="acct-mname">Income</label>
-                      <input
-                        type="text"
-                        readonly
-                        class="form-control"
-                        id="acct-mname"
-                        value="1,000,000 / Month"
-                        name="acc-mname"
-                      />
-                    </div>
-                    <!-- End .form-group -->
-
-                    <div class="form-group required mt-2">
-                      <label for="acct-mname">Loan</label>
-                      <input
-                        type="text"
-                        readonly
-                        class="form-control"
-                        id="acct-mname"
-                        value="50,000"
-                        name="acc-mname"
-                      />
-                    </div>
-                    <!-- End .form-group -->
-                  </form>
+                  </div>
                   <!-- End .product-single-details -->
                 </div>
                 <!-- End .col-lg-5 -->

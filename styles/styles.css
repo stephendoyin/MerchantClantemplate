@@ -629,3 +629,15 @@ small {
 .cm {
   margin-top: 15px;
 }
+
+.modal-disp .card-body {
+  min-height: 87px;
+  position: relative;
+}
+
+.tick-success {
+  position: absolute;
+  bottom: 10px;
+  right: 9px;
+  height: 21px;
+}
