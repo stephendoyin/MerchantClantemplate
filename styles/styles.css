@@ -616,3 +616,8 @@ small {
   padding: 5px 10px;
   font-size: 1.4rem;
 }
+
+.antext {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
