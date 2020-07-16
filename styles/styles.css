@@ -715,3 +715,8 @@ small {
 .login-popup.mfp-wrap .mfp-content {
   max-width: 605px;
 }
+
+.modal-sch .custom-control {
+  margin-top: 0;
+  margin-bottom: 0;
+}

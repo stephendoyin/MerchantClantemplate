@@ -54,7 +54,7 @@
   </head>
 
   <body class="loaded transaction">
-    <div class="modal modal-one">
+    <div class="modal modal-sch show modal-one">
       <div class="mfp-bg mfp-ajax-product mfp-ready"></div>
       <div
         class="mfp-wrap mfp-close-btn-in mfp-auto-cursor mfp-ajax-product mfp-ready"
@@ -68,38 +68,43 @@
             >
               <div class="row">
                 <div class="col-lg-10 col-md-10 m-auto">
-                  <div class="row modal-product-details pt-5 pl-4 mt-3 pb-3">
-                    <div
-                      class="col-8 col-sm-6 align-self-center pt-2 align-self-center"
-                    >
-                      <div class="product-details">
-                        <div class="ratings-container">
-                          <h2 class="modal-tra-name">Shola Thompson</h2>
-                          <h2 class="modal-product-title">
-                            ₦25,000.00 <span>Paid</span>
-                          </h2>
-                          <h2 class="modal-product-title">
-                            ₦145,000.00 <span>Balance</span>
-                          </h2>
+                  <div class="row">
+                    <div class="card mt-4">
+                      <div class="card-header">Order Preview</div>
+                      <div class="card-body">
+                        <div
+                          class="row align-items-center justify-content-center"
+                        >
+                          <div class="col-sm-5 order-sm-3">
+                            <img
+                              style="width: 60%;"
+                              class="mb-2 mx-auto"
+                              src="assets/images/user-sq.svg"
+                            />
+                          </div>
+                          <div class="col-sm-5 text-sm-left text-center">
+                            <h4 class="mb-1">Shola Thompson</h4>
+                            <p class="font-weight-normal mb-1">
+                              <span class="font-weight-bold">₦25,000.00</span>
+                              <span class="font-weight-normal"
+                                >initial Payment</span
+                              >
+                            </p>
+                            <p class="">
+                              <span class="font-weight-bold">₦85,000.00</span>
+                              <span>for 4 Months on credit</span>
+                            </p>
+                            <button class="btn mt-1 btn-primary btn-sm">
+                              Checkout
+                            </button>
+                          </div>
                         </div>
-                        <!-- End .product-container -->
-
-                        <div class="">
-                          <h1 class=""></h1>
-                        </div>
-                        <!-- End .price-box -->
-                      </div>
-                    </div>
-
-                    <div class="col-4 align-self-center">
-                      <div class="modal-transaction-img text-center">
-                        <img class="" src="assets/images/svg/user.svg" />
                       </div>
                     </div>
                   </div>
 
                   <div class="row mt-4 product-single-details">
-                    <h1 class="product-title mb-2">Repayment Schedule</h1>
+                    <h3 class="mb-2">Repayment Schedule</h3>
                     <table class="table">
                       <thead style="color: #fff;">
                         <tr class="bg-primary">
@@ -273,64 +278,51 @@
                     </table>
                   </div>
 
-                  <div class="row info-section mt-4 align-items-center mb-3">
-                    <div class="col-12 col-sm-5 text-center mb-2">
-                      <img
-                        src="assets/images/paper.svg"
-                        style="max-width: 180px; display: inline;"
-                        alt=""
-                      />
+                  <div class="row mt-4 mb-3">
+                    <div class="col-12 col-sm-6">
+                      <div class="card">
+                        <div class="card-header">
+                          Payment History
+                          <a href="#" class="card-edit">Edit</a>
+                        </div>
+                        <div class="card-body">
+                          <h4 class="mb-1">
+                            Payment history
+                          </h4>
+                          <p class="">
+                            If the buyer paid you money directly
+                          </p>
+                        </div>
+                      </div>
                     </div>
                     <div class="col-12 col-sm-6">
-                      <h1 class="product-title product-title-small mb-1">
-                        Payment history
-                      </h1>
-                      <h3 class="font-weight-normal m-0">
-                        If the buyer paid you money directly
-                      </h3>
-                      <button class="btn btn-primary mt-2">View</button>
-                      <!-- <form class="form-group required mt-2">
-                                <div class="row">
-                                    <div class="col-7">
-                                        <input type="text" class="form-control" style="max-width: 300px;" id="acc-mname" name="acc-mname">
-                                    </div>
-                                    <div class="col-5 justify-item-start p-0">
-                                        <button class="btn btn-primary">Update</button>
-                                    </div>
-                                </div>
-                                
-                            </form> -->
-                    </div>
-                  </div>
-
-                  <div class="row info-section mt-4 align-items-center mb-3">
-                    <div class="col-12 col-sm-5 text-center mb-2">
-                      <img
-                        src="assets/images/cc.svg"
-                        style="max-width: 180px; display: inline;"
-                        alt=""
-                      />
-                    </div>
-                    <div class="col-12 col-sm-6">
-                      <h1 class="product-title product-title-small mb-1">
-                        Attached Card
-                      </h1>
-
-                      <form class="form-group required mt-2">
-                        <div class="row">
-                          <div class="col-9">
-                            <input
-                              type="text"
-                              class="form-control"
-                              readonly
-                              value="**** **** **** 4322"
-                              style="max-width: 300px;"
-                              id="acc-mname"
-                              name="acc-mname"
-                            />
+                      <div class="card">
+                        <div class="card-header">
+                          Attached Card
+                        </div>
+                        <div class="card-body pt-5">
+                          <div class="row">
+                            <div class="col-3">
+                              <img
+                                src="assets/images/cc.svg"
+                                style="max-width: 280px; display: inline;"
+                                alt=""
+                              />
+                            </div>
+                            <div class="col-9">
+                              <input
+                                type="text"
+                                class="form-control"
+                                readonly
+                                value="**** **** **** 4322"
+                                style="max-width: 300px;"
+                                id="acc-mname"
+                                name="acc-mname"
+                              />
+                            </div>
                           </div>
                         </div>
-                      </form>
+                      </div>
                     </div>
                   </div>
                 </div>
