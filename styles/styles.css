@@ -699,6 +699,7 @@ small {
 .custom-nav:last-child:before {
   display: none;
 }
+
 .btn-custom {
   display: block;
   width: 100%;
@@ -719,4 +720,8 @@ small {
 .modal-sch .custom-control {
   margin-top: 0;
   margin-bottom: 0;
+}
+
+.product-default .product-label.label-sale {
+  margin-top: 6px;
 }
