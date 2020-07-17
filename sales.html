@@ -54,7 +54,7 @@
   </head>
 
   <body class="transaction">
-    <div class="modal show modal-one">
+    <div class="modal modal-one">
       <div class="mfp-bg mfp-ajax-product mfp-ready"></div>
       <div
         class="mfp-wrap mfp-close-btn-in mfp-auto-cursor mfp-ajax-product mfp-ready"
@@ -804,45 +804,62 @@
 
     <div class="page-wrapper">
       <header class="header">
-        <div class="header-bottom">
-          <nav class="main-nav">
-            <ul class="menu sf-arrows">
-              <li class="menu-li"><a href="index.html">Products</a></li>
-              <li class="menu-li"><a href="index.html">Transactions</a></li>
-              <li class="menu-li"><a href="index.html">Repayment</a></li>
-              <li class="active menu-li"><a href="index.html">Sales</a></li>
-              <li class="menu-li"><a href="index.html">Report</a></li>
+        <div class="sticky-wrapper">
+          <div
+            class="header-bottom header-bottom-constant sticky-header d-none d-lg-block"
+          >
+            <div class="container">
+              <nav class="main-nav w-100">
+                <ul
+                  class="menu sf-js-enabled sf-arrows"
+                  style="touch-action: pan-y;"
+                >
+                  <li>
+                    <a href="index.html">Catalogue</a>
+                  </li>
 
-              <li class="float-right menu-li active">
-                <a href="#">LOG OUT</a>
-              </li>
+                  <li><a href="blog.html">Items</a></li>
+                  <li><a href="about.html">About Us</a></li>
+                  <li><a href="contact.html">Orders</a></li>
+                  <li><a href="contact.html">Repayment</a></li>
+                  <li class="active"><a href="contact.html">Sales</a></li>
 
-              <a
-                href="index.html"
-                class="float-right mobile-menu-toggler menu-icon"
-                ><i class="icon-menu"></i
-              ></a>
-            </ul>
-          </nav>
+                  <li
+                    class="float-right mr-0 text-white"
+                    style="
+                      height: 43px;
+                      overflow: hidden;
+                      display: flex;
+                      align-items: center;
+                      margin-top: 7px;
+                      width: 70px;
+                    "
+                  >
+                    <a
+                      href="#"
+                      style="width: 100%; color: white;"
+                      class="px-4 btn btn-danger btn-sm text-white;"
+                      >Log Out</a
+                    >
+                  </li>
+                </ul>
+              </nav>
+              <button
+                class="float-right mobile-menu-toggler text-primary ml-auto"
+                type="button"
+              >
+                <i class="icon-menu"></i>
+              </button>
+            </div>
+            <!-- End .container -->
+          </div>
         </div>
+
         <!-- End .header-bottom -->
       </header>
       <!-- End .header -->
 
       <main class="main">
-        <div
-          class="banner banner-cat"
-          style="background-image: url('assets/images/banners/banner-top.jpg');"
-        >
-          <div class="banner-content container">
-            <h2 class="banner-subtitle">check out over <span>200+</span></h2>
-            <h1 class="banner-title">
-              INCREDIBLE deals
-            </h1>
-            <a href="#" class="btn btn-dark">Shop Now</a>
-          </div>
-          <!-- End .banner-content -->
-        </div>
         <!-- End .banner -->
 
         <nav aria-label="breadcrumb" class="breadcrumb-nav">
@@ -864,59 +881,35 @@
 
         <div class="container">
           <div class="row">
-            <aside class="sidebar-shop col-lg-3 order-lg-first">
-              <div class="pin-wrapper" style="height: 1402px;">
+            <aside class="sidebar-shop col-lg-3 order-lg-first mobile-sidebar">
+              <div class="pin-wrapper" style="height: 882px;">
                 <div
                   class="sidebar-wrapper"
                   style="
-                    border-bottom: 0px none rgb(122, 125, 130);
-                    width: 270px;
+                    border-bottom: 0px none rgb(119, 119, 119);
+                    width: 280px;
                   "
                 >
                   <div class="widget">
                     <h3 class="widget-title">
                       <a
                         data-toggle="collapse"
-                        href="#widget-body-1"
+                        href="#widget-body-2"
                         role="button"
-                        aria-expanded="true"
-                        aria-controls="widget-body-1"
-                        >Transaction</a
+                        aria-expanded="false"
+                        aria-controls="widget-body-2"
+                        class="collapsed"
+                        >Categories</a
                       >
                     </h3>
 
-                    <div class="collapse show" id="widget-body-1">
+                    <div class="collapse" id="widget-body-2" style="">
                       <div class="widget-body">
                         <ul class="cat-list">
-                          <li class="custom-control custom-checkbox mb-1">
-                            <input
-                              type="checkbox"
-                              class="custom-control-input"
-                              checked
-                              id="change-pass-checkbox"
-                              value="1"
-                            />
-                            <label
-                              class="custom-control-label"
-                              for="change-pass-checkbox"
-                              >All Transactions</label
-                            >
-                          </li>
-
-                          <li class="custom-control custom-checkbox">
-                            <input
-                              type="checkbox"
-                              class="custom-control-input"
-                              checked
-                              id="change-pass-checkbox"
-                              value="1"
-                            />
-                            <label
-                              class="custom-control-label"
-                              for="change-pass-checkbox"
-                              >Credit Purchase</label
-                            >
-                          </li>
+                          <li><a href="#">Accessories</a></li>
+                          <li><a href="#">Watch Fashion</a></li>
+                          <li><a href="#">Tees, Knits &amp; Polos</a></li>
+                          <li><a href="#">Pants &amp; Denim</a></li>
                         </ul>
                       </div>
                       <!-- End .widget-body -->
@@ -929,15 +922,16 @@
                     <h3 class="widget-title">
                       <a
                         data-toggle="collapse"
-                        href="#widget-body-2"
+                        href="#widget-body-3"
                         role="button"
-                        aria-expanded="true"
-                        aria-controls="widget-body-2"
+                        aria-expanded="false"
+                        aria-controls="widget-body-3"
+                        class="collapsed"
                         >Price</a
                       >
                     </h3>
 
-                    <div class="collapse show" id="widget-body-2">
+                    <div class="collapse" id="widget-body-3" style="">
                       <div class="widget-body">
                         <form action="#">
                           <div class="price-slider-wrapper">
@@ -999,12 +993,15 @@
                           </div>
                           <!-- End .price-slider-wrapper -->
 
-                          <div class="filter-price-action">
+                          <div
+                            class="filter-price-action d-flex align-items-center justify-content-between flex-wrap"
+                          >
                             <button type="submit" class="btn btn-primary">
                               Filter
                             </button>
 
                             <div class="filter-price-text">
+                              Price:
                               <span id="filter-price-range"
                                 >$200.00 - $700.00</span
                               >
@@ -1026,45 +1023,762 @@
                         data-toggle="collapse"
                         href="#widget-body-4"
                         role="button"
-                        aria-expanded="true"
+                        aria-expanded="false"
                         aria-controls="widget-body-4"
-                        >Sales</a
+                        class="collapsed"
+                        >Size</a
                       >
                     </h3>
 
-                    <div class="collapse show" id="widget-body-4">
+                    <div class="collapse" id="widget-body-4" style="">
                       <div class="widget-body">
                         <ul class="cat-list">
-                          <li>
-                            <a href="#"
-                              >Electronic <span>&#x20a6;223,000</span></a
-                            >
-                          </li>
-                          <li>
-                            <a href="#"
-                              >Phones &amp; Tablets
-                              <span>&#x20a6;983,000</span></a
-                            >
-                          </li>
-                          <li>
-                            <a href="#">PC <span>&#x20a6;566,000</span></a>
-                          </li>
-                          <li>
-                            <a href="#">Fashion <span>&#x20a6;688,000</span></a>
-                          </li>
-                          <li>
-                            <a href="#"
-                              ><strong>Total Sales</strong
-                              ><span
-                                ><strong>&#x20a6;4,780,000</strong></span
-                              ></a
-                            >
-                          </li>
+                          <li><a href="#">Small</a></li>
+                          <li><a href="#">Medium</a></li>
+                          <li><a href="#">Large</a></li>
+                          <li><a href="#">Extra Large</a></li>
                         </ul>
                       </div>
                       <!-- End .widget-body -->
                     </div>
                     <!-- End .collapse -->
+                  </div>
+                  <!-- End .widget -->
+
+                  <div class="widget widget-featured">
+                    <h3 class="widget-title">Featured</h3>
+
+                    <div class="widget-body">
+                      <div
+                        class="owl-carousel widget-featured-products owl-loaded owl-drag"
+                      >
+                        <!-- End .featured-col -->
+
+                        <!-- End .featured-col -->
+                        <div
+                          class="owl-stage-outer owl-height"
+                          style="height: 297px;"
+                        >
+                          <div
+                            class="owl-stage"
+                            style="
+                              transform: translate3d(-714px, 0px, 0px);
+                              transition: all 0.25s ease 0s;
+                              width: 1428px;
+                            "
+                          >
+                            <div class="owl-item cloned" style="width: 238px;">
+                              <div class="featured-col">
+                                <div
+                                  class="product-default left-details product-widget"
+                                >
+                                  <figure>
+                                    <a href="product.html">
+                                      <img
+                                        src="assets/images/products/product-10.jpg"
+                                      />
+                                    </a>
+                                  </figure>
+                                  <div class="product-details">
+                                    <h2 class="product-title">
+                                      <a href="product.html"
+                                        >Product Short Name</a
+                                      >
+                                    </h2>
+                                    <div class="ratings-container">
+                                      <div class="product-ratings">
+                                        <span
+                                          class="ratings"
+                                          style="width: 100%;"
+                                        ></span
+                                        ><!-- End .ratings -->
+                                        <span
+                                          class="tooltiptext tooltip-top"
+                                        ></span>
+                                      </div>
+                                      <!-- End .product-ratings -->
+                                    </div>
+                                    <!-- End .product-container -->
+                                    <div class="price-box">
+                                      <span class="product-price">$49.00</span>
+                                    </div>
+                                    <!-- End .price-box -->
+                                  </div>
+                                  <!-- End .product-details -->
+                                </div>
+                                <div
+                                  class="product-default left-details product-widget"
+                                >
+                                  <figure>
+                                    <a href="product.html">
+                                      <img
+                                        src="assets/images/products/product-11.jpg"
+                                      />
+                                    </a>
+                                  </figure>
+                                  <div class="product-details">
+                                    <h2 class="product-title">
+                                      <a href="product.html"
+                                        >Product Short Name</a
+                                      >
+                                    </h2>
+                                    <div class="ratings-container">
+                                      <div class="product-ratings">
+                                        <span
+                                          class="ratings"
+                                          style="width: 100%;"
+                                        ></span
+                                        ><!-- End .ratings -->
+                                        <span
+                                          class="tooltiptext tooltip-top"
+                                        ></span>
+                                      </div>
+                                      <!-- End .product-ratings -->
+                                    </div>
+                                    <!-- End .product-container -->
+                                    <div class="price-box">
+                                      <span class="product-price">$49.00</span>
+                                    </div>
+                                    <!-- End .price-box -->
+                                  </div>
+                                  <!-- End .product-details -->
+                                </div>
+                                <div
+                                  class="product-default left-details product-widget"
+                                >
+                                  <figure>
+                                    <a href="product.html">
+                                      <img
+                                        src="assets/images/products/product-12.jpg"
+                                      />
+                                    </a>
+                                  </figure>
+                                  <div class="product-details">
+                                    <h2 class="product-title">
+                                      <a href="product.html"
+                                        >Product Short Name</a
+                                      >
+                                    </h2>
+                                    <div class="ratings-container">
+                                      <div class="product-ratings">
+                                        <span
+                                          class="ratings"
+                                          style="width: 100%;"
+                                        ></span
+                                        ><!-- End .ratings -->
+                                        <span
+                                          class="tooltiptext tooltip-top"
+                                        ></span>
+                                      </div>
+                                      <!-- End .product-ratings -->
+                                    </div>
+                                    <!-- End .product-container -->
+                                    <div class="price-box">
+                                      <span class="product-price">$49.00</span>
+                                    </div>
+                                    <!-- End .price-box -->
+                                  </div>
+                                  <!-- End .product-details -->
+                                </div>
+                              </div>
+                            </div>
+                            <div class="owl-item cloned" style="width: 238px;">
+                              <div class="featured-col">
+                                <div
+                                  class="product-default left-details product-widget"
+                                >
+                                  <figure>
+                                    <a href="product.html">
+                                      <img
+                                        src="assets/images/products/product-13.jpg"
+                                      />
+                                    </a>
+                                  </figure>
+                                  <div class="product-details">
+                                    <h2 class="product-title">
+                                      <a href="product.html"
+                                        >Product Short Name</a
+                                      >
+                                    </h2>
+                                    <div class="ratings-container">
+                                      <div class="product-ratings">
+                                        <span
+                                          class="ratings"
+                                          style="width: 100%;"
+                                        ></span
+                                        ><!-- End .ratings -->
+                                        <span
+                                          class="tooltiptext tooltip-top"
+                                        ></span>
+                                      </div>
+                                      <!-- End .product-ratings -->
+                                    </div>
+                                    <!-- End .product-container -->
+                                    <div class="price-box">
+                                      <span class="product-price">$49.00</span>
+                                    </div>
+                                    <!-- End .price-box -->
+                                  </div>
+                                  <!-- End .product-details -->
+                                </div>
+                                <div
+                                  class="product-default left-details product-widget"
+                                >
+                                  <figure>
+                                    <a href="product.html">
+                                      <img
+                                        src="assets/images/products/product-14.jpg"
+                                      />
+                                    </a>
+                                  </figure>
+                                  <div class="product-details">
+                                    <h2 class="product-title">
+                                      <a href="product.html"
+                                        >Product Short Name</a
+                                      >
+                                    </h2>
+                                    <div class="ratings-container">
+                                      <div class="product-ratings">
+                                        <span
+                                          class="ratings"
+                                          style="width: 100%;"
+                                        ></span
+                                        ><!-- End .ratings -->
+                                        <span
+                                          class="tooltiptext tooltip-top"
+                                        ></span>
+                                      </div>
+                                      <!-- End .product-ratings -->
+                                    </div>
+                                    <!-- End .product-container -->
+                                    <div class="price-box">
+                                      <span class="product-price">$49.00</span>
+                                    </div>
+                                    <!-- End .price-box -->
+                                  </div>
+                                  <!-- End .product-details -->
+                                </div>
+                                <div
+                                  class="product-default left-details product-widget"
+                                >
+                                  <figure>
+                                    <a href="product.html">
+                                      <img
+                                        src="assets/images/products/product-8.jpg"
+                                      />
+                                    </a>
+                                  </figure>
+                                  <div class="product-details">
+                                    <h2 class="product-title">
+                                      <a href="product.html"
+                                        >Product Short Name</a
+                                      >
+                                    </h2>
+                                    <div class="ratings-container">
+                                      <div class="product-ratings">
+                                        <span
+                                          class="ratings"
+                                          style="width: 100%;"
+                                        ></span
+                                        ><!-- End .ratings -->
+                                        <span
+                                          class="tooltiptext tooltip-top"
+                                        ></span>
+                                      </div>
+                                      <!-- End .product-ratings -->
+                                    </div>
+                                    <!-- End .product-container -->
+                                    <div class="price-box">
+                                      <span class="product-price">$49.00</span>
+                                    </div>
+                                    <!-- End .price-box -->
+                                  </div>
+                                  <!-- End .product-details -->
+                                </div>
+                              </div>
+                            </div>
+                            <div class="owl-item" style="width: 238px;">
+                              <div class="featured-col">
+                                <div
+                                  class="product-default left-details product-widget"
+                                >
+                                  <figure>
+                                    <a href="product.html">
+                                      <img
+                                        src="assets/images/products/product-10.jpg"
+                                      />
+                                    </a>
+                                  </figure>
+                                  <div class="product-details">
+                                    <h2 class="product-title">
+                                      <a href="product.html"
+                                        >Product Short Name</a
+                                      >
+                                    </h2>
+                                    <div class="ratings-container">
+                                      <div class="product-ratings">
+                                        <span
+                                          class="ratings"
+                                          style="width: 100%;"
+                                        ></span
+                                        ><!-- End .ratings -->
+                                        <span
+                                          class="tooltiptext tooltip-top"
+                                        ></span>
+                                      </div>
+                                      <!-- End .product-ratings -->
+                                    </div>
+                                    <!-- End .product-container -->
+                                    <div class="price-box">
+                                      <span class="product-price">$49.00</span>
+                                    </div>
+                                    <!-- End .price-box -->
+                                  </div>
+                                  <!-- End .product-details -->
+                                </div>
+                                <div
+                                  class="product-default left-details product-widget"
+                                >
+                                  <figure>
+                                    <a href="product.html">
+                                      <img
+                                        src="assets/images/products/product-11.jpg"
+                                      />
+                                    </a>
+                                  </figure>
+                                  <div class="product-details">
+                                    <h2 class="product-title">
+                                      <a href="product.html"
+                                        >Product Short Name</a
+                                      >
+                                    </h2>
+                                    <div class="ratings-container">
+                                      <div class="product-ratings">
+                                        <span
+                                          class="ratings"
+                                          style="width: 100%;"
+                                        ></span
+                                        ><!-- End .ratings -->
+                                        <span
+                                          class="tooltiptext tooltip-top"
+                                        ></span>
+                                      </div>
+                                      <!-- End .product-ratings -->
+                                    </div>
+                                    <!-- End .product-container -->
+                                    <div class="price-box">
+                                      <span class="product-price">$49.00</span>
+                                    </div>
+                                    <!-- End .price-box -->
+                                  </div>
+                                  <!-- End .product-details -->
+                                </div>
+                                <div
+                                  class="product-default left-details product-widget"
+                                >
+                                  <figure>
+                                    <a href="product.html">
+                                      <img
+                                        src="assets/images/products/product-12.jpg"
+                                      />
+                                    </a>
+                                  </figure>
+                                  <div class="product-details">
+                                    <h2 class="product-title">
+                                      <a href="product.html"
+                                        >Product Short Name</a
+                                      >
+                                    </h2>
+                                    <div class="ratings-container">
+                                      <div class="product-ratings">
+                                        <span
+                                          class="ratings"
+                                          style="width: 100%;"
+                                        ></span
+                                        ><!-- End .ratings -->
+                                        <span
+                                          class="tooltiptext tooltip-top"
+                                        ></span>
+                                      </div>
+                                      <!-- End .product-ratings -->
+                                    </div>
+                                    <!-- End .product-container -->
+                                    <div class="price-box">
+                                      <span class="product-price">$49.00</span>
+                                    </div>
+                                    <!-- End .price-box -->
+                                  </div>
+                                  <!-- End .product-details -->
+                                </div>
+                              </div>
+                            </div>
+                            <div class="owl-item active" style="width: 238px;">
+                              <div class="featured-col">
+                                <div
+                                  class="product-default left-details product-widget"
+                                >
+                                  <figure>
+                                    <a href="product.html">
+                                      <img
+                                        src="assets/images/products/product-13.jpg"
+                                      />
+                                    </a>
+                                  </figure>
+                                  <div class="product-details">
+                                    <h2 class="product-title">
+                                      <a href="product.html"
+                                        >Product Short Name</a
+                                      >
+                                    </h2>
+                                    <div class="ratings-container">
+                                      <div class="product-ratings">
+                                        <span
+                                          class="ratings"
+                                          style="width: 100%;"
+                                        ></span
+                                        ><!-- End .ratings -->
+                                        <span
+                                          class="tooltiptext tooltip-top"
+                                        ></span>
+                                      </div>
+                                      <!-- End .product-ratings -->
+                                    </div>
+                                    <!-- End .product-container -->
+                                    <div class="price-box">
+                                      <span class="product-price">$49.00</span>
+                                    </div>
+                                    <!-- End .price-box -->
+                                  </div>
+                                  <!-- End .product-details -->
+                                </div>
+                                <div
+                                  class="product-default left-details product-widget"
+                                >
+                                  <figure>
+                                    <a href="product.html">
+                                      <img
+                                        src="assets/images/products/product-14.jpg"
+                                      />
+                                    </a>
+                                  </figure>
+                                  <div class="product-details">
+                                    <h2 class="product-title">
+                                      <a href="product.html"
+                                        >Product Short Name</a
+                                      >
+                                    </h2>
+                                    <div class="ratings-container">
+                                      <div class="product-ratings">
+                                        <span
+                                          class="ratings"
+                                          style="width: 100%;"
+                                        ></span
+                                        ><!-- End .ratings -->
+                                        <span
+                                          class="tooltiptext tooltip-top"
+                                        ></span>
+                                      </div>
+                                      <!-- End .product-ratings -->
+                                    </div>
+                                    <!-- End .product-container -->
+                                    <div class="price-box">
+                                      <span class="product-price">$49.00</span>
+                                    </div>
+                                    <!-- End .price-box -->
+                                  </div>
+                                  <!-- End .product-details -->
+                                </div>
+                                <div
+                                  class="product-default left-details product-widget"
+                                >
+                                  <figure>
+                                    <a href="product.html">
+                                      <img
+                                        src="assets/images/products/product-8.jpg"
+                                      />
+                                    </a>
+                                  </figure>
+                                  <div class="product-details">
+                                    <h2 class="product-title">
+                                      <a href="product.html"
+                                        >Product Short Name</a
+                                      >
+                                    </h2>
+                                    <div class="ratings-container">
+                                      <div class="product-ratings">
+                                        <span
+                                          class="ratings"
+                                          style="width: 100%;"
+                                        ></span
+                                        ><!-- End .ratings -->
+                                        <span
+                                          class="tooltiptext tooltip-top"
+                                        ></span>
+                                      </div>
+                                      <!-- End .product-ratings -->
+                                    </div>
+                                    <!-- End .product-container -->
+                                    <div class="price-box">
+                                      <span class="product-price">$49.00</span>
+                                    </div>
+                                    <!-- End .price-box -->
+                                  </div>
+                                  <!-- End .product-details -->
+                                </div>
+                              </div>
+                            </div>
+                            <div class="owl-item cloned" style="width: 238px;">
+                              <div class="featured-col">
+                                <div
+                                  class="product-default left-details product-widget"
+                                >
+                                  <figure>
+                                    <a href="product.html">
+                                      <img
+                                        src="assets/images/products/product-10.jpg"
+                                      />
+                                    </a>
+                                  </figure>
+                                  <div class="product-details">
+                                    <h2 class="product-title">
+                                      <a href="product.html"
+                                        >Product Short Name</a
+                                      >
+                                    </h2>
+                                    <div class="ratings-container">
+                                      <div class="product-ratings">
+                                        <span
+                                          class="ratings"
+                                          style="width: 100%;"
+                                        ></span
+                                        ><!-- End .ratings -->
+                                        <span
+                                          class="tooltiptext tooltip-top"
+                                        ></span>
+                                      </div>
+                                      <!-- End .product-ratings -->
+                                    </div>
+                                    <!-- End .product-container -->
+                                    <div class="price-box">
+                                      <span class="product-price">$49.00</span>
+                                    </div>
+                                    <!-- End .price-box -->
+                                  </div>
+                                  <!-- End .product-details -->
+                                </div>
+                                <div
+                                  class="product-default left-details product-widget"
+                                >
+                                  <figure>
+                                    <a href="product.html">
+                                      <img
+                                        src="assets/images/products/product-11.jpg"
+                                      />
+                                    </a>
+                                  </figure>
+                                  <div class="product-details">
+                                    <h2 class="product-title">
+                                      <a href="product.html"
+                                        >Product Short Name</a
+                                      >
+                                    </h2>
+                                    <div class="ratings-container">
+                                      <div class="product-ratings">
+                                        <span
+                                          class="ratings"
+                                          style="width: 100%;"
+                                        ></span
+                                        ><!-- End .ratings -->
+                                        <span
+                                          class="tooltiptext tooltip-top"
+                                        ></span>
+                                      </div>
+                                      <!-- End .product-ratings -->
+                                    </div>
+                                    <!-- End .product-container -->
+                                    <div class="price-box">
+                                      <span class="product-price">$49.00</span>
+                                    </div>
+                                    <!-- End .price-box -->
+                                  </div>
+                                  <!-- End .product-details -->
+                                </div>
+                                <div
+                                  class="product-default left-details product-widget"
+                                >
+                                  <figure>
+                                    <a href="product.html">
+                                      <img
+                                        src="assets/images/products/product-12.jpg"
+                                      />
+                                    </a>
+                                  </figure>
+                                  <div class="product-details">
+                                    <h2 class="product-title">
+                                      <a href="product.html"
+                                        >Product Short Name</a
+                                      >
+                                    </h2>
+                                    <div class="ratings-container">
+                                      <div class="product-ratings">
+                                        <span
+                                          class="ratings"
+                                          style="width: 100%;"
+                                        ></span
+                                        ><!-- End .ratings -->
+                                        <span
+                                          class="tooltiptext tooltip-top"
+                                        ></span>
+                                      </div>
+                                      <!-- End .product-ratings -->
+                                    </div>
+                                    <!-- End .product-container -->
+                                    <div class="price-box">
+                                      <span class="product-price">$49.00</span>
+                                    </div>
+                                    <!-- End .price-box -->
+                                  </div>
+                                  <!-- End .product-details -->
+                                </div>
+                              </div>
+                            </div>
+                            <div class="owl-item cloned" style="width: 238px;">
+                              <div class="featured-col">
+                                <div
+                                  class="product-default left-details product-widget"
+                                >
+                                  <figure>
+                                    <a href="product.html">
+                                      <img
+                                        src="assets/images/products/product-13.jpg"
+                                      />
+                                    </a>
+                                  </figure>
+                                  <div class="product-details">
+                                    <h2 class="product-title">
+                                      <a href="product.html"
+                                        >Product Short Name</a
+                                      >
+                                    </h2>
+                                    <div class="ratings-container">
+                                      <div class="product-ratings">
+                                        <span
+                                          class="ratings"
+                                          style="width: 100%;"
+                                        ></span
+                                        ><!-- End .ratings -->
+                                        <span
+                                          class="tooltiptext tooltip-top"
+                                        ></span>
+                                      </div>
+                                      <!-- End .product-ratings -->
+                                    </div>
+                                    <!-- End .product-container -->
+                                    <div class="price-box">
+                                      <span class="product-price">$49.00</span>
+                                    </div>
+                                    <!-- End .price-box -->
+                                  </div>
+                                  <!-- End .product-details -->
+                                </div>
+                                <div
+                                  class="product-default left-details product-widget"
+                                >
+                                  <figure>
+                                    <a href="product.html">
+                                      <img
+                                        src="assets/images/products/product-14.jpg"
+                                      />
+                                    </a>
+                                  </figure>
+                                  <div class="product-details">
+                                    <h2 class="product-title">
+                                      <a href="product.html"
+                                        >Product Short Name</a
+                                      >
+                                    </h2>
+                                    <div class="ratings-container">
+                                      <div class="product-ratings">
+                                        <span
+                                          class="ratings"
+                                          style="width: 100%;"
+                                        ></span
+                                        ><!-- End .ratings -->
+                                        <span
+                                          class="tooltiptext tooltip-top"
+                                        ></span>
+                                      </div>
+                                      <!-- End .product-ratings -->
+                                    </div>
+                                    <!-- End .product-container -->
+                                    <div class="price-box">
+                                      <span class="product-price">$49.00</span>
+                                    </div>
+                                    <!-- End .price-box -->
+                                  </div>
+                                  <!-- End .product-details -->
+                                </div>
+                                <div
+                                  class="product-default left-details product-widget"
+                                >
+                                  <figure>
+                                    <a href="product.html">
+                                      <img
+                                        src="assets/images/products/product-8.jpg"
+                                      />
+                                    </a>
+                                  </figure>
+                                  <div class="product-details">
+                                    <h2 class="product-title">
+                                      <a href="product.html"
+                                        >Product Short Name</a
+                                      >
+                                    </h2>
+                                    <div class="ratings-container">
+                                      <div class="product-ratings">
+                                        <span
+                                          class="ratings"
+                                          style="width: 100%;"
+                                        ></span
+                                        ><!-- End .ratings -->
+                                        <span
+                                          class="tooltiptext tooltip-top"
+                                        ></span>
+                                      </div>
+                                      <!-- End .product-ratings -->
+                                    </div>
+                                    <!-- End .product-container -->
+                                    <div class="price-box">
+                                      <span class="product-price">$49.00</span>
+                                    </div>
+                                    <!-- End .price-box -->
+                                  </div>
+                                  <!-- End .product-details -->
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="owl-nav">
+                          <button
+                            type="button"
+                            role="presentation"
+                            class="owl-prev"
+                          >
+                            <i class="icon-angle-left"></i></button
+                          ><button
+                            type="button"
+                            role="presentation"
+                            class="owl-next"
+                          >
+                            <i class="icon-angle-right"></i>
+                          </button>
+                        </div>
+                        <div class="owl-dots disabled"></div>
+                      </div>
+                      <!-- End .widget-featured-slider -->
+                    </div>
+                    <!-- End .widget-body -->
                   </div>
                   <!-- End .widget -->
 
@@ -1084,6 +1798,25 @@
             <!-- End .col-lg-3 -->
 
             <div class="col-lg-9">
+              <div
+                class="category-banner banner text-uppercase"
+                style="
+                  background: no-repeat 60% / cover
+                    url('assets/images/banners/banner-top.jpg');
+                "
+              >
+                <div class="row">
+                  <div class="pb-5 pb-md-0 col-md-5 col-lg-5 offset-1">
+                    <h3 class="mb-2 ls-10">My<br />Sales</h3>
+                    <a href="#" class="btn btn-dark btn-black ls-10"
+                      >Get Yours!</a
+                    >
+                  </div>
+                  <div class="col-md-4 offset-md-0 offset-1"></div>
+                </div>
+              </div>
+              <br />
+
               <nav class="toolbox">
                 <div class="toolbox-left">
                   <div class="toolbox-item toolbox-sort">
@@ -1122,204 +1855,203 @@
 
               <div class="row row-sm">
                 <div class="col-6 col-md-4">
-                  <div class="product-default border py-4">
-                    <div class="transaction-item my-3">
-                      <a href="#" class="transaction-img mb-3">
-                        <img class="" src="assets/images/svg/user.svg" />
-                      </a>
-                    </div>
-                    <div class="product-details">
-                      <div class="ratings-container"></div>
-                      <!-- End .product-container -->
-                      <h2 class="product-title">
+                  <div
+                    class="product-default border p-4 bg-white inner-quickview inner-icon"
+                  >
+                    <img
+                      src="assets/images/user-sq.svg"
+                      class="my-5 mb-3 mx-auto"
+                      width="42%"
+                      alt=""
+                    />
+                    <div class="product-details text-center">
+                      <h2 class="product-title my-2 mb-1 mx-auto">
                         <a href="product.html">Shola Thompson</a>
                       </h2>
+
+                      <!-- End .product-container -->
                       <div class="price-box">
-                        <span class="product-price text-center font-weight-bold"
-                          >&#8358;90,000.00</span
-                        >
+                        <span class="product-price mx-auto"
+                          >&#8358;70,000.00
+                          <span class="product-title">
+                            For 3 Months
+                          </span>
+                        </span>
                       </div>
+
+                      <button
+                        class="mt-1 btn mx-auto btn-primary btn-sm rounded"
+                      >
+                        view details
+                      </button>
                       <!-- End .price-box -->
-                      <div class="product-action">
-                        <button
-                          class="btn-icon btn-add-cart"
-                          data-toggle="modal"
-                          data-target="#addCartModal"
-                        >
-                          <i class="icon-eye"></i>
-                          VIEW
-                        </button>
-                      </div>
                     </div>
                     <!-- End .product-details -->
                   </div>
                 </div>
 
                 <div class="col-6 col-md-4">
-                  <div class="product-default border py-4">
-                    <div class="transaction-item my-3">
-                      <a href="#" class="transaction-img mb-3">
-                        <img class="" src="assets/images/svg/user.svg" />
-                      </a>
-                    </div>
-                    <div class="product-details">
-                      <div class="ratings-container"></div>
-                      <!-- End .product-container -->
-                      <h2 class="product-title">
-                        <a href="product.html">Oloko Olalekan</a>
+                  <div
+                    class="product-default border p-4 bg-white inner-quickview inner-icon"
+                  >
+                    <img
+                      src="assets/images/user-sq.svg"
+                      class="my-5 mb-3 mx-auto"
+                      width="42%"
+                      alt=""
+                    />
+                    <div class="product-details text-center">
+                      <h2 class="product-title my-2 mb-1 mx-auto">
+                        <a href="product.html">Daniel Amokachi</a>
                       </h2>
+
+                      <!-- End .product-container -->
                       <div class="price-box">
-                        <span class="product-price text-center font-weight-bold"
-                          >&#8358;75,700.00</span
-                        >
+                        <span class="product-price mx-auto"
+                          >&#8358;70,000.00
+                        </span>
                       </div>
+
+                      <button
+                        class="mt-1 btn mx-auto btn-primary btn-sm rounded"
+                      >
+                        view details
+                      </button>
                       <!-- End .price-box -->
-                      <div class="product-action">
-                        <button
-                          class="btn-icon btn-add-cart"
-                          data-toggle="modal"
-                          data-target="#addCartModal"
-                        >
-                          <i class="icon-eye"></i>
-                          VIEW
-                        </button>
-                      </div>
                     </div>
                     <!-- End .product-details -->
                   </div>
                 </div>
 
                 <div class="col-6 col-md-4">
-                  <div class="product-default border py-4">
-                    <div class="transaction-item my-3">
-                      <a href="#" class="transaction-img mb-3">
-                        <img class="" src="assets/images/svg/user.svg" />
-                      </a>
-                    </div>
-                    <div class="product-details">
-                      <div class="ratings-container"></div>
-                      <!-- End .product-container -->
-                      <h2 class="product-title">
-                        <a href="product.html">Fred Johnson</a>
+                  <div
+                    class="product-default border p-4 bg-white inner-quickview inner-icon"
+                  >
+                    <img
+                      src="assets/images/user-sq.svg"
+                      class="my-5 mb-3 mx-auto"
+                      width="42%"
+                      alt=""
+                    />
+                    <div class="product-details text-center">
+                      <h2 class="product-title my-2 mb-1 mx-auto">
+                        <a href="product.html">Jennifer Hudson</a>
                       </h2>
+
+                      <!-- End .product-container -->
                       <div class="price-box">
-                        <span class="product-price text-center font-weight-bold"
-                          >&#8358;55,000.00</span
-                        >
+                        <span class="product-price mx-auto"
+                          >&#8358;270,000.00
+                        </span>
                       </div>
+
+                      <button
+                        class="mt-1 btn mx-auto btn-primary btn-sm rounded"
+                      >
+                        view details
+                      </button>
                       <!-- End .price-box -->
-                      <div class="product-action">
-                        <button
-                          class="btn-icon btn-add-cart"
-                          data-toggle="modal"
-                          data-target="#addCartModal"
-                        >
-                          <i class="icon-eye"></i>
-                          VIEW
-                        </button>
+                    </div>
+                    <!-- End .product-details -->
+                  </div>
+                </div>
+                <div class="col-6 col-md-4">
+                  <div
+                    class="product-default border p-4 bg-white inner-quickview inner-icon"
+                  >
+                    <img
+                      src="assets/images/user-sq.svg"
+                      class="my-5 mb-3 mx-auto"
+                      width="42%"
+                      alt=""
+                    />
+                    <div class="product-details text-center">
+                      <h2 class="product-title my-2 mb-1 mx-auto">
+                        <a href="product.html">Shola Thompson</a>
+                      </h2>
+
+                      <!-- End .product-container -->
+                      <div class="price-box">
+                        <span class="product-price mx-auto"
+                          >&#8358;70,000.00
+                          <span class="product-title">
+                            For 3 Months
+                          </span>
+                        </span>
                       </div>
+
+                      <button
+                        class="mt-1 btn mx-auto btn-primary btn-sm rounded"
+                      >
+                        view details
+                      </button>
+                      <!-- End .price-box -->
                     </div>
                     <!-- End .product-details -->
                   </div>
                 </div>
 
                 <div class="col-6 col-md-4">
-                  <div class="product-default border py-4">
-                    <div class="transaction-item my-3">
-                      <a href="#" class="transaction-img mb-3">
-                        <img class="" src="assets/images/svg/user.svg" />
-                      </a>
-                    </div>
-                    <div class="product-details">
-                      <div class="ratings-container"></div>
-                      <!-- End .product-container -->
-                      <h2 class="product-title">
-                        <a href="product.html">Ellie Joe</a>
+                  <div
+                    class="product-default border p-4 bg-white inner-quickview inner-icon"
+                  >
+                    <img
+                      src="assets/images/user-sq.svg"
+                      class="my-5 mb-3 mx-auto"
+                      width="42%"
+                      alt=""
+                    />
+                    <div class="product-details text-center">
+                      <h2 class="product-title my-2 mb-1 mx-auto">
+                        <a href="product.html">Daniel Amokachi</a>
                       </h2>
+
+                      <!-- End .product-container -->
                       <div class="price-box">
-                        <span class="product-price text-center font-weight-bold"
-                          >&#8358;33,300.00</span
-                        >
+                        <span class="product-price mx-auto"
+                          >&#8358;70,000.00
+                        </span>
                       </div>
+
+                      <button
+                        class="mt-1 btn mx-auto btn-primary btn-sm rounded"
+                      >
+                        view details
+                      </button>
                       <!-- End .price-box -->
-                      <div class="product-action">
-                        <button
-                          class="btn-icon btn-add-cart"
-                          data-toggle="modal"
-                          data-target="#addCartModal"
-                        >
-                          <i class="icon-eye"></i>
-                          VIEW
-                        </button>
-                      </div>
                     </div>
                     <!-- End .product-details -->
                   </div>
                 </div>
 
                 <div class="col-6 col-md-4">
-                  <div class="product-default border py-4">
-                    <div class="transaction-item my-3">
-                      <a href="#" class="transaction-img mb-3">
-                        <img class="" src="assets/images/svg/user.svg" />
-                      </a>
-                    </div>
-                    <div class="product-details">
-                      <div class="ratings-container"></div>
-                      <!-- End .product-container -->
-                      <h2 class="product-title">
-                        <a href="product.html">John Doe</a>
+                  <div
+                    class="product-default border p-4 bg-white inner-quickview inner-icon"
+                  >
+                    <img
+                      src="assets/images/user-sq.svg"
+                      class="my-5 mb-3 mx-auto"
+                      width="42%"
+                      alt=""
+                    />
+                    <div class="product-details text-center">
+                      <h2 class="product-title my-2 mb-1 mx-auto">
+                        <a href="product.html">Jennifer Hudson</a>
                       </h2>
-                      <div class="price-box">
-                        <span class="product-price text-center font-weight-bold"
-                          >&#8358;22,330.00</span
-                        >
-                      </div>
-                      <!-- End .price-box -->
-                      <div class="product-action">
-                        <button
-                          class="btn-icon btn-add-cart"
-                          data-toggle="modal"
-                          data-target="#addCartModal"
-                        >
-                          <i class="icon-eye"></i>
-                          VIEW
-                        </button>
-                      </div>
-                    </div>
-                    <!-- End .product-details -->
-                  </div>
-                </div>
 
-                <div class="col-6 col-md-4">
-                  <div class="product-default border py-4">
-                    <div class="transaction-item my-3">
-                      <a href="#" class="transaction-img mb-3">
-                        <img class="" src="assets/images/svg/user.svg" />
-                      </a>
-                    </div>
-                    <div class="product-details">
-                      <div class="ratings-container"></div>
                       <!-- End .product-container -->
-                      <h2 class="product-title">
-                        <a href="product.html">Peter Parker</a>
-                      </h2>
                       <div class="price-box">
-                        <span class="product-price text-center font-weight-bold"
-                          >&#8358;66,500.00</span
-                        >
+                        <span class="product-price mx-auto"
+                          >&#8358;270,000.00
+                        </span>
                       </div>
+
+                      <button
+                        class="mt-1 btn mx-auto btn-primary btn-sm rounded"
+                      >
+                        view details
+                      </button>
                       <!-- End .price-box -->
-                      <div class="product-action">
-                        <button
-                          class="btn-icon btn-add-cart"
-                          data-toggle="modal"
-                          data-target="#addCartModal"
-                        >
-                          <i class="icon-eye"></i>
-                          VIEW
-                        </button>
-                      </div>
                     </div>
                     <!-- End .product-details -->
                   </div>
@@ -1334,7 +2066,8 @@
                         <i class="icon-pencil"></i>
 
                         <div class="feature-box-content">
-                          <h3>Create an Item<span>Add more items</span></h3>
+                          <h4 class="m-0">Create an Item</h4>
+                          <p>Add more items</p>
                         </div>
                         <!-- End .feature-box-content -->
                       </div>
@@ -1347,7 +2080,8 @@
                         <i class="icon-export"></i>
 
                         <div class="feature-box-content">
-                          <h3>share a link<span>Copy &amp; Share</span></h3>
+                          <h4 class="m-0">Copy &amp; Share link</h4>
+                          <p>Share on websites and social media</p>
                         </div>
                         <!-- End .feature-box-content -->
                       </div>
@@ -1360,7 +2094,8 @@
                         <i class="icon-reply"></i>
 
                         <div class="feature-box-content">
-                          <h3>Get Repayment <span>Stressfree</span></h3>
+                          <h4 class="m-0">Get Repayment</h4>
+                          <p>Seamlessly &amp; Stressfree</p>
                         </div>
                         <!-- End .feature-box-content -->
                       </div>
@@ -1377,19 +2112,21 @@
 
               <div class="info-section">
                 <div class="container">
-                  <div class="row text-center">
-                    <div class="col-12 col-sm-5 mb-3 mb-sm-0 text-center">
+                  <div
+                    class="row text-center align-items-center justify-content-center"
+                  >
+                    <div class="col-12 col-sm-4 text-center">
                       <img
                         style="max-width: 200px; display: inline;"
-                        src="assets/images/speaker.jpg"
+                        src="assets/images/product.gif"
                       />
                     </div>
                     <!-- End .col-md-4 -->
 
-                    <div class="col-12 col-sm-7 align-self-center text-sm-left">
+                    <div class="col-12 col-sm-6 text-sm-left">
                       <div class="">
                         <div class="">
-                          <h2 class="m-0 mb-1">Share link to your products</h2>
+                          <h3 class="m-0 mb-1">Share link to your products</h3>
                           <p>
                             Add a product, copy &amp; share link on your social
                             media accounts to reach more buyers.
