@@ -725,3 +725,25 @@ small {
 .product-default .product-label.label-sale {
   margin-top: 6px;
 }
+
+.form-footer .btn {
+  margin-right: 1.5rem;
+}
+
+.form-footer {
+  margin-bottom: 1rem;
+}
+
+.screen-height {
+  min-height: auto;
+  padding: 10vh 0;
+}
+
+@media only screen and (min-width: 767px) {
+  .resp-statement {
+    display: none;
+  }
+  .screen-height {
+    min-height: 100vh;
+  }
+}
