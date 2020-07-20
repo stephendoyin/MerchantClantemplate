@@ -1,3 +1,7 @@
+* {
+  font-family: Poppins, sans-serif;
+}
+
 .transaction .main-nav {
   background-color: #fff;
   padding: 0 10px;
@@ -387,17 +391,6 @@ h2.modal-product-title span {
   align-items: center;
 }
 
-@media only screen and (max-width: 767px) {
-  .left-content {
-    display: none;
-  }
-
-  .form-con {
-    position: relative;
-    width: 85%;
-  }
-}
-
 .mfp-container {
   height: 0;
 }
@@ -553,7 +546,7 @@ small {
 }
 
 .modal select.form-control-sm:not([size]):not([multiple]) {
-  height: 6rem;
+  height: 4rem;
 }
 
 .small,
@@ -746,4 +739,116 @@ small {
   .screen-height {
     min-height: 100vh;
   }
+}
+
+.form-control {
+  border-bottom: 1px solid #838586;
+  border-right: none;
+  border-left: none;
+  border-top: none;
+  padding: 0;
+  height: 4rem;
+  font-size: 1.6rem;
+  font-family: Poppins;
+}
+
+.form-control:focus {
+  border-bottom: 2px solid #646566;
+}
+
+.modal .owl-carousel.owl-loaded {
+  display: none;
+}
+
+.select-custom:after {
+  right: 0rem;
+}
+
+@media only screen and (max-width: 480px) {
+  .btn {
+    width: 100%;
+  }
+}
+select.form-control:not([size]):not([multiple]) {
+  height: 4rem;
+}
+.btn-resp-show {
+  display: none;
+}
+@media only screen and (max-width: 767px) {
+  .left-content {
+    display: none;
+  }
+
+  .form-con {
+    position: relative;
+    width: 85%;
+  }
+  .screen-height {
+    background: linear-gradient(
+        rgba(0, 136, 204, 0.789),
+        rgba(0, 136, 204, 0.768)
+      ),
+      url(../assets/images/sign-bg.png);
+    background-size: cover;
+    background-position: center;
+  }
+  .screen-height .form-control {
+    background: transparent;
+    color: #efefef;
+  }
+  .screen-height p,
+  .screen-height h2,
+  .screen-height label,
+  .screen-height small {
+    color: #313131;
+  }
+
+  .screen-height .select-custom:after {
+    color: #fff;
+  }
+
+  .screen-height #passwordHelpInline {
+    color: #fff !important;
+  }
+
+  .screen-height a#login {
+    color: #fff !important;
+    font-weight: bold;
+  }
+
+  .screen-height option {
+    color: #000;
+  }
+
+  .screen-height small {
+    color: #000;
+  }
+  .screen-height .form-control {
+    border-bottom: 1px solid #fff;
+  }
+
+  .screen-height .required-field > label:after {
+    color: #fff;
+  }
+
+  .screen-height .form-control:focus {
+    border-bottom: 2px solid #fff;
+  }
+  .screen-height .select-custom {
+    background: transparent;
+  }
+  .btn-resp {
+    display: none;
+  }
+  .btn-resp-show {
+    display: inline-block;
+  }
+  .screen-height .screen-height small {
+    color: #fff;
+  }
+}
+
+.screen-height .form-group {
+  margin-bottom: 2rem;
 }

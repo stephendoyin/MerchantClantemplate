@@ -54,7 +54,7 @@
   </head>
 
   <body class="loaded transaction">
-    <div class="modal modal-one">
+    <div class="modal show modal-one">
       <div class="mfp-bg mfp-ajax-product mfp-ready"></div>
       <div
         class="mfp-wrap mfp-close-btn-in mfp-auto-cursor mfp-ajax-product mfp-ready"
@@ -73,7 +73,7 @@
                   <form class="product-single-details mx-auto">
                     <h1 class="product-title mt-3">Set up a Product</h1>
                     <hr class="short-divider mb-3" />
-                    <div class="form-group required mt-2">
+                    <div class="form-group required mt-4">
                       <label for="acc-mname">Name of Product</label>
                       <input
                         type="text"
@@ -84,7 +84,7 @@
                     </div>
                     <!-- End .form-group -->
 
-                    <div class="form-group required mt-2">
+                    <div class="form-group required mt-4">
                       <label>Products Category</label>
                       <div class="select-custom">
                         <select class="form-control form-control-sm">
@@ -100,7 +100,7 @@
                       <!-- End .select-custom -->
                     </div>
 
-                    <div class="form-group required mt-2">
+                    <div class="form-group required mt-4">
                       <label for="acc-mname">Product Price</label>
                       <input
                         type="number"
@@ -110,6 +110,90 @@
                       />
                     </div>
                     <!-- End .form-group -->
+
+                    <div class="form-group required mt-4 mb-3">
+                      <label for="acc-mname" class="font-weight-bold mb-1"
+                        >Do you want to sell on credit?</label
+                      >
+                      <div class="row">
+                        <div class="col-12 col-sm-6 col-md-5">
+                          <input
+                            type="radio"
+                            name="price[1]"
+                            id="outright-p"
+                            value="1"
+                            class="radio mr-2"
+                            checked
+                          />
+                          <label for="outright-p " class="font-weight-normal"
+                            >No, Outright payment</label
+                          >
+                        </div>
+                        <div class="col-12 col-md-6 col-md-5">
+                          <input
+                            type="radio"
+                            name="price[1]"
+                            id="credit-p"
+                            value="1"
+                            class="radio mr-2"
+                          />
+                          <label for="credit-p" class="font-weight-normal"
+                            >Yes, Sell on credit</label
+                          >
+                        </div>
+                      </div>
+                    </div>
+                    <!-- End .form-group -->
+
+                    <div class="form-group required mt-4">
+                      <label for="acc-mname">How many months ?</label>
+                      <input
+                        type="number"
+                        class="form-control"
+                        id="acc-mname"
+                        name="acc-mname"
+                      />
+                    </div>
+
+                    <div class="form-group required mt-4">
+                      <label for="acc-mname"
+                        >How much does buyers contribute upfront ?</label
+                      >
+                      <input
+                        type="number"
+                        class="form-control"
+                        id="acc-mname"
+                        name="acc-mname"
+                      />
+                    </div>
+
+                    <div class="row mt-5 mb-4">
+                      <div class="col-5 text-left border-right align-center">
+                        <h2 class="custom-title">
+                          &#8358;20,000
+                        </h2>
+                        <span class="custom-text">
+                          Upfront Payment of purchase
+                        </span>
+                      </div>
+                      <div class="col-4 text-left align-center border-right">
+                        <h2 class="custom-title">
+                          &#8358;141,700
+                        </h2>
+                        <span class="custom-text">
+                          Balance over 3 Months
+                        </span>
+                      </div>
+                      <div class="col-3 text-right align-center">
+                        <h2 class="custom-title">
+                          &#8358;161,700
+                        </h2>
+                        <span class="custom-text">
+                          Total
+                        </span>
+                      </div>
+                    </div>
+
                     <div class="row mt-4 mb-1">
                       <div class="col-12">
                         <small class="text-danger">
@@ -118,6 +202,7 @@
                         </small>
                       </div>
                     </div>
+
                     <div class="row align-items-end">
                       <div class="col-12 col-sm-7 col-md-6">
                         <div class="product-slider-container">
@@ -188,91 +273,9 @@
                       </div>
                     </div>
 
-                    <div class="form-group required mt-4 mb-3">
-                      <label for="acc-mname" class="font-weight-bold mb-1"
-                        >Do you want to sell on credit?</label
-                      >
-                      <div class="row">
-                        <div class="col-12 col-sm-6 col-md-5">
-                          <input
-                            type="radio"
-                            name="price[1]"
-                            id="outright-p"
-                            value="1"
-                            class="radio mr-2"
-                            checked
-                          />
-                          <label for="outright-p " class="font-weight-normal"
-                            >No, Outright payment</label
-                          >
-                        </div>
-                        <div class="col-12 col-md-6 col-md-5">
-                          <input
-                            type="radio"
-                            name="price[1]"
-                            id="credit-p"
-                            value="1"
-                            class="radio mr-2"
-                          />
-                          <label for="credit-p" class="font-weight-normal"
-                            >Yes, Sell on credit</label
-                          >
-                        </div>
-                      </div>
-                    </div>
                     <!-- End .form-group -->
 
-                    <div class="form-group required mt-2">
-                      <label for="acc-mname">How many months ?</label>
-                      <input
-                        type="number"
-                        class="form-control"
-                        id="acc-mname"
-                        name="acc-mname"
-                      />
-                    </div>
-                    <div class="form-group required mt-2">
-                      <label for="acc-mname"
-                        >How much does buyers contribute upfront ?</label
-                      >
-                      <input
-                        type="number"
-                        class="form-control"
-                        id="acc-mname"
-                        name="acc-mname"
-                      />
-                    </div>
-
-                    <div class="row mt-5 mb-3">
-                      <div class="col-5 text-left border-right align-center">
-                        <h2 class="custom-title">
-                          &#8358;20,000
-                        </h2>
-                        <span class="custom-text">
-                          Upfront Payment of purchase
-                        </span>
-                      </div>
-                      <div class="col-4 text-left align-center border-right">
-                        <h2 class="custom-title">
-                          &#8358;141,700
-                        </h2>
-                        <span class="custom-text">
-                          Balance over 3 Months
-                        </span>
-                      </div>
-                      <div class="col-3 text-right align-center">
-                        <h2 class="custom-title">
-                          &#8358;161,700
-                        </h2>
-                        <span class="custom-text">
-                          Total
-                        </span>
-                      </div>
-                    </div>
-
-                    <!-- End .form-group -->
-
-                    <div class="form-footer-right mb-5 mt-3">
+                    <div class="form-footer-right mb-5 mt-5">
                       <button type="submit" class="btn btn-secondary">
                         CREATE PRODUCT
                       </button>
