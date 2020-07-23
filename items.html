@@ -54,7 +54,7 @@
   </head>
 
   <body class="loaded transaction">
-    <div class="modal show modal-one">
+    <div class="modal modal-setup modal-one">
       <div class="mfp-bg mfp-ajax-product mfp-ready"></div>
       <div
         class="mfp-wrap mfp-close-btn-in mfp-auto-cursor mfp-ajax-product mfp-ready"
@@ -69,7 +69,7 @@
               <div class="row">
                 <!-- End .col-lg-7 -->
 
-                <div class="col-12 col-md-8 mx-auto">
+                <div class="col-12 col-md-10 mx-auto">
                   <form class="product-single-details mx-auto">
                     <h1 class="product-title mt-3">Set up a Product</h1>
                     <hr class="short-divider mb-3" />
@@ -77,6 +77,7 @@
                       <label for="acc-mname">Name of Product</label>
                       <input
                         type="text"
+                        autocomplete="off"
                         class="form-control"
                         id="acc-mname"
                         name="acc-mname"
@@ -88,13 +89,11 @@
                       <label>Products Category</label>
                       <div class="select-custom">
                         <select class="form-control form-control-sm">
-                          <option value="CA">Category 1</option>
-                          <option value="CA">Category 1</option>
-                          <option value="CA">Category 1</option>
-                          <option value="CA">Category 1</option>
-                          <option value="CA">Category 1</option>
-                          <option value="CA">Category 1</option>
-                          <option value="CA">Category 1</option>
+                          <option value="CA">Electronics</option>
+                          <option value="CA">Fashion</option>
+                          <option value="CA">Gadgets</option>
+                          <option value="CA">Phones</option>
+                          <option value="CA">Cosmetics</option>
                         </select>
                       </div>
                       <!-- End .select-custom -->
@@ -103,7 +102,8 @@
                     <div class="form-group required mt-4">
                       <label for="acc-mname">Product Price</label>
                       <input
-                        type="number"
+                        type="text"
+                        autocomplete="off"
                         class="form-control"
                         id="acc-mname"
                         name="acc-mname"
@@ -122,7 +122,7 @@
                             name="price[1]"
                             id="outright-p"
                             value="1"
-                            class="radio mr-2"
+                            class="radio no-credit mr-2"
                             checked
                           />
                           <label for="outright-p " class="font-weight-normal"
@@ -135,7 +135,7 @@
                             name="price[1]"
                             id="credit-p"
                             value="1"
-                            class="radio mr-2"
+                            class="radio credit-input mr-2"
                           />
                           <label for="credit-p" class="font-weight-normal"
                             >Yes, Sell on credit</label
@@ -144,111 +144,64 @@
                       </div>
                     </div>
                     <!-- End .form-group -->
-
-                    <div class="form-group required mt-4">
-                      <label for="acc-mname">How many months ?</label>
-                      <input
-                        type="number"
-                        class="form-control"
-                        id="acc-mname"
-                        name="acc-mname"
-                      />
-                    </div>
-
-                    <div class="form-group required mt-4">
-                      <label for="acc-mname"
-                        >How much does buyers contribute upfront ?</label
-                      >
-                      <input
-                        type="number"
-                        class="form-control"
-                        id="acc-mname"
-                        name="acc-mname"
-                      />
-                    </div>
-
-                    <div class="row mt-5 mb-4">
-                      <div class="col-5 text-left border-right align-center">
-                        <h2 class="custom-title">
-                          &#8358;20,000
-                        </h2>
-                        <span class="custom-text">
-                          Upfront Payment of purchase
-                        </span>
+                    <div class="extra-info">
+                      <div class="form-group required mt-4">
+                        <label for="acc-mname">How many months ?</label>
+                        <input
+                          type="text"
+                          autocomplete="off"
+                          class="form-control"
+                          id="acc-mname"
+                          name="acc-mname"
+                        />
                       </div>
-                      <div class="col-4 text-left align-center border-right">
-                        <h2 class="custom-title">
-                          &#8358;141,700
-                        </h2>
-                        <span class="custom-text">
-                          Balance over 3 Months
-                        </span>
-                      </div>
-                      <div class="col-3 text-right align-center">
-                        <h2 class="custom-title">
-                          &#8358;161,700
-                        </h2>
-                        <span class="custom-text">
-                          Total
-                        </span>
-                      </div>
-                    </div>
 
-                    <div class="row mt-4 mb-1">
-                      <div class="col-12">
-                        <small class="text-danger">
-                          *Add product images by clicking on the thumbnails
-                          below
-                        </small>
+                      <div class="form-group required mt-4">
+                        <label for="acc-mname"
+                          >How much does buyers contribute upfront ?</label
+                        >
+                        <input
+                          type="text"
+                          autocomplete="off"
+                          class="form-control"
+                          id="acc-mname"
+                          name="acc-mname"
+                        />
                       </div>
-                    </div>
 
-                    <div class="row align-items-end">
-                      <div class="col-12 col-sm-7 col-md-6">
-                        <div class="product-slider-container">
-                          <div
-                            class="product-single-carousel owl-carousel owl-theme"
-                          >
-                            <div class="product-item">
-                              <img
-                                class="product-single-image"
-                                src="assets/images/products/zoom/product-1.jpg"
-                              />
-                            </div>
-                            <div class="product-item">
-                              <img
-                                class="product-single-image"
-                                src="assets/images/add-item.png"
-                              />
-                            </div>
-                            <div class="product-item">
-                              <img
-                                class="product-single-image"
-                                src="assets/images/add-item.png"
-                              />
-                            </div>
-                            <div class="product-item">
-                              <img
-                                class="product-single-image"
-                                src="assets/images/add-item.png"
-                              />
-                            </div>
-                            <div class="product-item">
-                              <img
-                                class="product-single-image"
-                                src="assets/images/add-item.png"
-                              />
-                            </div>
-                          </div>
-                          <!-- End .product-single-carousel -->
-                          <span class="prod-full-screen">
-                            <i class="fas fa-trash-alt"></i>
+                      <div class="row mt-5 mb-4">
+                        <div class="col-5 text-left border-right align-center">
+                          <h2 class="custom-title">
+                            &#8358;20,000
+                          </h2>
+                          <span class="custom-text">
+                            Upfront Payment of purchase
+                          </span>
+                        </div>
+                        <div class="col-4 text-left align-center border-right">
+                          <h2 class="custom-title">
+                            &#8358;141,700
+                          </h2>
+                          <span class="custom-text">
+                            Balance over 3 Months
+                          </span>
+                        </div>
+                        <div class="col-3 text-right align-center">
+                          <h2 class="custom-title">
+                            &#8358;161,700
+                          </h2>
+                          <span class="custom-text">
+                            Total
                           </span>
                         </div>
                       </div>
+                    </div>
 
+                    <hr />
+
+                    <div class="row align-items-end">
                       <div class="col-12 mt-2">
-                        <small>Added 1 images of 5</small>
+                        <h6 class="mb-1 font-weight-bold">Added media</h6>
                       </div>
                     </div>
 
@@ -257,6 +210,9 @@
                       id="carousel-custom-dots"
                     >
                       <div class="owl-dot">
+                        <span class="close-btn">
+                          <i class="icon-cancel"></i>
+                        </span>
                         <img src="assets/images/products/zoom/product-1.jpg" />
                       </div>
                       <div class="owl-dot">
@@ -276,7 +232,11 @@
                     <!-- End .form-group -->
 
                     <div class="form-footer-right mb-5 mt-5">
-                      <button type="submit" class="btn btn-secondary">
+                      <button
+                        type="submit"
+                        disabled
+                        class="btn btn-block btn-primary"
+                      >
                         CREATE PRODUCT
                       </button>
                     </div>
@@ -308,45 +268,40 @@
         <div class="mfp-container mfp-ajax-holder">
           <div class="mfp-content">
             <div
-              class="product-single-container product-single-default product-quick-view container"
+              class="product-single-container product-single-default product-quick-view"
             >
-              <div class="row">
-                <div class="col-lg-6 col-md-6 product-single-gallery">
-                  <div class="product-slider-container product-item">
+              <div class="row row-sparse">
+                <div class="col-lg-6 product-single-gallery">
+                  <div class="product-slider-container">
                     <div class="product-single-carousel owl-carousel owl-theme">
                       <div class="product-item">
                         <img
                           class="product-single-image"
                           src="assets/images/products/zoom/product-1.jpg"
-                          data-zoom-image="assets/images/products/zoom/product-1-big.jpg"
-                        />
-                      </div>
-                      <div class="product-item">
-                        <img
-                          class="product-single-image"
-                          src="assets/images/products/zoom/product-1.jpg"
-                          data-zoom-image="assets/images/products/zoom/product-1-big.jpg"
                         />
                       </div>
                       <div class="product-item">
                         <img
                           class="product-single-image"
                           src="assets/images/products/zoom/product-2.jpg"
-                          data-zoom-image="assets/images/products/zoom/product-2-big.jpg"
                         />
                       </div>
                       <div class="product-item">
                         <img
                           class="product-single-image"
                           src="assets/images/products/zoom/product-3.jpg"
-                          data-zoom-image="assets/images/products/zoom/product-3-big.jpg"
                         />
                       </div>
                       <div class="product-item">
                         <img
                           class="product-single-image"
                           src="assets/images/products/zoom/product-4.jpg"
-                          data-zoom-image="assets/images/products/zoom/product-4-big.jpg"
+                        />
+                      </div>
+                      <div class="product-item">
+                        <img
+                          class="product-single-image"
+                          src="assets/images/products/product-5-white.jpg"
                         />
                       </div>
                     </div>
@@ -356,84 +311,650 @@
                     </span>
                   </div>
                   <div
-                    class="prod-thumbnail row owl-dots"
+                    class="prod-thumbnail owl-dots"
                     id="carousel-custom-dots"
                   >
-                    <div class="col-2 owl-dot active">
+                    <div class="owl-dot border active">
                       <img src="assets/images/products/zoom/product-1.jpg" />
                     </div>
-                    <div class="col-2 owl-dot">
+                    <div class="owl-dot border">
                       <img src="assets/images/products/zoom/product-2.jpg" />
                     </div>
-                    <div class="col-2 owl-dot">
+                    <div class="owl-dot border">
                       <img src="assets/images/products/zoom/product-3.jpg" />
                     </div>
-                    <div class="col-2 owl-dot">
+                    <div class="owl-dot border">
                       <img src="assets/images/products/zoom/product-4.jpg" />
                     </div>
-                    <div class="col-2 owl-dot">
-                      <img src="assets/images/products/zoom/product-4.jpg" />
+                    <div class="owl-dot border">
+                      <img src="assets/images/products/product-5-white.jpg" />
                     </div>
                   </div>
                 </div>
-                <!-- End .col-lg-7 -->
+                <!-- End .product-single-gallery -->
 
-                <div class="col-lg-6 col-md-6">
-                  <div class="product-single-details">
-                    <h1 class="product-title">
-                      Gucci Molaringa Delux Bag
-                    </h1>
+                <div class="col-lg-6 product-single-details">
+                  <h1 class="product-title">Silver Porto Headset</h1>
 
-                    <div class="price-box mt-2">
-                      <span class="old-price">&#8358;81.00</span>
-                      <span class="product-price text-center"
-                        >&#8358;45,000 for 6 Months</span
+                  <div class="ratings-container">
+                    <div class="product-ratings">
+                      <span class="ratings" style="width: 60%;"></span
+                      ><!-- End .ratings -->
+                    </div>
+                    <!-- End .product-ratings -->
+                  </div>
+                  <!-- End .product-container -->
+
+                  <div class="price-box">
+                    <span class="old-price">&#x20A6;81,000</span>
+                    <span class="product-price">&#x20A6;101,000</span>
+                  </div>
+                  <!-- End .price-box -->
+
+                  <div class="product-desc m-0">
+                    <p>
+                      Duis aute irure dolor in reprehenderit in voluptate velit
+                      esse cillum dolore eu fugiat nulla pariatur. Excepteur
+                      sint occaecat cupidatat non.
+                    </p>
+                  </div>
+                  <!-- End .product-desc -->
+                  <hr class="divider" />
+
+                  <div class="row mb-2">
+                    <div class="col-12 my-2">
+                      <span
+                        class="mr-2"
+                        style="
+                          font-size: 2.5rem;
+                          vertical-align: center;
+                          width: 40px;
+                          position: relative;
+                        "
                       >
+                        <i
+                          class="fas fa-credit-card d-inline"
+                          style="width: 100%;"
+                        ></i>
+                      </span>
+                      ₦90,000 (2 Months) contribution
                     </div>
-                    <!-- End .price-box -->
+                    <div class="col-12 my-2">
+                      <span
+                        class="mr-2"
+                        style="
+                          font-size: 2.5rem;
+                          vertical-align: center;
+                          width: 40px;
+                          position: relative;
+                        "
+                      >
+                        <i
+                          class="fas fa-money-bill d-inline"
+                          style="width: 100%;"
+                        ></i>
+                      </span>
+                      ₦300,000 outright payment
+                    </div>
+                    <div class="col-12 my-2">
+                      <span
+                        class="mr-2"
+                        style="
+                          font-size: 2.5rem;
+                          vertical-align: center;
+                          width: 40px;
+                          position: relative;
+                        "
+                      >
+                        <i
+                          class="fas fa-link d-inline"
+                          style="width: 100%;"
+                        ></i>
+                      </span>
+                      &nbsp;&nbsp;bit.ly/aeew231
+                    </div>
+                  </div>
 
-                    <div class="row mb-2">
-                      <div class="col-12 my-3">
-                        <img
-                          src="assets/images/svg/credit-card.svg"
-                          class="icn-img"
-                          alt=""
-                        />
-                        &#8358;90,000 (2 Months) contribution
-                      </div>
-                      <div class="col-12 my-3">
-                        <img
-                          src="assets/images/svg/payment-method.svg"
-                          class="icn-img"
-                          alt=""
-                        />
-                        &#8358;300,000 outright payment
-                      </div>
-                      <div class="col-12 my-3">
-                        <img
-                          src="assets/images/svg/link.svg"
-                          class="icn-img"
-                          alt=""
-                        />
-                        bit.ly/aeew231
+                  <!-- End .product-action -->
+
+                  <hr class="divider" />
+
+                  <div class="product-single-share">
+                    <label class="sr-only">Share:</label>
+
+                    <!-- www.addthis.com share plugin-->
+                    <div
+                      class="addthis_inline_share_toolbox"
+                      data-url="http://portotheme.com/html/porto_ecommerce/demo_5/category-banner-boxed-slider.html"
+                      data-title="Porto - Bootstrap eCommerce Template"
+                      style="clear: both;"
+                    >
+                      <div class="at-share-btn-elements">
+                        <a
+                          role="button"
+                          tabindex="0"
+                          class="at-icon-wrapper at-share-btn at-svc-facebook"
+                          style="
+                            background-color: rgb(76, 76, 76);
+                            border-radius: 26px;
+                          "
+                          ><span class="at4-visually-hidden"
+                            >Share to Facebook</span
+                          ><span
+                            class="at-icon-wrapper"
+                            style="
+                              line-height: 20px;
+                              height: 20px;
+                              width: 20px;
+                            "
+                            ><svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              xmlns:xlink="http://www.w3.org/1999/xlink"
+                              viewBox="0 0 32 32"
+                              version="1.1"
+                              role="img"
+                              aria-labelledby="at-svg-facebook-1"
+                              class="at-icon at-icon-facebook"
+                              style="
+                                fill: rgb(255, 255, 255);
+                                width: 20px;
+                                height: 20px;
+                              "
+                            >
+                              <title id="at-svg-facebook-1">Facebook</title>
+                              <g>
+                                <path
+                                  d="M22 5.16c-.406-.054-1.806-.16-3.43-.16-3.4 0-5.733 1.825-5.733 5.17v2.882H9v3.913h3.837V27h4.604V16.965h3.823l.587-3.913h-4.41v-2.5c0-1.123.347-1.903 2.198-1.903H22V5.16z"
+                                  fill-rule="evenodd"
+                                ></path>
+                              </g></svg></span></a
+                        ><a
+                          role="button"
+                          tabindex="0"
+                          class="at-icon-wrapper at-share-btn at-svc-twitter"
+                          style="
+                            background-color: rgb(76, 76, 76);
+                            border-radius: 26px;
+                          "
+                          ><span class="at4-visually-hidden"
+                            >Share to Twitter</span
+                          ><span
+                            class="at-icon-wrapper"
+                            style="
+                              line-height: 20px;
+                              height: 20px;
+                              width: 20px;
+                            "
+                            ><svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              xmlns:xlink="http://www.w3.org/1999/xlink"
+                              viewBox="0 0 32 32"
+                              version="1.1"
+                              role="img"
+                              aria-labelledby="at-svg-twitter-2"
+                              class="at-icon at-icon-twitter"
+                              style="
+                                fill: rgb(255, 255, 255);
+                                width: 20px;
+                                height: 20px;
+                              "
+                            >
+                              <title id="at-svg-twitter-2">Twitter</title>
+                              <g>
+                                <path
+                                  d="M27.996 10.116c-.81.36-1.68.602-2.592.71a4.526 4.526 0 0 0 1.984-2.496 9.037 9.037 0 0 1-2.866 1.095 4.513 4.513 0 0 0-7.69 4.116 12.81 12.81 0 0 1-9.3-4.715 4.49 4.49 0 0 0-.612 2.27 4.51 4.51 0 0 0 2.008 3.755 4.495 4.495 0 0 1-2.044-.564v.057a4.515 4.515 0 0 0 3.62 4.425 4.52 4.52 0 0 1-2.04.077 4.517 4.517 0 0 0 4.217 3.134 9.055 9.055 0 0 1-5.604 1.93A9.18 9.18 0 0 1 6 23.85a12.773 12.773 0 0 0 6.918 2.027c8.3 0 12.84-6.876 12.84-12.84 0-.195-.005-.39-.014-.583a9.172 9.172 0 0 0 2.252-2.336"
+                                  fill-rule="evenodd"
+                                ></path>
+                              </g></svg></span></a
+                        ><a
+                          role="button"
+                          tabindex="0"
+                          class="at-icon-wrapper at-share-btn at-svc-compact"
+                          style="
+                            background-color: rgb(76, 76, 76);
+                            border-radius: 26px;
+                          "
+                          ><span class="at4-visually-hidden">Share to More</span
+                          ><span
+                            class="at-icon-wrapper"
+                            style="
+                              line-height: 20px;
+                              height: 20px;
+                              width: 20px;
+                            "
+                            ><svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              xmlns:xlink="http://www.w3.org/1999/xlink"
+                              viewBox="0 0 32 32"
+                              version="1.1"
+                              role="img"
+                              aria-labelledby="at-svg-addthis-3"
+                              class="at-icon at-icon-addthis"
+                              style="
+                                fill: rgb(255, 255, 255);
+                                width: 20px;
+                                height: 20px;
+                              "
+                            >
+                              <title id="at-svg-addthis-3">AddThis</title>
+                              <g>
+                                <path
+                                  d="M18 14V8h-4v6H8v4h6v6h4v-6h6v-4h-6z"
+                                  fill-rule="evenodd"
+                                ></path>
+                              </g></svg></span
+                        ></a>
                       </div>
                     </div>
 
-                    <div class="product-desc">
-                      <p>
-                        Duis aute irure dolor in reprehenderit in voluptate
-                        velit esse cillum dolore eu fugiat nulla pariatur.
-                        Excepteur sint occaecat cupidatat non.
-                      </p>
+                    <a
+                      href="#"
+                      class="btn btn-custom btn-cus btn-primary btn btn-md ml-sm-5"
+                    >
+                      Edit Product
+                    </a>
+                  </div>
+                  <!-- End .product single-share -->
+                </div>
+                <!-- End .product-single-details -->
+              </div>
+              <!-- End .row -->
+              <button title="Close (Esc)" type="button" class="mfp-close">
+                ×
+              </button>
+            </div>
+            <!-- End .product-single-container -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal modal-select modal-two">
+      <div class="mfp-bg mfp-ajax-product mfp-ready"></div>
+      <div
+        class="mfp-wrap mfp-close-btn-in mfp-auto-cursor mfp-ajax-product mfp-ready"
+        tabindex="-1"
+        style="overflow: hidden auto;"
+      >
+        <div class="mfp-container mfp-ajax-holder">
+          <div class="mfp-content">
+            <div
+              class="product-single-container product-single-default product-quick-view container"
+            >
+              <div class="row">
+                <div class="col-lg-11 m-auto">
+                  <div class="product-single-details">
+                    <div class="widget widget-search">
+                      <form
+                        role="search"
+                        method="get"
+                        class="search-form"
+                        action="#"
+                      >
+                        <input
+                          type="search"
+                          class="form-control"
+                          placeholder="Search posts here..."
+                          name="s"
+                          required
+                        />
+                        <button
+                          type="submit"
+                          class="search-submit"
+                          title="Search"
+                        >
+                          <i class="icon-search"></i>
+                          <span class="sr-only">Search</span>
+                        </button>
+                      </form>
                     </div>
-                    <!-- End .product-desc -->
+
+                    <div class="modal-items-container">
+                      <div
+                        class="row shadow pt-3 mt-2 mb-2"
+                        style="margin-right: 1px; margin-left: 1px;"
+                      >
+                        <div class="col-sm-2">
+                          <figure>
+                            <a href="product.html">
+                              <img src="assets/images/products/product-4.jpg" />
+                            </a>
+                          </figure>
+                        </div>
+                        <div class="col-sm-7">
+                          <h5 class="mb-1">
+                            Product Short Name
+                          </h5>
+
+                          <div class="m-0">
+                            <p>
+                              <span class="font-weight-bold">₦90,000</span> for
+                              4 Months
+                            </p>
+                          </div>
+                          <!-- End .price-box -->
+                        </div>
+                        <!-- End .product-details -->
+
+                        <div class="col-sm-3 justify-self-right">
+                          <button
+                            class="btn btn-primary btn-sm float-sm-right float-left mb-2 mr-2"
+                          >
+                            Share
+                          </button>
+                        </div>
+                      </div>
+                      <div
+                        class="row shadow pt-3 mt-2 mb-2"
+                        style="margin-right: 1px; margin-left: 1px;"
+                      >
+                        <div class="col-sm-2">
+                          <figure>
+                            <a href="product.html">
+                              <img src="assets/images/products/product-4.jpg" />
+                            </a>
+                          </figure>
+                        </div>
+                        <div class="col-sm-7">
+                          <h5 class="mb-1">
+                            Product Short Name
+                          </h5>
+
+                          <div class="m-0">
+                            <p>
+                              <span class="font-weight-bold">₦90,000</span> for
+                              4 Months
+                            </p>
+                          </div>
+                          <!-- End .price-box -->
+                        </div>
+                        <!-- End .product-details -->
+
+                        <div class="col-sm-3 justify-self-right">
+                          <button
+                            class="btn btn-primary btn-sm float-sm-right float-left mb-2 mr-2"
+                          >
+                            Share
+                          </button>
+                        </div>
+                      </div>
+                      <div
+                        class="row shadow pt-3 mt-2 mb-2"
+                        style="margin-right: 1px; margin-left: 1px;"
+                      >
+                        <div class="col-sm-2">
+                          <figure>
+                            <a href="product.html">
+                              <img src="assets/images/products/product-4.jpg" />
+                            </a>
+                          </figure>
+                        </div>
+                        <div class="col-sm-7">
+                          <h5 class="mb-1">
+                            Product Short Name
+                          </h5>
+
+                          <div class="m-0">
+                            <p>
+                              <span class="font-weight-bold">₦90,000</span> for
+                              4 Months
+                            </p>
+                          </div>
+                          <!-- End .price-box -->
+                        </div>
+                        <!-- End .product-details -->
+
+                        <div class="col-sm-3 justify-self-right">
+                          <button
+                            class="btn btn-primary btn-sm float-sm-right float-left mb-2 mr-2"
+                          >
+                            Share
+                          </button>
+                        </div>
+                      </div>
+                      <div
+                        class="row shadow pt-3 mt-2 mb-2"
+                        style="margin-right: 1px; margin-left: 1px;"
+                      >
+                        <div class="col-sm-2">
+                          <figure>
+                            <a href="product.html">
+                              <img src="assets/images/products/product-4.jpg" />
+                            </a>
+                          </figure>
+                        </div>
+                        <div class="col-sm-7">
+                          <h5 class="mb-1">
+                            Product Short Name
+                          </h5>
+
+                          <div class="m-0">
+                            <p>
+                              <span class="font-weight-bold">₦90,000</span> for
+                              4 Months
+                            </p>
+                          </div>
+                          <!-- End .price-box -->
+                        </div>
+                        <!-- End .product-details -->
+
+                        <div class="col-sm-3 justify-self-right">
+                          <button
+                            class="btn btn-primary btn-sm float-sm-right float-left mb-2 mr-2"
+                          >
+                            Share
+                          </button>
+                        </div>
+                      </div>
+                      <div
+                        class="row shadow pt-3 mt-2 mb-2"
+                        style="margin-right: 1px; margin-left: 1px;"
+                      >
+                        <div class="col-sm-2">
+                          <figure>
+                            <a href="product.html">
+                              <img src="assets/images/products/product-4.jpg" />
+                            </a>
+                          </figure>
+                        </div>
+                        <div class="col-sm-7">
+                          <h5 class="mb-1">
+                            Product Short Name
+                          </h5>
+
+                          <div class="m-0">
+                            <p>
+                              <span class="font-weight-bold">₦90,000</span> for
+                              4 Months
+                            </p>
+                          </div>
+                          <!-- End .price-box -->
+                        </div>
+                        <!-- End .product-details -->
+
+                        <div class="col-sm-3 justify-self-right">
+                          <button
+                            class="btn btn-primary btn-sm float-sm-right float-left mb-2 mr-2"
+                          >
+                            Share
+                          </button>
+                        </div>
+                      </div>
+                      <div
+                        class="row shadow pt-3 mt-2 mb-2"
+                        style="margin-right: 1px; margin-left: 1px;"
+                      >
+                        <div class="col-sm-2">
+                          <figure>
+                            <a href="product.html">
+                              <img src="assets/images/products/product-4.jpg" />
+                            </a>
+                          </figure>
+                        </div>
+                        <div class="col-sm-7">
+                          <h5 class="mb-1">
+                            Product Short Name
+                          </h5>
+
+                          <div class="m-0">
+                            <p>
+                              <span class="font-weight-bold">₦90,000</span> for
+                              4 Months
+                            </p>
+                          </div>
+                          <!-- End .price-box -->
+                        </div>
+                        <!-- End .product-details -->
+
+                        <div class="col-sm-3 justify-self-right">
+                          <button
+                            class="btn btn-primary btn-sm float-sm-right float-left mb-2 mr-2"
+                          >
+                            Share
+                          </button>
+                        </div>
+                      </div>
+                      <div
+                        class="row shadow pt-3 mt-2 mb-2"
+                        style="margin-right: 1px; margin-left: 1px;"
+                      >
+                        <div class="col-sm-2">
+                          <figure>
+                            <a href="product.html">
+                              <img src="assets/images/products/product-4.jpg" />
+                            </a>
+                          </figure>
+                        </div>
+                        <div class="col-sm-7">
+                          <h5 class="mb-1">
+                            Product Short Name
+                          </h5>
+
+                          <div class="m-0">
+                            <p>
+                              <span class="font-weight-bold">₦90,000</span> for
+                              4 Months
+                            </p>
+                          </div>
+                          <!-- End .price-box -->
+                        </div>
+                        <!-- End .product-details -->
+
+                        <div class="col-sm-3 justify-self-right">
+                          <button
+                            class="btn btn-primary btn-sm float-sm-right float-left mb-2 mr-2"
+                          >
+                            Share
+                          </button>
+                        </div>
+                      </div>
+                      <div
+                        class="row shadow pt-3 mt-2 mb-2"
+                        style="margin-right: 1px; margin-left: 1px;"
+                      >
+                        <div class="col-sm-2">
+                          <figure>
+                            <a href="product.html">
+                              <img src="assets/images/products/product-4.jpg" />
+                            </a>
+                          </figure>
+                        </div>
+                        <div class="col-sm-7">
+                          <h5 class="mb-1">
+                            Product Short Name
+                          </h5>
+
+                          <div class="m-0">
+                            <p>
+                              <span class="font-weight-bold">₦90,000</span> for
+                              4 Months
+                            </p>
+                          </div>
+                          <!-- End .price-box -->
+                        </div>
+                        <!-- End .product-details -->
+
+                        <div class="col-sm-3 justify-self-right">
+                          <button
+                            class="btn btn-primary btn-sm float-sm-right float-left mb-2 mr-2"
+                          >
+                            Share
+                          </button>
+                        </div>
+                      </div>
+                      <div
+                        class="row shadow pt-3 mt-2 mb-2"
+                        style="margin-right: 1px; margin-left: 1px;"
+                      >
+                        <div class="col-sm-2">
+                          <figure>
+                            <a href="product.html">
+                              <img src="assets/images/products/product-4.jpg" />
+                            </a>
+                          </figure>
+                        </div>
+                        <div class="col-sm-7">
+                          <h5 class="mb-1">
+                            Product Short Name
+                          </h5>
+
+                          <div class="m-0">
+                            <p>
+                              <span class="font-weight-bold">₦90,000</span> for
+                              4 Months
+                            </p>
+                          </div>
+                          <!-- End .price-box -->
+                        </div>
+                        <!-- End .product-details -->
+
+                        <div class="col-sm-3 justify-self-right">
+                          <button
+                            class="btn btn-primary btn-sm float-sm-right float-left mb-2 mr-2"
+                          >
+                            Share
+                          </button>
+                        </div>
+                      </div>
+                      <div
+                        class="row shadow pt-3 mt-2 mb-2"
+                        style="margin-right: 1px; margin-left: 1px;"
+                      >
+                        <div class="col-sm-2">
+                          <figure>
+                            <a href="product.html">
+                              <img src="assets/images/products/product-4.jpg" />
+                            </a>
+                          </figure>
+                        </div>
+                        <div class="col-sm-7">
+                          <h5 class="mb-1">
+                            Product Short Name
+                          </h5>
+
+                          <div class="m-0">
+                            <p>
+                              <span class="font-weight-bold">₦90,000</span> for
+                              4 Months
+                            </p>
+                          </div>
+                          <!-- End .price-box -->
+                        </div>
+                        <!-- End .product-details -->
+
+                        <div class="col-sm-3 justify-self-right">
+                          <button
+                            class="btn btn-primary btn-sm float-sm-right float-left mb-2 mr-2"
+                          >
+                            Share
+                          </button>
+                        </div>
+                      </div>
+                    </div>
 
                     <div class="my-2">
-                      <button class="btn btn-primary mr-3">
-                        Edit Item
-                      </button>
-                      <button class="btn btn-secondary">
-                        Share Link
+                      <button class="btn btn-primary btn-md mt-3">
+                        Done
                       </button>
                     </div>
                   </div>
@@ -451,102 +972,185 @@
       </div>
     </div>
 
-    <div class="modal modal-two">
-      <div class="mfp-bg mfp-ajax-product mfp-ready"></div>
-      <div
-        class="mfp-wrap mfp-close-btn-in mfp-auto-cursor mfp-ajax-product mfp-ready"
-        tabindex="-1"
-        style="overflow: hidden auto;"
-      >
-        <div class="mfp-container mfp-ajax-holder">
-          <div class="mfp-content">
-            <div
-              class="product-single-container product-single-default product-quick-view container"
-            >
-              <div class="row">
-                <div class="col-12">
-                  <!-- Centered Pills -->
-                  <ul class="nav nav-pills nav-fill">
-                    <li class="nav-item">
-                      <a class="nav-link active" href="#">Verify Email</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">Longer nav link</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">Link</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">Disabled</a>
-                    </li>
-                  </ul>
-                  <!-- End .col-lg-5 -->
-                </div>
-              </div>
-              <!-- End .row -->
-              <button title="Close (Esc)" type="button" class="mfp-close">
-                ×
-              </button>
-            </div>
-            <!-- End .product-single-container -->
-          </div>
-        </div>
-      </div>
-    </div>
-
     <div class="page-wrapper">
       <header class="header">
+        <div class="header-top">
+          <div class="container">
+            <div class="header-left d-none d-sm-block">
+              <p class="top-message text-uppercase">
+                <span class="text-warning d-inline">
+                  <i class="fa fa-smile"></i> </span
+                >&nbsp; Hi Adeshola!
+              </p>
+            </div>
+            <!-- End .header-left -->
+
+            <div class="header-right header-dropdowns ml-0 ml-sm-auto w-sm-100">
+              <div class="header-dropdown dropdown-expanded d-none d-lg-block">
+                <a href="#">Links</a>
+              </div>
+              <!-- End .header-dropown -->
+
+              <span class="separator"></span>
+
+              <div class="header-dropdown">
+                <a href="#">USD</a>
+                <div class="header-menu">
+                  <ul>
+                    <li><a href="#">EUR</a></li>
+                    <li><a href="#">USD</a></li>
+                  </ul>
+                </div>
+                <!-- End .header-menu -->
+              </div>
+              <!-- End .header-dropown -->
+
+              <div class="header-dropdown mr-auto mr-sm-3 mr-md-0">
+                <a href="#"
+                  ><img
+                    src="assets/images/flags/en.png"
+                    alt="England flag"
+                  />ENG</a
+                >
+                <div class="header-menu">
+                  <ul>
+                    <li>
+                      <a href="#"
+                        ><img
+                          src="assets/images/flags/en.png"
+                          alt="England flag"
+                        />ENG</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#"
+                        ><img
+                          src="assets/images/flags/fr.png"
+                          alt="France flag"
+                        />FRA</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+                <!-- End .header-menu -->
+              </div>
+              <!-- End .header-dropown -->
+
+              <span class="separator"></span>
+
+              <div class="social-icons">
+                <a
+                  href="#"
+                  class="social-icon social-instagram icon-instagram"
+                  target="_blank"
+                ></a>
+                <a
+                  href="#"
+                  class="social-icon social-twitter icon-twitter"
+                  target="_blank"
+                ></a>
+                <a
+                  href="#"
+                  class="social-icon social-facebook icon-facebook"
+                  target="_blank"
+                ></a>
+              </div>
+              <!-- End .social-icons -->
+            </div>
+            <!-- End .header-right -->
+          </div>
+          <!-- End .container -->
+        </div>
+        <!-- End .header-top -->
+
+        <div class="header-middle">
+          <div class="container">
+            <div class="header-left col-lg-2 w-auto pl-0">
+              <button
+                class="mobile-menu-toggler text-primary mr-2"
+                type="button"
+              >
+                <i class="icon-menu"></i>
+              </button>
+              <a href="index.html" class="logo">
+                <img src="assets/images/logo.png" alt="Porto Logo" />
+              </a>
+            </div>
+            <!-- End .header-left -->
+
+            <div class="header-right w-lg-max">
+              <div class="dropdown cart-dropdown ml-auto show">
+                <a
+                  href="#"
+                  class="dropdown-toggle dropdown-arrow"
+                  role="button"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="true"
+                  data-display="static"
+                >
+                  <i class="icon-user-2"></i>
+                  <span class="cart-count badge-circle">2</span>
+                </a>
+
+                <div class="dropdown-menu show">
+                  <div class="dropdownmenu-wrapper">
+                    <!-- <div class="dropdown-cart-header">
+                      <span>2 Items</span>
+
+                      <a href="cart.html" class="float-right">View Cart</a>
+                    </div> -->
+                    <!-- End .dropdown-cart-header -->
+
+                    <!-- End .cart-product -->
+
+                    <!-- <div class="dropdown-cart-total">
+                      <span>Total</span>
+
+                      <span class="cart-total-price float-right">$134.00</span>
+                    </div> -->
+                    <!-- End .dropdown-cart-total -->
+
+                    <div class="dropdown-cart-action">
+                      <a
+                        href="checkout-shipping.html"
+                        class="btn btn-danger btn-block"
+                        >Log Out</a
+                      >
+                    </div>
+                    <!-- End .dropdown-cart-total -->
+                  </div>
+                  <!-- End .dropdownmenu-wrapper -->
+                </div>
+                <!-- End .dropdown-menu -->
+              </div>
+              <!-- End .dropdown -->
+            </div>
+            <!-- End .header-right -->
+          </div>
+          <!-- End .container -->
+        </div>
+        <!-- End .header-middle -->
+
         <div class="sticky-wrapper">
-          <div
-            class="header-bottom header-bottom-constant sticky-header d-none d-lg-block"
-          >
+          <div class="header-bottom sticky-header d-none d-lg-block">
             <div class="container">
               <nav class="main-nav w-100">
                 <ul
                   class="menu sf-js-enabled sf-arrows"
                   style="touch-action: pan-y;"
                 >
-                  <li class="active">
-                    <a href="index.html">Catalogue</a>
-                  </li>
-
-                  <li><a href="blog.html">Items</a></li>
-                  <li><a href="about.html">About Us</a></li>
-                  <li><a href="contact.html">Orders</a></li>
-                  <li><a href="contact.html">Repayment</a></li>
-                  <li><a href="contact.html">Sales</a></li>
-
-                  <li
-                    class="float-right mr-0 text-white"
-                    style="
-                      height: 43px;
-                      overflow: hidden;
-                      display: flex;
-                      align-items: center;
-                      margin-top: 7px;
-                      width: 70px;
-                    "
-                  >
-                    <a
-                      href="#"
-                      style="width: 100%; color: white;"
-                      class="px-4 btn btn-danger btn-sm text-white;"
-                      >Log Out</a
-                    >
-                  </li>
+                  <li><a href="index.html">Home</a></li>
+                  <li class="active"><a href="index.html">Products</a></li>
+                  <li><a href="index.html">Catalogues</a></li>
+                  <li><a href="index.html">Orders</a></li>
+                  <li><a href="index.html">Sales</a></li>
                 </ul>
               </nav>
-              <button
-                class="float-right mobile-menu-toggler text-primary ml-auto"
-                type="button"
-              >
-                <i class="icon-menu"></i>
-              </button>
             </div>
             <!-- End .container -->
           </div>
         </div>
-
         <!-- End .header-bottom -->
       </header>
 
@@ -568,6 +1172,32 @@
                     width: 280px;
                   "
                 >
+                  <div class="widget">
+                    <h3 class="widget-title">
+                      <a
+                        data-toggle="collapse"
+                        href="#widget-body-2"
+                        role="button"
+                        aria-expanded="false"
+                        aria-controls="widget-body-2"
+                        class="collapsed"
+                        >share your PRofile</a
+                      >
+                    </h3>
+
+                    <div class="collapse" id="widget-body-2" style="">
+                      <div class="widget-body">
+                        <ul class="cat-list">
+                          <li><a href="#">Accessories</a></li>
+                          <li><a href="#">Watch Fashion</a></li>
+                          <li><a href="#">Tees, Knits &amp; Polos</a></li>
+                          <li><a href="#">Pants &amp; Denim</a></li>
+                        </ul>
+                      </div>
+                      <!-- End .widget-body -->
+                    </div>
+                    <!-- End .collapse -->
+                  </div>
                   <div class="widget">
                     <h3 class="widget-title">
                       <a
@@ -1484,7 +2114,7 @@
                 "
               >
                 <div class="row">
-                  <div class="pb-5 pb-md-0 col-md-5 col-lg-5 offset-1">
+                  <div class="pb-md-0 col-md-5 col-lg-5 offset-1">
                     <h3 class="mb-2 ls-10">Add<br />Products</h3>
                     <a href="#" class="btn btn-dark btn-black ls-10"
                       >Get Yours!</a
@@ -1527,11 +2157,6 @@
                 </div>
                 <!-- End .toolbox-left -->
 
-                <div class="toolbox-item mr-auto">
-                  <button class="btn btn-primary btn-sm">
-                    Create Catalogue
-                  </button>
-                </div>
                 <!-- End .toolbox-item -->
 
                 <div class="toolbox-item toolbox-show">
@@ -1544,9 +2169,10 @@
                   <div class="product-default inner-quickview inner-icon">
                     <figure>
                       <a href="product.html">
-                        <img src="assets/images/products/product-3.jpg" />
+                        <img src="assets/images/products/product-1.jpg" />
                       </a>
                       <div class="label-group">
+                        <div class="product-label label-hot">HOT</div>
                         <div class="product-label label-sale">-20%</div>
                       </div>
                       <div class="btn-icon-group">
@@ -1561,27 +2187,29 @@
                     </figure>
                     <div class="product-details">
                       <div class="category-wrap">
-                        <div class="category-list">
-                          <a href="category.html" class="product-category"
-                            >category</a
-                          >
-                        </div>
+                        <div class="category-list"></div>
                         <a href="#" class="btn-icon-wish"
                           ><i class="icon-pencil"></i
                         ></a>
                       </div>
-                      <h2 class="product-title my-2 mb-1">
-                        <a href="product.html">Product Short Name</a>
+                      <h2 class="product-title">
+                        <a href="product.html">Fleece Jacket</a>
                       </h2>
-
+                      <div class="ratings-container">
+                        <div class="product-ratings">
+                          <span class="ratings" style="width: 100%;"></span
+                          ><!-- End .ratings -->
+                          <span class="tooltiptext tooltip-top"></span>
+                        </div>
+                        <!-- End .product-ratings -->
+                      </div>
                       <!-- End .product-container -->
                       <div class="price-box">
                         <span class="product-price"
-                          >&#8358;70,000.00
-                          <span class="product-title">
+                          >&#8358;70,000<span class="product-title">
                             For 3 Months
-                          </span>
-                        </span>
+                          </span></span
+                        >
                       </div>
                       <!-- End .price-box -->
                     </div>
@@ -1592,9 +2220,10 @@
                   <div class="product-default inner-quickview inner-icon">
                     <figure>
                       <a href="product.html">
-                        <img src="assets/images/products/product-3.jpg" />
+                        <img src="assets/images/products/product-5.jpg" />
                       </a>
                       <div class="label-group">
+                        <div class="product-label label-hot">HOT</div>
                         <div class="product-label label-sale">-20%</div>
                       </div>
                       <div class="btn-icon-group">
@@ -1609,27 +2238,26 @@
                     </figure>
                     <div class="product-details">
                       <div class="category-wrap">
-                        <div class="category-list">
-                          <a href="category.html" class="product-category"
-                            >category</a
-                          >
-                        </div>
+                        <div class="category-list"></div>
                         <a href="#" class="btn-icon-wish"
                           ><i class="icon-pencil"></i
                         ></a>
                       </div>
-                      <h2 class="product-title my-2 mb-1">
-                        <a href="product.html">Product Short Name</a>
+                      <h2 class="product-title">
+                        <a href="product.html">Fleece Jacket</a>
                       </h2>
-
+                      <div class="ratings-container">
+                        <div class="product-ratings">
+                          <span class="ratings" style="width: 100%;"></span
+                          ><!-- End .ratings -->
+                          <span class="tooltiptext tooltip-top"></span>
+                        </div>
+                        <!-- End .product-ratings -->
+                      </div>
                       <!-- End .product-container -->
                       <div class="price-box">
-                        <span class="product-price"
-                          >&#8358;70,000.00
-                          <span class="product-title">
-                            For 3 Months
-                          </span>
-                        </span>
+                        <span class="old-price">&#8358;9,000.00</span>
+                        <span class="product-price">&#8358;70,000</span>
                       </div>
                       <!-- End .price-box -->
                     </div>
@@ -1640,9 +2268,10 @@
                   <div class="product-default inner-quickview inner-icon">
                     <figure>
                       <a href="product.html">
-                        <img src="assets/images/products/product-3.jpg" />
+                        <img src="assets/images/products/product-11.jpg" />
                       </a>
                       <div class="label-group">
+                        <div class="product-label label-hot">HOT</div>
                         <div class="product-label label-sale">-20%</div>
                       </div>
                       <div class="btn-icon-group">
@@ -1657,27 +2286,25 @@
                     </figure>
                     <div class="product-details">
                       <div class="category-wrap">
-                        <div class="category-list">
-                          <a href="category.html" class="product-category"
-                            >category</a
-                          >
-                        </div>
+                        <div class="category-list"></div>
                         <a href="#" class="btn-icon-wish"
                           ><i class="icon-pencil"></i
                         ></a>
                       </div>
-                      <h2 class="product-title my-2 mb-1">
-                        <a href="product.html">Product Short Name</a>
+                      <h2 class="product-title">
+                        <a href="product.html">Fleece Jacket</a>
                       </h2>
-
+                      <div class="ratings-container">
+                        <div class="product-ratings">
+                          <span class="ratings" style="width: 100%;"></span
+                          ><!-- End .ratings -->
+                          <span class="tooltiptext tooltip-top"></span>
+                        </div>
+                        <!-- End .product-ratings -->
+                      </div>
                       <!-- End .product-container -->
                       <div class="price-box">
-                        <span class="product-price"
-                          >&#8358;70,000.00
-                          <span class="product-title">
-                            For 3 Months
-                          </span>
-                        </span>
+                        <span class="product-price">&#8358;70,000</span>
                       </div>
                       <!-- End .price-box -->
                     </div>
@@ -1688,9 +2315,10 @@
                   <div class="product-default inner-quickview inner-icon">
                     <figure>
                       <a href="product.html">
-                        <img src="assets/images/products/product-3.jpg" />
+                        <img src="assets/images/products/product-1.jpg" />
                       </a>
                       <div class="label-group">
+                        <div class="product-label label-hot">HOT</div>
                         <div class="product-label label-sale">-20%</div>
                       </div>
                       <div class="btn-icon-group">
@@ -1705,27 +2333,29 @@
                     </figure>
                     <div class="product-details">
                       <div class="category-wrap">
-                        <div class="category-list">
-                          <a href="category.html" class="product-category"
-                            >category</a
-                          >
-                        </div>
+                        <div class="category-list"></div>
                         <a href="#" class="btn-icon-wish"
                           ><i class="icon-pencil"></i
                         ></a>
                       </div>
-                      <h2 class="product-title my-2 mb-1">
-                        <a href="product.html">Product Short Name</a>
+                      <h2 class="product-title">
+                        <a href="product.html">Fleece Jacket</a>
                       </h2>
-
+                      <div class="ratings-container">
+                        <div class="product-ratings">
+                          <span class="ratings" style="width: 100%;"></span
+                          ><!-- End .ratings -->
+                          <span class="tooltiptext tooltip-top"></span>
+                        </div>
+                        <!-- End .product-ratings -->
+                      </div>
                       <!-- End .product-container -->
                       <div class="price-box">
                         <span class="product-price"
-                          >&#8358;70,000.00
-                          <span class="product-title">
+                          >&#8358;70,000<span class="product-title">
                             For 3 Months
-                          </span>
-                        </span>
+                          </span></span
+                        >
                       </div>
                       <!-- End .price-box -->
                     </div>
@@ -1736,9 +2366,10 @@
                   <div class="product-default inner-quickview inner-icon">
                     <figure>
                       <a href="product.html">
-                        <img src="assets/images/products/product-3.jpg" />
+                        <img src="assets/images/products/product-5.jpg" />
                       </a>
                       <div class="label-group">
+                        <div class="product-label label-hot">HOT</div>
                         <div class="product-label label-sale">-20%</div>
                       </div>
                       <div class="btn-icon-group">
@@ -1753,27 +2384,26 @@
                     </figure>
                     <div class="product-details">
                       <div class="category-wrap">
-                        <div class="category-list">
-                          <a href="category.html" class="product-category"
-                            >category</a
-                          >
-                        </div>
+                        <div class="category-list"></div>
                         <a href="#" class="btn-icon-wish"
                           ><i class="icon-pencil"></i
                         ></a>
                       </div>
-                      <h2 class="product-title my-2 mb-1">
-                        <a href="product.html">Product Short Name</a>
+                      <h2 class="product-title">
+                        <a href="product.html">Fleece Jacket</a>
                       </h2>
-
+                      <div class="ratings-container">
+                        <div class="product-ratings">
+                          <span class="ratings" style="width: 100%;"></span
+                          ><!-- End .ratings -->
+                          <span class="tooltiptext tooltip-top"></span>
+                        </div>
+                        <!-- End .product-ratings -->
+                      </div>
                       <!-- End .product-container -->
                       <div class="price-box">
-                        <span class="product-price"
-                          >&#8358;70,000.00
-                          <span class="product-title">
-                            For 3 Months
-                          </span>
-                        </span>
+                        <span class="old-price">&#8358;9,000.00</span>
+                        <span class="product-price">&#8358;70,000</span>
                       </div>
                       <!-- End .price-box -->
                     </div>
@@ -1784,9 +2414,10 @@
                   <div class="product-default inner-quickview inner-icon">
                     <figure>
                       <a href="product.html">
-                        <img src="assets/images/add-item.png" />
+                        <img src="assets/images/products/product-11.jpg" />
                       </a>
                       <div class="label-group">
+                        <div class="product-label label-hot">HOT</div>
                         <div class="product-label label-sale">-20%</div>
                       </div>
                       <div class="btn-icon-group">
@@ -1801,78 +2432,31 @@
                     </figure>
                     <div class="product-details">
                       <div class="category-wrap">
-                        <div class="category-list">
-                          <a href="category.html" class="product-category"
-                            >category</a
-                          >
-                        </div>
+                        <div class="category-list"></div>
                         <a href="#" class="btn-icon-wish"
                           ><i class="icon-pencil"></i
                         ></a>
                       </div>
-                      <h2 class="product-title my-2 mb-1">
-                        <a href="product.html">Product Name</a>
+                      <h2 class="product-title">
+                        <a href="product.html">Fleece Jacket</a>
                       </h2>
-
+                      <div class="ratings-container">
+                        <div class="product-ratings">
+                          <span class="ratings" style="width: 100%;"></span
+                          ><!-- End .ratings -->
+                          <span class="tooltiptext tooltip-top"></span>
+                        </div>
+                        <!-- End .product-ratings -->
+                      </div>
                       <!-- End .product-container -->
                       <div class="price-box">
-                        <span class="product-price">&#8358;0.00 </span>
+                        <span class="product-price">&#8358;70,000</span>
                       </div>
                       <!-- End .price-box -->
                     </div>
                     <!-- End .product-details -->
                   </div>
                 </div>
-              </div>
-
-              <div class="info-section">
-                <div class="container">
-                  <div class="row">
-                    <div class="col-md-4">
-                      <div class="feature-box feature-box-simple text-center">
-                        <i class="icon-pencil"></i>
-
-                        <div class="feature-box-content">
-                          <h4 class="m-0">Create an Item</h4>
-                          <p>Add more items</p>
-                        </div>
-                        <!-- End .feature-box-content -->
-                      </div>
-                      <!-- End .feature-box -->
-                    </div>
-                    <!-- End .col-md-4 -->
-
-                    <div class="col-md-4">
-                      <div class="feature-box feature-box-simple text-center">
-                        <i class="icon-export"></i>
-
-                        <div class="feature-box-content">
-                          <h4 class="m-0">Copy &amp; Share link</h4>
-                          <p>Share on websites and social media</p>
-                        </div>
-                        <!-- End .feature-box-content -->
-                      </div>
-                      <!-- End .feature-box -->
-                    </div>
-                    <!-- End .col-md-4 -->
-
-                    <div class="col-md-4">
-                      <div class="feature-box feature-box-simple text-center">
-                        <i class="icon-reply"></i>
-
-                        <div class="feature-box-content">
-                          <h4 class="m-0">Get Repayment</h4>
-                          <p>Seamlessly &amp; Stressfree</p>
-                        </div>
-                        <!-- End .feature-box-content -->
-                      </div>
-                      <!-- End .feature-box -->
-                    </div>
-                    <!-- End .col-md-4 -->
-                  </div>
-                  <!-- End .row -->
-                </div>
-                <!-- End .container -->
               </div>
 
               <br />
@@ -1893,25 +2477,16 @@
                     <div class="col-12 col-sm-6 text-sm-left">
                       <div class="">
                         <div class="">
-                          <h3 class="m-0 mb-1">Share link to your products</h3>
+                          <h4 class="m-0 mb-1 title text-uppercase">
+                            Share your entire store
+                          </h4>
                           <p>
                             Add a product, copy &amp; share link on your social
                             media accounts to reach more buyers.
                           </p>
-                          <div class="social-list">
-                            <span>
-                              <i class="icon icon-linkedin"></i>
-                            </span>
-                            <span>
-                              <i class="icon icon-twitter"></i>
-                            </span>
-                            <span>
-                              <i class="icon icon-instagram"></i>
-                            </span>
-                            <span>
-                              <i class="icon icon-facebook"></i>
-                            </span>
-                          </div>
+                          <button class="btn btn-primary btn-sm">
+                            share
+                          </button>
                         </div>
                         <!-- End .feature-box-content -->
                       </div>
@@ -1972,160 +2547,96 @@
       ><i class="icon-angle-up"></i
     ></a>
 
+    <div class="float-share">
+      <div class="float-inner shadow-lg rounded mb-2" style="width: 100%;">
+        <div class="row m-0 bg-white">
+          <div class="">
+            <div
+              class="product-default inner-quickview inner-icon"
+              style="width: 340px;"
+            >
+              <figure class="owl-carousel">
+                <div>
+                  <a href="product.html">
+                    <img src="assets/images/products/product-1.jpg" />
+                  </a>
+
+                  <a
+                    href="ajax/product-quick-view.html"
+                    class="btn-quickview"
+                    title="Quick View"
+                    >share your store</a
+                  >
+                </div>
+                <div>
+                  <a href="product.html">
+                    <img src="assets/images/products/product-2.jpg" />
+                  </a>
+
+                  <a
+                    href="ajax/product-quick-view.html"
+                    class="btn-quickview"
+                    title="Quick View"
+                    >share your store</a
+                  >
+                </div>
+                <div>
+              </figure>
+              <div class="product-details">
+                <h2 class="product-title mx-auto">
+                  <a href="product.html">Fleece Jacket</a>
+                </h2>
+                <div class="ratings-container mx-auto">
+                  <div class="product-ratings">
+                    <span class="ratings" style="width: 100%;"></span
+                    ><!-- End .ratings -->
+                    <span class="tooltiptext tooltip-top"></span>
+                  </div>
+                  <!-- End .product-ratings -->
+                </div>
+                <!-- End .product-container -->
+                <div class="price-box text-center">
+                  <span class="product-price mx-auto pr-0">&#8358;70,000</span>
+                </div>
+                <!-- End .price-box -->
+              </div>
+              <div class="product-item-share mt-1">
+                <p
+                  class="text-center d-inline bg-white pl-1 pr-1 pt-0 pb-0 m-0"
+                >
+                  <span>
+                    <small>OR</small>
+                  </span>
+                </p>
+                <button
+                  class="single-share btn mt-3 btn-md btn-primary btn-block"
+                  style="width: 90%; margin-left: 5%;"
+                >
+                  share a single product
+                </button>
+              </div>
+              <!-- End .product-details -->
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <a href="" id="float-btn" class="shadow bg-primary" role="button">
+        <i class="fas fa-share"></i>
+        <i class="icon-cancel hide"></i>
+      </a>
+    </div>
+
     <div class="mobile-menu-container">
       <div class="mobile-menu-wrapper">
         <span class="mobile-menu-close"><i class="icon-cancel"></i></span>
         <nav class="mobile-nav">
           <ul class="mobile-menu">
-            <li class="active"><a href="index.html">Home</a></li>
-            <li>
-              <a href="category.html"
-                >Categories<span class="mmenu-btn"></span
-              ></a>
-              <ul>
-                <li><a href="category.html">Full Width Banner</a></li>
-                <li>
-                  <a href="category-banner-boxed-slider.html"
-                    >Boxed Slider Banner</a
-                  >
-                </li>
-                <li>
-                  <a href="category-banner-boxed-image.html"
-                    >Boxed Image Banner</a
-                  >
-                </li>
-                <li><a href="category.html">Left Sidebar</a></li>
-                <li><a href="category-sidebar-right.html">Right Sidebar</a></li>
-                <li><a href="category-flex-grid.html">Product Flex Grid</a></li>
-                <li>
-                  <a href="category-horizontal-filter1.html"
-                    >Horizontal Filter 1</a
-                  >
-                </li>
-                <li>
-                  <a href="category-horizontal-filter2.html"
-                    >Horizontal Filter 2</a
-                  >
-                </li>
-                <li><a href="#">Product List Item Types</a></li>
-                <li>
-                  <a href="category-infinite-scroll.html"
-                    >Ajax Infinite Scroll<span class="tip tip-new">New</span></a
-                  >
-                </li>
-                <li><a href="category.html">3 Columns Products</a></li>
-                <li><a href="category-4col.html">4 Columns Products</a></li>
-                <li><a href="category-5col.html">5 Columns Products</a></li>
-                <li><a href="category-6col.html">6 Columns Products</a></li>
-                <li><a href="category-7col.html">7 Columns Products</a></li>
-                <li><a href="category-8col.html">8 Columns Products</a></li>
-              </ul>
-            </li>
-            <li>
-              <a href="product.html">Products<span class="mmenu-btn"></span></a>
-              <ul>
-                <li>
-                  <a href="#">Variations<span class="mmenu-btn"></span></a>
-                  <ul>
-                    <li><a href="product.html">Horizontal Thumbnails</a></li>
-                    <li>
-                      <a href="product-full-width.html"
-                        >Vertical Thumbnails<span class="tip tip-hot"
-                          >Hot!</span
-                        ></a
-                      >
-                    </li>
-                    <li><a href="product.html">Inner Zoom</a></li>
-                    <li>
-                      <a href="product-addcart-sticky.html">Addtocart Sticky</a>
-                    </li>
-                    <li>
-                      <a href="product-sidebar-left.html">Accordion Tabs</a>
-                    </li>
-                  </ul>
-                </li>
-                <li>
-                  <a href="#">Variations<span class="mmenu-btn"></span></a>
-                  <ul>
-                    <li><a href="product-sticky-tab.html">Sticky Tabs</a></li>
-                    <li><a href="product-simple.html">Simple Product</a></li>
-                    <li>
-                      <a href="product-sidebar-left.html">With Left Sidebar</a>
-                    </li>
-                  </ul>
-                </li>
-                <li>
-                  <a href="#"
-                    >Product Layout Types<span class="mmenu-btn"></span
-                  ></a>
-                  <ul>
-                    <li><a href="product.html">Default Layout</a></li>
-                    <li>
-                      <a href="product-extended-layout.html">Extended Layout</a>
-                    </li>
-                    <li>
-                      <a href="product-full-width.html">Full Width Layout</a>
-                    </li>
-                    <li>
-                      <a href="product-grid-layout.html">Grid Images Layout</a>
-                    </li>
-                    <li>
-                      <a href="product-sticky-both.html"
-                        >Sticky Both Side Info<span class="tip tip-hot"
-                          >Hot!</span
-                        ></a
-                      >
-                    </li>
-                    <li>
-                      <a href="product-sticky-info.html"
-                        >Sticky Right Side Info</a
-                      >
-                    </li>
-                  </ul>
-                </li>
-              </ul>
-            </li>
-            <li>
-              <a href="#"
-                >Pages<span class="tip tip-hot">Hot!</span
-                ><span class="mmenu-btn"></span
-              ></a>
-              <ul>
-                <li><a href="cart.html">Shopping Cart</a></li>
-                <li>
-                  <a href="#">Checkout<span class="mmenu-btn"></span></a>
-                  <ul>
-                    <li>
-                      <a href="checkout-shipping.html">Checkout Shipping</a>
-                    </li>
-                    <li>
-                      <a href="checkout-shipping-2.html">Checkout Shipping 2</a>
-                    </li>
-                    <li><a href="checkout-review.html">Checkout Review</a></li>
-                  </ul>
-                </li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="#" class="login-link">Login</a></li>
-                <li><a href="forgot-password.html">Forgot Password</a></li>
-              </ul>
-            </li>
-            <li>
-              <a href="blog.html">Blog<span class="mmenu-btn"></span></a>
-              <ul>
-                <li><a href="single.html">Blog Post</a></li>
-              </ul>
-            </li>
-            <li><a href="contact.html">Contact Us</a></li>
-            <li>
-              <a href="#"
-                >Special Offer!<span class="tip tip-hot">Hot!</span></a
-              >
-            </li>
-            <li>
-              <a href="https://1.envato.market/DdLk5" target="_blank"
-                >Buy Porto!</a
-              >
-            </li>
+            <li><a href="index.html">Home</a></li>
+            <li class="active"><a href="index.html">Products</a></li>
+            <li><a href="index.html">Catalogues</a></li>
+            <li><a href="index.html">Orders</a></li>
+            <li><a href="index.html">Sales</a></li>
           </ul>
         </nav>
         <!-- End .mobile-nav -->
@@ -2147,22 +2658,33 @@
     </div>
 
     <script>
-      let createItemModal = document.querySelector(".modal-one");
-      let modalTriggerButton = document.querySelector(".add-js");
+      let floatBtn = document.querySelector("#float-btn");
+      let floatBtnIcon = document.querySelector("#float-btn .fas");
+      let floatBtnIcon2 = document.querySelector("#float-btn .icon-cancel");
+      let floatInner = document.querySelector(".float-inner");
+      let btnSingle = document.querySelector(".single-share");
+      let selectProModal = document.querySelector(".modal-select");
+      let creditInput = document.querySelector(".credit-input");
+      let noCredit = document.querySelector(".no-credit");
+      let extraInfo = document.querySelector(".extra-info");
 
-      modalTriggerButton.addEventListener("click", function () {
-        createItemModal.classList.toggle("show");
-        document.body.style.overflow = "hidden";
+      floatBtn.addEventListener("click", (e) => {
+        e.preventDefault();
+        floatInner.classList.toggle("show");
+        floatBtnIcon.classList.toggle("hide");
+        floatBtnIcon2.classList.toggle("hide");
       });
 
-      let viewModal = document.querySelector(".modal-two");
-      let viewBtn = document.querySelectorAll(".btn-icon-wish");
+      creditInput.addEventListener("change", function (e) {
+        extraInfo.classList.add("show");
+      });
+      noCredit.addEventListener("change", function (e) {
+        extraInfo.classList.remove("show");
+      });
 
-      viewBtn.forEach((el) => {
-        el.addEventListener("click", () => {
-          viewModal.classList.toggle("show");
-          document.body.style.overflow = "hidden";
-        });
+      btnSingle.addEventListener("click", function (e) {
+        floatInner.classList.toggle("show");
+        selectProModal.classList.toggle("show");
       });
     </script>
 
