@@ -54,7 +54,7 @@
   </head>
 
   <body class="loaded transaction">
-    <div class="modal show modal-sch modal-one">
+    <div class="modal modal-sch modal-one">
       <div class="mfp-bg mfp-ajax-product mfp-ready"></div>
       <div
         class="mfp-wrap mfp-close-btn-in mfp-auto-cursor mfp-ajax-product mfp-ready"
@@ -67,272 +67,196 @@
               class="product-single-container product-single-default product-quick-view container"
             >
               <div class="row">
-                <div class="col-lg-10 col-md-10 m-auto">
-                  <div class="row">
-                    <div class="card mt-4">
-                      <div class="card-header">Order Preview</div>
-                      <div class="card-body">
-                        <div
-                          class="row align-items-center justify-content-center"
+                <div class="col-11 mx-auto">
+                  <div class="row mt-4">
+                    <div class="col-sm-5 pb-5">
+                      <div class="text-align avatar-container">
+                        <img
+                          src="assets/images/face.jpg"
+                          class="display-sm-inline mod-avatar"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                    <div class="col-sm-7">
+                      <div class="border-bottom" style="position: relative;">
+                        <h5 class="text-uppercase">
+                          contact information
+                        </h5>
+                        <p>
+                          John Snow / 08090000000
+                        </p>
+                      </div>
+                      <div class="border-bottom" style="position: relative;">
+                        <h5 class="text-uppercase mt-2">
+                          upfront payment
+                        </h5>
+                        <p>
+                          ₦&nbsp;75,000
+                        </p>
+                        <small
+                          class="text-white border-radius text-align-right label-success"
                         >
-                          <div class="col-sm-5 order-sm-3">
+                          PAID
+                        </small>
+                      </div>
+                      <div class="border-bottom mt-2">
+                        <h5 class="text-uppercase">
+                          repayment plan
+                        </h5>
+                        <p>
+                          ₦&nbsp;155,000/Mo. For 3 Months
+                        </p>
+                      </div>
+
+                      <button class="btn btn-md btn-secondary mt-3">
+                        checkout
+                      </button>
+                    </div>
+
+                    <!-- End .col-lg-5 -->
+                  </div>
+
+                  <div class="row mt-5">
+                    <div class="col-12">
+                      <h4 class="text-uppercase">Repayment Schedule</h4>
+                      <table style="width: 100%;" class="repayment-table">
+                        <tr class="border-bottom">
+                          <th>Date</th>
+                          <th>S/N</th>
+                          <th>AMOUNT</th>
+                          <th></th>
+                        </tr>
+                        <tr class="border-bottom">
+                          <td>22 Nov</td>
+                          <td>1 of 5</td>
+                          <td>55,000</td>
+                          <td>
                             <img
-                              style="width: 60%;"
-                              class="mb-2 mx-auto"
-                              src="assets/images/user-sq.svg"
+                              src="assets/images/check.svg"
+                              width="26px"
+                              alt=""
+                            />
+                          </td>
+                        </tr>
+                        <tr class="border-bottom">
+                          <td>22 Dec</td>
+                          <td>2 of 5</td>
+                          <td>55,000</td>
+                          <td>
+                            <img
+                              src="assets/images/check.svg"
+                              width="26px"
+                              alt=""
+                            />
+                          </td>
+                        </tr>
+                        <tr class="border-bottom">
+                          <td>22 Jan</td>
+                          <td>3 of 5</td>
+                          <td>55,000</td>
+                          <td>
+                            <img
+                              src="assets/images/check.svg"
+                              width="26px"
+                              alt=""
+                            />
+                          </td>
+                        </tr>
+                        <tr class="border-bottom">
+                          <td>22 Feb</td>
+                          <td>4 of 5</td>
+                          <td>55,000</td>
+                          <td></td>
+                        </tr>
+                        <tr class="border-bottom">
+                          <td>22 Mar</td>
+                          <td>5 of 5</td>
+                          <td>55,000</td>
+                          <td></td>
+                        </tr>
+                        <tr class="border-bottom">
+                          <td>#</td>
+                          <td></td>
+                          <td class="text-uppercase text-dark font-weight-bold">
+                            total paid
+                          </td>
+                          <td class="font-weight-bold text-dark">55,000</td>
+                        </tr>
+                        <tr class="">
+                          <td>#</td>
+                          <td></td>
+                          <td class="text-uppercase text-dark font-weight-bold">
+                            Balance
+                          </td>
+                          <td class="font-weight-bold text-dark">255,000</td>
+                        </tr>
+                      </table>
+                    </div>
+                  </div>
+                  <!-- End .row -->
+
+                  <div class="row mt-5">
+                    <div class="col-sm-6 mb-3">
+                      <div class="p-5 bg-light info-paper">
+                        <h5 class="text-uppercase mb-1">PAYMENT HISTORY</h5>
+                        <div class="row align-items-center">
+                          <!-- <div class="col-2 m-0 py-0" style="font-size: 4rem;">
+                            <i class="icon-credit-card"></i>
+                          </div> -->
+                          <div class="col-10 py-1">
+                            <!-- <div>************</div> -->
+                            <span class=""
+                              >If the buyer paid you money directly
+                              <a href="#">Edit</a></span
+                            >
+                          </div>
+                          <div class="col-2 text-align-right">
+                            <img
+                              src="assets/images/check.svg"
+                              class="check"
+                              width="26px"
+                              alt=""
                             />
                           </div>
-                          <div class="col-sm-5 text-sm-left text-center">
-                            <h4 class="mb-1">Shola Thompson</h4>
-                            <p class="font-weight-normal mb-1">
-                              <span class="font-weight-bold">₦25,000.00</span>
-                              <span class="font-weight-normal"
-                                >initial Payment</span
-                              >
-                            </p>
-                            <p class="">
-                              <span class="font-weight-bold">₦85,000.00</span>
-                              <span>for 4 Months on credit</span>
-                            </p>
-                            <button class="btn mt-1 btn-primary btn-sm">
-                              Checkout
-                            </button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-6 mb-3">
+                      <div class="p-5 bg-light info-paper">
+                        <h5 class="text-uppercase mb-1">Attached Card</h5>
+                        <div class="row align-items-center">
+                          <div class="col-2 m-0 py-0" style="font-size: 4rem;">
+                            <i class="icon-credit-card"></i>
+                          </div>
+                          <div class="col-8">
+                            <div>************</div>
+                            <span class="text-uppercase">visa debit card</span>
+                          </div>
+                          <div class="col-2 text-align-right">
+                            <img
+                              src="assets/images/check.svg"
+                              class="check"
+                              width="26px"
+                              alt=""
+                            />
                           </div>
                         </div>
                       </div>
                     </div>
                   </div>
+                  <!-- End .row -->
 
-                  <div class="row mt-4 product-single-details">
-                    <h3 class="mb-2">Repayment Schedule</h3>
-                    <table class="table">
-                      <thead style="color: #fff;">
-                        <tr class="bg-primary">
-                          <th scope="col">#</th>
-                          <th scope="col">Date</th>
-                          <th scope="col">Amount</th>
-                          <th scope="col">Status</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <th scope="row">1</th>
-                          <td>22-Nov</td>
-
-                          <td>
-                            <span><strong class="currency">34500</strong></span>
-                          </td>
-                          <td>
-                            <div class="checkbox">
-                              <span class="custom-control custom-checkbox">
-                                <input
-                                  type="checkbox"
-                                  class="custom-control-input"
-                                  checked
-                                  onclick="return false;"
-                                  readonly
-                                  id="change-pass-checkbox"
-                                  value="1"
-                                />
-                                <label
-                                  class="custom-control-label"
-                                  for="change-pass-checkbox"
-                                ></label>
-                              </span>
-                            </div>
-                          </td>
-                        </tr>
-                        <tr>
-                          <th scope="row">2</th>
-                          <td>22-Dec</td>
-
-                          <td>
-                            <span><strong class="currency">34500</strong></span>
-                          </td>
-                          <td>
-                            <div class="checkbox">
-                              <span class="custom-control custom-checkbox">
-                                <input
-                                  type="checkbox"
-                                  class="custom-control-input"
-                                  checked
-                                  onclick="return false;"
-                                  readonly
-                                  id="change-pass-checkbox"
-                                  value="1"
-                                />
-                                <label
-                                  class="custom-control-label"
-                                  for="change-pass-checkbox"
-                                ></label>
-                              </span>
-                            </div>
-                          </td>
-                        </tr>
-                        <tr>
-                          <th scope="row">3</th>
-                          <td>22-Jan</td>
-
-                          <td>
-                            <span><strong class="currency">34500</strong></span>
-                          </td>
-                          <td>
-                            <div class="checkbox">
-                              <span class="custom-control custom-checkbox">
-                                <input
-                                  type="checkbox"
-                                  class="custom-control-input"
-                                  checked
-                                  onclick="return false;"
-                                  readonly
-                                  id="change-pass-checkbox"
-                                  value="1"
-                                />
-                                <label
-                                  class="custom-control-label"
-                                  for="change-pass-checkbox"
-                                ></label>
-                              </span>
-                            </div>
-                          </td>
-                        </tr>
-                        <tr>
-                          <th scope="row">4</th>
-                          <td>22-Feb</td>
-
-                          <td>
-                            <span><strong class="currency">34500</strong></span>
-                          </td>
-                          <td>
-                            <div class="checkbox">
-                              <span class="custom-control custom-checkbox">
-                                <input
-                                  type="checkbox"
-                                  class="custom-control-input"
-                                  onclick="return false;"
-                                  readonly
-                                  id="change-pass-checkbox"
-                                  value="1"
-                                />
-                                <label
-                                  class="custom-control-label"
-                                  for="change-pass-checkbox"
-                                ></label>
-                              </span>
-                            </div>
-                          </td>
-                        </tr>
-                        <tr>
-                          <th scope="row">5</th>
-                          <td>22-Mar</td>
-
-                          <td>
-                            <span><strong class="currency">34500</strong></span>
-                          </td>
-                          <td>
-                            <div class="checkbox">
-                              <span class="custom-control custom-checkbox">
-                                <input
-                                  type="checkbox"
-                                  class="custom-control-input"
-                                  onclick="return false;"
-                                  readonly
-                                  id="change-pass-checkbox"
-                                  value="1"
-                                />
-                                <label
-                                  class="custom-control-label"
-                                  for="change-pass-checkbox"
-                                ></label>
-                              </span>
-                            </div>
-                          </td>
-                        </tr>
-                        <tr>
-                          <th scope="row">#</th>
-                          <td></td>
-                          <td colspan="1" class="pl-2">
-                            <strong>Total Paid</strong>
-                          </td>
-
-                          <td>
-                            <span
-                              ><strong class="currency">124500</strong></span
-                            >
-                          </td>
-                        </tr>
-                        <tr>
-                          <th scope="row">#</th>
-                          <td></td>
-                          <td colspan="1" class="pl-2">
-                            <strong>Balance</strong>
-                          </td>
-
-                          <td>
-                            <span
-                              ><strong class="currency">145500</strong></span
-                            >
-                          </td>
-                        </tr>
-                      </tbody>
-                    </table>
-                  </div>
-
-                  <div class="row mt-4 mb-3">
-                    <div class="col-12">
-                      <div class="row">
-                        <div class="col-12 col-sm-6 p-0 pr-sm-2">
-                          <div class="card">
-                            <div class="card-header">
-                              Payment History
-                              <a href="#" class="card-edit">Edit</a>
-                            </div>
-                            <div class="card-body">
-                              <h4 class="mb-1">
-                                Payment history
-                              </h4>
-                              <p class="">
-                                If the buyer paid you money directly
-                              </p>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col-12 p-0 pl-sm-2 col-sm-6">
-                          <div class="card">
-                            <div class="card-header">
-                              Attached Card
-                            </div>
-                            <div class="card-body pt-5">
-                              <div class="row">
-                                <div class="col-3">
-                                  <img
-                                    src="assets/images/cc.svg"
-                                    style="max-width: 280px; display: inline;"
-                                    alt=""
-                                  />
-                                </div>
-                                <div class="col-9">
-                                  <input
-                                    type="text"
-                                    class="form-control"
-                                    readonly
-                                    value="**** **** **** 4322"
-                                    style="max-width: 300px;"
-                                    id="acc-mname"
-                                    name="acc-mname"
-                                  />
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
+                  <div class="row mt-2">
+                    <div class="col-12 mb-5">
+                      <button class="btn btn-block btn-primary">
+                        checkout
+                      </button>
                     </div>
                   </div>
                 </div>
-                <!-- End .col-lg-5 -->
               </div>
-              <!-- End .row -->
+
               <button title="Close (Esc)" type="button" class="mfp-close">
                 ×
               </button>
@@ -358,14 +282,14 @@
               class="product-single-container product-single-default product-quick-view container"
             >
               <div class="row">
-                <div class="col-lg-10 col-md-10 m-auto">
+                <div class="col-sm-10 mx-auto">
                   <form class="product-single-details">
-                    <h1 class="product-title">Part Payment</h1>
+                    <h3 class="product-title">Part Payment</h3>
 
-                    <div class="form-group required mt-2">
+                    <div class="form-group required mt-4">
                       <label for="acc-mname">Amount Paid ?</label>
                       <input
-                        type="number"
+                        type="text"
                         class="form-control"
                         placeholder="ex: 55000"
                         id="acc-mname"
@@ -374,7 +298,7 @@
                     </div>
                     <!-- End .form-group -->
 
-                    <div class="form-group required mt-2">
+                    <div class="form-group required mt-4">
                       <label for="acc-mname">Payment Source</label>
                       <input
                         type="text"
@@ -386,7 +310,7 @@
                     </div>
                     <!-- End .form-group -->
 
-                    <div class="form-group required mt-2 form-group-sm">
+                    <div class="form-group required mt-4 form-group-sm">
                       <label>Select date paid?</label>
                       <div class="select-custom">
                         <select class="form-control form-control-sm">
@@ -402,7 +326,7 @@
                     </div>
                     <!-- End .form-group -->
 
-                    <button class="mt-3 mb-3 btn btn-warning">
+                    <button class="mt-5 mb-5 btn btn-block btn-primary">
                       Save
                     </button>
                   </form>
@@ -1713,327 +1637,169 @@
                 <!-- End .toolbox-item -->
               </nav>
               <div class="row row-sm">
-                <div class="col-6 col-md-4">
-                  <div
-                    class="product-default border p-4 bg-white inner-quickview inner-icon"
-                  >
-                    <img
-                      src="assets/images/user-sq.svg"
-                      class="my-5 mb-3 mx-auto"
-                      width="42%"
-                      alt=""
-                    />
-
-                    <div class="label-group">
-                      <div class="product-label label-sale">NEW</div>
+                <div class="col-sm-12 my-5">
+                  <div class="modal-transact-container">
+                    <div
+                      class="modal-img-transact-container"
+                      style="position: relative;"
+                    >
+                      <img src="assets/images/face.jpg" alt="img-trasact" />
                     </div>
+                    <div class="modal-transact-content">
+                      <h5 class="text-capitalize">
+                        Jennifer Hudson &nbsp; | &nbsp;
+                        <span class="tiny-font">08065784658</span>
+                      </h5>
+                      <p>
+                        Paid:
+                        <span class="font-weight-bold text-dark">162,000</span>
+                      </p>
+                      <p>
+                        Balance:
+                        <span class="font-weight-bold text-dark">662,000</span>
+                      </p>
 
-                    <div class="count-label rounded border">
-                      4
-                    </div>
-                    <div class="product-details text-center">
-                      <h2 class="product-title my-2 mb-1 mx-auto">
-                        <a href="product.html">Daniel Amokachi</a>
-                      </h2>
-
-                      <div
-                        class="progress mt-1 mb-2"
-                        style="width: 50%; margin-left: 25%;"
-                      >
-                        <div
-                          class="progress-bar progress-bar-animated bg-success"
-                          role="progressbar"
-                          aria-valuenow="70"
-                          aria-valuemin="0"
-                          aria-valuemax="100"
-                          style="width: 70%;"
-                        ></div>
+                      <div class="row">
+                        <div class="col-6 col-sm-8">
+                          <div class="progress mt-2 mb-3">
+                            <div
+                              class="progress-bar progress-bar-animated bg-success"
+                              role="progressbar"
+                              aria-valuenow="20"
+                              aria-valuemin="0"
+                              aria-valuemax="100"
+                              style="width: 20%;"
+                            ></div>
+                          </div>
+                        </div>
                       </div>
 
-                      <!-- End .product-container -->
-                      <div class="price-box">
-                        <span class="product-price mx-auto"
-                          >&#8358;70,000.00
-                          <span class="product-title">
-                            Left
-                          </span>
-                        </span>
+                      <div class="row">
+                        <div class="col-12 col-sm-9">
+                          <div class="product-slider-two owl-carousel">
+                            <div class="product-item">
+                              <img
+                                src="assets/images/products/product-14.jpg"
+                                alt=""
+                                class="product-img"
+                              />
+                            </div>
+                            <div class="product-item">
+                              <img
+                                src="assets/images/products/product-13.jpg"
+                                alt=""
+                                class="product-img"
+                              />
+                            </div>
+                            <div class="product-item">
+                              <img
+                                src="assets/images/products/product-12.jpg"
+                                alt=""
+                                class="product-img"
+                              />
+                            </div>
+                            <div class="product-item">
+                              <img
+                                src="assets/images/products/product-11.jpg"
+                                alt=""
+                                class="product-img"
+                              />
+                            </div>
+                          </div>
+                        </div>
                       </div>
 
-                      <button
-                        class="mt-1 btn mx-auto btn-primary btn-sm rounded"
-                      >
+                      <button class="btn btn-primary btn-md mt-3">
                         view details
                       </button>
-                      <!-- End .price-box -->
                     </div>
-                    <!-- End .product-details -->
                   </div>
                 </div>
-                <div class="col-6 col-md-4">
-                  <div
-                    class="product-default border p-4 bg-white inner-quickview inner-icon"
-                  >
-                    <img
-                      src="assets/images/user-sq.svg"
-                      class="my-5 mb-3 mx-auto"
-                      width="42%"
-                      alt=""
-                    />
 
-                    <div class="count-label rounded border">
-                      4
+                <div class="col-12">
+                  <hr class="divider-cus" />
+                </div>
+                <div class="col-sm-12 my-5">
+                  <div class="modal-transact-container">
+                    <div
+                      class="modal-img-transact-container"
+                      style="position: relative;"
+                    >
+                      <img src="assets/images/face.jpg" alt="img-trasact" />
                     </div>
-                    <div class="product-details text-center">
-                      <h2 class="product-title my-2 mb-1 mx-auto">
-                        <a href="product.html">Daniel Amokachi</a>
-                      </h2>
+                    <div class="modal-transact-content">
+                      <h5 class="text-capitalize">
+                        Jennifer Hudson &nbsp; | &nbsp;
+                        <span class="tiny-font">08065784658</span>
+                      </h5>
+                      <p>
+                        Paid:
+                        <span class="font-weight-bold text-dark">162,000</span>
+                      </p>
+                      <p>
+                        Balance:
+                        <span class="font-weight-bold text-dark">662,000</span>
+                      </p>
 
-                      <div
-                        class="progress mt-1 mb-2"
-                        style="width: 50%; margin-left: 25%;"
-                      >
-                        <div
-                          class="progress-bar progress-bar-animated bg-success"
-                          role="progressbar"
-                          aria-valuenow="70"
-                          aria-valuemin="0"
-                          aria-valuemax="100"
-                          style="width: 70%;"
-                        ></div>
+                      <div class="row">
+                        <div class="col-6 col-sm-8">
+                          <div class="progress mt-2 mb-3">
+                            <div
+                              class="progress-bar progress-bar-animated bg-success"
+                              role="progressbar"
+                              aria-valuenow="20"
+                              aria-valuemin="0"
+                              aria-valuemax="100"
+                              style="width: 20%;"
+                            ></div>
+                          </div>
+                        </div>
                       </div>
 
-                      <!-- End .product-container -->
-                      <div class="price-box">
-                        <span class="product-price mx-auto"
-                          >&#8358;70,000.00
-                          <span class="product-title">
-                            Left
-                          </span>
-                        </span>
+                      <div class="row">
+                        <div class="col-12 col-sm-9">
+                          <div class="product-slider-two owl-carousel">
+                            <div class="product-item">
+                              <img
+                                src="assets/images/products/product-14.jpg"
+                                alt=""
+                                class="product-img"
+                              />
+                            </div>
+                            <div class="product-item">
+                              <img
+                                src="assets/images/products/product-13.jpg"
+                                alt=""
+                                class="product-img"
+                              />
+                            </div>
+                            <div class="product-item">
+                              <img
+                                src="assets/images/products/product-12.jpg"
+                                alt=""
+                                class="product-img"
+                              />
+                            </div>
+                            <div class="product-item">
+                              <img
+                                src="assets/images/products/product-11.jpg"
+                                alt=""
+                                class="product-img"
+                              />
+                            </div>
+                          </div>
+                        </div>
                       </div>
 
-                      <button
-                        class="mt-1 btn mx-auto btn-primary btn-sm rounded"
-                      >
+                      <button class="btn btn-primary btn-md mt-3">
                         view details
                       </button>
-                      <!-- End .price-box -->
                     </div>
-                    <!-- End .product-details -->
                   </div>
                 </div>
-                <div class="col-6 col-md-4">
-                  <div
-                    class="product-default border p-4 bg-white inner-quickview inner-icon"
-                  >
-                    <img
-                      src="assets/images/user-sq.svg"
-                      class="my-5 mb-3 mx-auto"
-                      width="42%"
-                      alt=""
-                    />
 
-                    <div class="count-label rounded border">
-                      4
-                    </div>
-                    <div class="product-details text-center">
-                      <h2 class="product-title my-2 mb-1 mx-auto">
-                        <a href="product.html">Daniel Amokachi</a>
-                      </h2>
-
-                      <div
-                        class="progress mt-1 mb-2"
-                        style="width: 50%; margin-left: 25%;"
-                      >
-                        <div
-                          class="progress-bar progress-bar-animated bg-success"
-                          role="progressbar"
-                          aria-valuenow="70"
-                          aria-valuemin="0"
-                          aria-valuemax="100"
-                          style="width: 70%;"
-                        ></div>
-                      </div>
-
-                      <!-- End .product-container -->
-                      <div class="price-box">
-                        <span class="product-price mx-auto"
-                          >&#8358;70,000.00
-                          <span class="product-title">
-                            Left
-                          </span>
-                        </span>
-                      </div>
-
-                      <button
-                        class="mt-1 btn mx-auto btn-primary btn-sm rounded"
-                      >
-                        view details
-                      </button>
-                      <!-- End .price-box -->
-                    </div>
-                    <!-- End .product-details -->
-                  </div>
-                </div>
-                <div class="col-6 col-md-4">
-                  <div
-                    class="product-default border p-4 bg-white inner-quickview inner-icon"
-                  >
-                    <img
-                      src="assets/images/user-sq.svg"
-                      class="my-5 mb-3 mx-auto"
-                      width="42%"
-                      alt=""
-                    />
-
-                    <div class="count-label rounded border">
-                      4
-                    </div>
-                    <div class="product-details text-center">
-                      <h2 class="product-title my-2 mb-1 mx-auto">
-                        <a href="product.html">Daniel Amokachi</a>
-                      </h2>
-
-                      <div
-                        class="progress mt-1 mb-2"
-                        style="width: 50%; margin-left: 25%;"
-                      >
-                        <div
-                          class="progress-bar progress-bar-animated bg-success"
-                          role="progressbar"
-                          aria-valuenow="70"
-                          aria-valuemin="0"
-                          aria-valuemax="100"
-                          style="width: 70%;"
-                        ></div>
-                      </div>
-
-                      <!-- End .product-container -->
-                      <div class="price-box">
-                        <span class="product-price mx-auto"
-                          >&#8358;70,000.00
-                          <span class="product-title">
-                            Left
-                          </span>
-                        </span>
-                      </div>
-
-                      <button
-                        class="mt-1 btn mx-auto btn-primary btn-sm rounded"
-                      >
-                        view details
-                      </button>
-                      <!-- End .price-box -->
-                    </div>
-                    <!-- End .product-details -->
-                  </div>
-                </div>
-                <div class="col-6 col-md-4">
-                  <div
-                    class="product-default border p-4 bg-white inner-quickview inner-icon"
-                  >
-                    <img
-                      src="assets/images/user-sq.svg"
-                      class="my-5 mb-3 mx-auto"
-                      width="42%"
-                      alt=""
-                    />
-
-                    <div class="count-label rounded border">
-                      4
-                    </div>
-                    <div class="product-details text-center">
-                      <h2 class="product-title my-2 mb-1 mx-auto">
-                        <a href="product.html">Daniel Amokachi</a>
-                      </h2>
-
-                      <div
-                        class="progress mt-1 mb-2"
-                        style="width: 50%; margin-left: 25%;"
-                      >
-                        <div
-                          class="progress-bar progress-bar-animated bg-success"
-                          role="progressbar"
-                          aria-valuenow="70"
-                          aria-valuemin="0"
-                          aria-valuemax="100"
-                          style="width: 70%;"
-                        ></div>
-                      </div>
-
-                      <!-- End .product-container -->
-                      <div class="price-box">
-                        <span class="product-price mx-auto"
-                          >&#8358;70,000.00
-                          <span class="product-title">
-                            Left
-                          </span>
-                        </span>
-                      </div>
-
-                      <button
-                        class="mt-1 btn mx-auto btn-primary btn-sm rounded"
-                      >
-                        view details
-                      </button>
-                      <!-- End .price-box -->
-                    </div>
-                    <!-- End .product-details -->
-                  </div>
-                </div>
-                <div class="col-6 col-md-4">
-                  <div
-                    class="product-default border p-4 bg-white inner-quickview inner-icon"
-                  >
-                    <img
-                      src="assets/images/user-sq.svg"
-                      class="my-5 mb-3 mx-auto"
-                      width="42%"
-                      alt=""
-                    />
-
-                    <div class="count-label rounded border">
-                      4
-                    </div>
-                    <div class="product-details text-center">
-                      <h2 class="product-title my-2 mb-1 mx-auto">
-                        <a href="product.html">Daniel Amokachi</a>
-                      </h2>
-
-                      <div
-                        class="progress mt-1 mb-2"
-                        style="width: 50%; margin-left: 25%;"
-                      >
-                        <div
-                          class="progress-bar progress-bar-animated bg-success"
-                          role="progressbar"
-                          aria-valuenow="70"
-                          aria-valuemin="0"
-                          aria-valuemax="100"
-                          style="width: 70%;"
-                        ></div>
-                      </div>
-
-                      <!-- End .product-container -->
-                      <div class="price-box">
-                        <span class="product-price mx-auto"
-                          >&#8358;70,000.00
-                          <span class="product-title">
-                            Left
-                          </span>
-                        </span>
-                      </div>
-
-                      <button
-                        class="mt-1 btn mx-auto btn-primary btn-sm rounded"
-                      >
-                        view details
-                      </button>
-                      <!-- End .price-box -->
-                    </div>
-                    <!-- End .product-details -->
-                  </div>
+                <div class="col-12">
+                  <hr class="divider-cus" />
                 </div>
               </div>
 
@@ -2361,7 +2127,7 @@
     <script>
       let currency = document.querySelectorAll(".currency");
 
-      currency.forEach((element) => {
+      currency.forEach(element => {
         currencyFormat = Number(element.innerHTML.trim()).toLocaleString();
         element.innerHTML = `&#8358;${currencyFormat.trim()}`;
       });
@@ -2374,6 +2140,7 @@
 
     <!-- Main JS File -->
     <script src="assets/js/main.min.js"></script>
+    <script src="assets/js/custom.js"></script>
   </body>
 
   <!-- Mirrored from portotheme.com/html/porto_ecommerce/demo_5/checkout-shipping-2.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 29 May 2020 14:36:11 GMT -->
