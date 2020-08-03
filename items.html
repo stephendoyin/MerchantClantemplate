@@ -258,7 +258,7 @@
       <!-- end modal -->
     </div>
 
-    <div class="modal show modal-two">
+    <div class="modal modal-two">
       <div class="mfp-bg mfp-ajax-product mfp-ready"></div>
       <div
         class="mfp-wrap mfp-close-btn-in mfp-auto-cursor mfp-ajax-product mfp-ready"
@@ -2885,7 +2885,7 @@
       let extraInfo = document.querySelector(".extra-info");
       let closeBtn = document.querySelectorAll(".close-float");
 
-      floatBtn.addEventListener("click", (e) => {
+      floatBtn.addEventListener("click", e => {
         e.preventDefault();
         floatInner.classList.toggle("show");
         floatShare.classList.toggle("show");
@@ -2899,7 +2899,7 @@
         extraInfo.classList.remove("show");
       });
 
-      closeBtn.forEach((element) => {
+      closeBtn.forEach(element => {
         element.addEventListener("click", function () {
           floatShare.classList.remove("show");
           floatInner.classList.remove("show");

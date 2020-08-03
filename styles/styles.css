@@ -188,7 +188,7 @@ textarea.form-control {
   font-size: 16px;
 }
 
-.thumb-col .col-2:hover .btn--close {
+.thumb-col div:hover .btn--close {
   display: flex;
 }
 
@@ -1247,7 +1247,7 @@ hr.divider-cus {
 
 .modal-img-transact-container {
   width: 340px;
-  min-width: 340px;
+  /* min-width: 340px; */
 }
 
 .modal-transact-content {
@@ -1370,6 +1370,21 @@ textarea.form-control {
   cursor: pointer;
 }
 
+@media only screen and (max-width: 540px) {
+  .nav-scr-right {
+    right: -18px;
+  }
+  .nav-scr-left {
+    left: -18px;
+  }
+  .no-resp .nav-scr-right {
+    right: -30px;
+  }
+  .no-resp .nav-scr-left {
+    left: -30px;
+  }
+}
+
 .modal-thumb-item {
   position: relative;
 }
@@ -1378,4 +1393,115 @@ textarea.form-control {
   top: 5px;
   right: 5px;
   position: absolute;
+}
+
+.btn-custom {
+  font-size: 1rem;
+  max-height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+}
+
+.catalogue-prod-left,
+.catalogue-prod-right {
+  font-size: 2.6rem;
+  cursor: pointer;
+}
+
+.slide-nav-right {
+  position: absolute;
+  right: -16px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 33;
+}
+
+.slide-nav-left {
+  position: absolute;
+  left: -16px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 33;
+}
+
+.modal .owl-carousel.prev-slider {
+  display: block;
+}
+
+.category-list {
+  font-weight: 400;
+  font-size: 1rem;
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.7;
+  opacity: 0.8;
+  text-transform: uppercase;
+}
+.product-title {
+  font-weight: 600;
+  font-size: 1.8rem;
+  font-family: "Open Sans", sans-serif;
+  color: #222529;
+  max-width: 100%;
+  font-weight: 600;
+  line-height: 1.35;
+  letter-spacing: 0.005em;
+  margin-bottom: 0.72rem;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.product-title a {
+  color: #222529;
+}
+
+.product-description {
+  display: -webkit-box;
+  max-width: 100%;
+  font-weight: 400;
+  font-size: 1.4rem;
+  font-family: "Open Sans", sans-serif;
+  line-height: 24px;
+  margin-bottom: 1em;
+  overflow: hidden;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.btn-copy {
+  margin-top: 16px;
+}
+
+.cata-item .btn {
+  width: 100%;
+  display: block;
+}
+.btn-share {
+  margin-right: 0rem;
+}
+.btn-edit {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 37px;
+  height: 37px;
+  border-radius: 50%;
+  position: absolute;
+  cursor: pointer;
+  top: 7px;
+  font-size: 1.5rem;
+  right: 7px;
+}
+
+@media only screen and (min-width: 618px) {
+  .btn-copy {
+    margin-top: 0;
+  }
+  .btn-share {
+    margin-right: 1rem;
+  }
+  .cata-item .btn {
+    width: auto;
+  }
 }
