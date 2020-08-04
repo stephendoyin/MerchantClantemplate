@@ -81,6 +81,7 @@
               id="acc-email"
               name="acc-email"
               required=""
+              autocomplete="off"
             />
           </div>
 
@@ -91,21 +92,47 @@
               id="inputPassword6"
               class="form-control"
               aria-describedby="passwordHelpInline"
+              autocomplete="off"
             />
             <small id="passwordHelpInline" class="text-muted">
               Must be 8-20 characters long.
             </small>
           </div>
 
-          <div class="form-footer mt-4">
+          <div class="mt-4">
             <button type="submit" class="btn btn-block btn-primary btn-resp">
               Login
+            </button>
+            <div
+              class="d-flex custom-division custom-division--large align-items-center justify-content-between"
+            >
+              <div class=""></div>
+              <small class="text-dark">OR</small>
+              <div class=""></div>
+            </div>
+            <button type="submit" class="btn btn-block btn-dark btn-resp">
+              <i class="icon-instagram mr-2"></i>
+              Login with Instagram
             </button>
             <button
               type="submit"
               class="btn btn-primary btn-block text-white btn-md btn-resp-show"
             >
               Login
+            </button>
+            <div
+              class="d-flex custom-division align-items-center justify-content-between"
+            >
+              <div class=""></div>
+              <small class="text-white or-division">OR</small>
+              <div class=""></div>
+            </div>
+            <button
+              type="submit"
+              class="btn bg-white btn-block text-dark btn-md btn-resp-show"
+            >
+              <i class="icon-instagram font-weight-bold mr-2 text-dark"></i>
+              Login with Instagram
             </button>
 
             <!-- End .custom-checkbox -->
@@ -127,15 +154,15 @@
           <img
             src="assets/images/signal.svg"
             class="mb-2 d-inline"
-            style="width: 70%; margin: auto;"
+            style="width: 50%; margin: auto;"
             alt=""
           />
-          <h3 class="text-white title mt-2">Don't have an account?</h3>
+          <h4 class="text-white title mt-2 mb-1">Don't have an account?</h4>
           <p class="text-white mb-2">
             Join hundreds of merchants using merchantClan<br />
             to reach more audience and sell on credit
           </p>
-          <a href="signup.html" class="btn btn-secondary btn-md">
+          <a href="signup.html" class="btn btn-dark">
             Sign Up
           </a>
         </div>

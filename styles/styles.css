@@ -657,6 +657,23 @@ small {
   display: none;
 }
 
+.custom-division div {
+  width: 46%;
+  border-bottom: 1px solid #fff;
+}
+
+.custom-division {
+  padding: 2rem 0;
+  opacity: 0.7;
+}
+
+.custom-division--large {
+  padding: 1.5rem 0;
+}
+.custom-division--large div {
+  border-bottom: 1px solid var(--dark);
+}
+
 .btn-custom {
   display: block;
   width: 100%;
@@ -815,7 +832,7 @@ select.form-control:not([size]):not([multiple]) {
     background: transparent;
   }
   .btn-resp {
-    display: none;
+    display: none !important;
   }
   .btn-resp-show {
     display: inline-block;

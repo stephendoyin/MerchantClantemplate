@@ -54,7 +54,7 @@
   </head>
 
   <body class="transaction">
-    <div class="modal show modal-one">
+    <div class="modal modal-one">
       <div class="mfp-bg mfp-ajax-product mfp-ready"></div>
       <div
         class="mfp-wrap mfp-close-btn-in mfp-auto-cursor mfp-ajax-product mfp-ready"
@@ -492,57 +492,183 @@
 
     <div class="page-wrapper">
       <header class="header">
+        <div class="header-top">
+          <div class="container">
+            <div class="header-left d-none d-sm-block">
+              <p class="top-message text-uppercase">
+                <span class="text-warning d-inline">
+                  <i class="fa fa-smile"></i> </span
+                >&nbsp; Hi Adeshola!
+              </p>
+            </div>
+            <!-- End .header-left -->
+
+            <div class="header-right header-dropdowns ml-0 ml-sm-auto w-sm-100">
+              <div class="header-dropdown dropdown-expanded d-none d-lg-block">
+                <a href="#">Links</a>
+              </div>
+              <!-- End .header-dropown -->
+
+              <span class="separator"></span>
+
+              <div class="header-dropdown">
+                <a href="#">USD</a>
+                <div class="header-menu">
+                  <ul>
+                    <li><a href="#">EUR</a></li>
+                    <li><a href="#">USD</a></li>
+                  </ul>
+                </div>
+                <!-- End .header-menu -->
+              </div>
+              <!-- End .header-dropown -->
+
+              <div class="header-dropdown mr-auto mr-sm-3 mr-md-0">
+                <a href="#"
+                  ><img
+                    src="assets/images/flags/en.png"
+                    alt="England flag"
+                  />ENG</a
+                >
+                <div class="header-menu">
+                  <ul>
+                    <li>
+                      <a href="#"
+                        ><img
+                          src="assets/images/flags/en.png"
+                          alt="England flag"
+                        />ENG</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#"
+                        ><img
+                          src="assets/images/flags/fr.png"
+                          alt="France flag"
+                        />FRA</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+                <!-- End .header-menu -->
+              </div>
+              <!-- End .header-dropown -->
+
+              <span class="separator"></span>
+
+              <div class="social-icons">
+                <a
+                  href="#"
+                  class="social-icon social-instagram icon-instagram"
+                  target="_blank"
+                ></a>
+                <a
+                  href="#"
+                  class="social-icon social-twitter icon-twitter"
+                  target="_blank"
+                ></a>
+                <a
+                  href="#"
+                  class="social-icon social-facebook icon-facebook"
+                  target="_blank"
+                ></a>
+              </div>
+              <!-- End .social-icons -->
+            </div>
+            <!-- End .header-right -->
+          </div>
+          <!-- End .container -->
+        </div>
+        <!-- End .header-top -->
+
+        <div class="header-middle">
+          <div class="container">
+            <div class="header-left col-lg-2 w-auto pl-0">
+              <button
+                class="mobile-menu-toggler text-primary mr-2"
+                type="button"
+              >
+                <i class="icon-menu"></i>
+              </button>
+              <a href="index.html" class="logo">
+                <img src="assets/images/logo.png" alt="Porto Logo" />
+              </a>
+            </div>
+            <!-- End .header-left -->
+
+            <div class="header-right w-lg-max">
+              <div class="dropdown cart-dropdown ml-auto show">
+                <a
+                  href="#"
+                  class="dropdown-toggle dropdown-arrow"
+                  role="button"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="true"
+                  data-display="static"
+                >
+                  <i class="icon-user-2"></i>
+                  <span class="cart-count badge-circle">2</span>
+                </a>
+
+                <div class="dropdown-menu show">
+                  <div class="dropdownmenu-wrapper">
+                    <!-- <div class="dropdown-cart-header">
+                      <span>2 Items</span>
+
+                      <a href="cart.html" class="float-right">View Cart</a>
+                    </div> -->
+                    <!-- End .dropdown-cart-header -->
+
+                    <!-- End .cart-product -->
+
+                    <!-- <div class="dropdown-cart-total">
+                      <span>Total</span>
+
+                      <span class="cart-total-price float-right">$134.00</span>
+                    </div> -->
+                    <!-- End .dropdown-cart-total -->
+
+                    <div class="dropdown-cart-action">
+                      <a
+                        href="checkout-shipping.html"
+                        class="btn btn-danger btn-block"
+                        >Log Out</a
+                      >
+                    </div>
+                    <!-- End .dropdown-cart-total -->
+                  </div>
+                  <!-- End .dropdownmenu-wrapper -->
+                </div>
+                <!-- End .dropdown-menu -->
+              </div>
+              <!-- End .dropdown -->
+            </div>
+            <!-- End .header-right -->
+          </div>
+          <!-- End .container -->
+        </div>
+        <!-- End .header-middle -->
+
         <div class="sticky-wrapper">
-          <div
-            class="header-bottom header-bottom-constant sticky-header d-none d-lg-block"
-          >
+          <div class="header-bottom sticky-header d-none d-lg-block">
             <div class="container">
               <nav class="main-nav w-100">
                 <ul
                   class="menu sf-js-enabled sf-arrows"
                   style="touch-action: pan-y;"
                 >
-                  <li>
-                    <a href="index.html">Catalogue</a>
-                  </li>
-
-                  <li><a href="blog.html">Items</a></li>
-                  <li><a href="about.html">About Us</a></li>
-                  <li><a href="contact.html">Orders</a></li>
-                  <li><a href="contact.html">Repayment</a></li>
-                  <li class="active"><a href="contact.html">Sales</a></li>
-
-                  <li
-                    class="float-right mr-0 text-white"
-                    style="
-                      height: 43px;
-                      overflow: hidden;
-                      display: flex;
-                      align-items: center;
-                      margin-top: 7px;
-                      width: 70px;
-                    "
-                  >
-                    <a
-                      href="#"
-                      style="width: 100%; color: white;"
-                      class="px-4 btn btn-danger btn-sm text-white;"
-                      >Log Out</a
-                    >
-                  </li>
+                  <li><a href="index.html">Home</a></li>
+                  <li class="active"><a href="index.html">Products</a></li>
+                  <li><a href="index.html">Catalogues</a></li>
+                  <li><a href="index.html">Orders</a></li>
+                  <li><a href="index.html">Sales</a></li>
                 </ul>
               </nav>
-              <button
-                class="float-right mobile-menu-toggler text-primary ml-auto"
-                type="button"
-              >
-                <i class="icon-menu"></i>
-              </button>
             </div>
             <!-- End .container -->
           </div>
         </div>
-
         <!-- End .header-bottom -->
       </header>
       <!-- End .header -->
@@ -1542,207 +1668,192 @@
               </nav>
 
               <div class="row row-sm">
-                <div class="col-6 col-md-4">
-                  <div
-                    class="product-default border p-4 bg-white inner-quickview inner-icon"
-                  >
-                    <img
-                      src="assets/images/user-sq.svg"
-                      class="my-5 mb-3 mx-auto"
-                      width="42%"
-                      alt=""
-                    />
-                    <div class="product-details text-center">
-                      <h2 class="product-title my-2 mb-1 mx-auto">
-                        <a href="product.html">Shola Thompson</a>
-                      </h2>
-
-                      <!-- End .product-container -->
-                      <div class="price-box">
-                        <span class="product-price mx-auto"
-                          >&#8358;70,000.00
-                          <span class="product-title">
-                            For 3 Months
-                          </span>
-                        </span>
+                <div class="col-11 mx-auto col-sm-12 my-5">
+                  <div class="modal-transact-container">
+                    <div
+                      class="modal-img-transact-container"
+                      style="position: relative;"
+                    >
+                      <div class="modal-user-trasact-avatar-container">
+                        <i class="fas fa-user-circle"></i>
+                        <div class="modal-product-count shadow">
+                          <span class="">5</span>
+                        </div>
                       </div>
 
-                      <button
-                        class="mt-1 btn mx-auto btn-primary btn-sm rounded"
-                      >
+                      <img
+                        src="assets/images/products/product-4.jpg"
+                        alt="img-trasact"
+                      />
+                    </div>
+                    <div class="modal-transact-content">
+                      <h5 class="text-capitalize">
+                        Jennifer Hudson &nbsp; | &nbsp;
+                        <span class="tiny-font">08065784658</span>
+                      </h5>
+                      <p>
+                        Date:
+                        <span class="font-weight-bold text-dark"
+                          >22nd-Feb to 9th-July</span
+                        >
+                      </p>
+                      <p>
+                        <span class="font-weight-bold text-dark">555,000</span>
+                        / Mo. For 3 Months
+                      </p>
+                      <div class="row">
+                        <div class="col-12 col-sm-10">
+                          <div>
+                            <div class="nav-scr-right">
+                              <i class="icon-angle-right"></i>
+                            </div>
+                            <div class="nav-scr-left">
+                              <i class="icon-angle-left"></i>
+                            </div>
+                          </div>
+                          <div class="product-slider-two owl-carousel">
+                            <div class="product-item">
+                              <img
+                                src="assets/images/products/product-14.jpg"
+                                alt=""
+                                class="product-img"
+                              />
+                            </div>
+                            <div class="product-item">
+                              <img
+                                src="assets/images/products/product-13.jpg"
+                                alt=""
+                                class="product-img"
+                              />
+                            </div>
+                            <div class="product-item">
+                              <img
+                                src="assets/images/products/product-12.jpg"
+                                alt=""
+                                class="product-img"
+                              />
+                            </div>
+                            <div class="product-item">
+                              <img
+                                src="assets/images/products/product-11.jpg"
+                                alt=""
+                                class="product-img"
+                              />
+                            </div>
+                            <div class="product-item">
+                              <img
+                                src="assets/images/products/product-1.jpg"
+                                alt=""
+                                class="product-img"
+                              />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <button class="btn btn-primary btn-md mt-3">
                         view details
                       </button>
-                      <!-- End .price-box -->
                     </div>
-                    <!-- End .product-details -->
                   </div>
                 </div>
 
-                <div class="col-6 col-md-4">
-                  <div
-                    class="product-default border p-4 bg-white inner-quickview inner-icon"
-                  >
-                    <img
-                      src="assets/images/user-sq.svg"
-                      class="my-5 mb-3 mx-auto"
-                      width="42%"
-                      alt=""
-                    />
-                    <div class="product-details text-center">
-                      <h2 class="product-title my-2 mb-1 mx-auto">
-                        <a href="product.html">Daniel Amokachi</a>
-                      </h2>
+                <div class="col-12">
+                  <hr class="divider-cus" />
+                </div>
 
-                      <!-- End .product-container -->
-                      <div class="price-box">
-                        <span class="product-price mx-auto"
-                          >&#8358;70,000.00
-                        </span>
+                <div class="col-11 mx-auto col-sm-12 my-5">
+                  <div class="modal-transact-container">
+                    <div
+                      class="modal-img-transact-container"
+                      style="position: relative;"
+                    >
+                      <div class="modal-user-trasact-avatar-container">
+                        <i class="fas fa-user-circle"></i>
+                        <div class="modal-product-count shadow">
+                          <span class="">5</span>
+                        </div>
                       </div>
 
-                      <button
-                        class="mt-1 btn mx-auto btn-primary btn-sm rounded"
-                      >
+                      <img
+                        src="assets/images/products/product-4.jpg"
+                        alt="img-trasact"
+                      />
+                    </div>
+                    <div class="modal-transact-content">
+                      <h5 class="text-capitalize">
+                        Jennifer Hudson &nbsp; | &nbsp;
+                        <span class="tiny-font">08065784658</span>
+                      </h5>
+                      <p>
+                        Date:
+                        <span class="font-weight-bold text-dark"
+                          >22-Feb to 9-July</span
+                        >
+                      </p>
+                      <p>
+                        <span class="font-weight-bold text-dark">555,000</span>
+                        / Mo. For 3 Months
+                      </p>
+                      <div class="row">
+                        <div class="col-12 col-sm-10">
+                          <div>
+                            <div class="nav-scr-right">
+                              <i class="icon-angle-right"></i>
+                            </div>
+                            <div class="nav-scr-left">
+                              <i class="icon-angle-left"></i>
+                            </div>
+                          </div>
+                          <div class="product-slider-two owl-carousel">
+                            <div class="product-item">
+                              <img
+                                src="assets/images/products/product-14.jpg"
+                                alt=""
+                                class="product-img"
+                              />
+                            </div>
+                            <div class="product-item">
+                              <img
+                                src="assets/images/products/product-13.jpg"
+                                alt=""
+                                class="product-img"
+                              />
+                            </div>
+                            <div class="product-item">
+                              <img
+                                src="assets/images/products/product-12.jpg"
+                                alt=""
+                                class="product-img"
+                              />
+                            </div>
+                            <div class="product-item">
+                              <img
+                                src="assets/images/products/product-11.jpg"
+                                alt=""
+                                class="product-img"
+                              />
+                            </div>
+                            <div class="product-item">
+                              <img
+                                src="assets/images/products/product-1.jpg"
+                                alt=""
+                                class="product-img"
+                              />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <button class="btn btn-primary btn-md mt-3">
                         view details
                       </button>
-                      <!-- End .price-box -->
                     </div>
-                    <!-- End .product-details -->
                   </div>
                 </div>
 
-                <div class="col-6 col-md-4">
-                  <div
-                    class="product-default border p-4 bg-white inner-quickview inner-icon"
-                  >
-                    <img
-                      src="assets/images/user-sq.svg"
-                      class="my-5 mb-3 mx-auto"
-                      width="42%"
-                      alt=""
-                    />
-                    <div class="product-details text-center">
-                      <h2 class="product-title my-2 mb-1 mx-auto">
-                        <a href="product.html">Jennifer Hudson</a>
-                      </h2>
-
-                      <!-- End .product-container -->
-                      <div class="price-box">
-                        <span class="product-price mx-auto"
-                          >&#8358;270,000.00
-                        </span>
-                      </div>
-
-                      <button
-                        class="mt-1 btn mx-auto btn-primary btn-sm rounded"
-                      >
-                        view details
-                      </button>
-                      <!-- End .price-box -->
-                    </div>
-                    <!-- End .product-details -->
-                  </div>
-                </div>
-                <div class="col-6 col-md-4">
-                  <div
-                    class="product-default border p-4 bg-white inner-quickview inner-icon"
-                  >
-                    <img
-                      src="assets/images/user-sq.svg"
-                      class="my-5 mb-3 mx-auto"
-                      width="42%"
-                      alt=""
-                    />
-                    <div class="product-details text-center">
-                      <h2 class="product-title my-2 mb-1 mx-auto">
-                        <a href="product.html">Shola Thompson</a>
-                      </h2>
-
-                      <!-- End .product-container -->
-                      <div class="price-box">
-                        <span class="product-price mx-auto"
-                          >&#8358;70,000.00
-                          <span class="product-title">
-                            For 3 Months
-                          </span>
-                        </span>
-                      </div>
-
-                      <button
-                        class="mt-1 btn mx-auto btn-primary btn-sm rounded"
-                      >
-                        view details
-                      </button>
-                      <!-- End .price-box -->
-                    </div>
-                    <!-- End .product-details -->
-                  </div>
-                </div>
-
-                <div class="col-6 col-md-4">
-                  <div
-                    class="product-default border p-4 bg-white inner-quickview inner-icon"
-                  >
-                    <img
-                      src="assets/images/user-sq.svg"
-                      class="my-5 mb-3 mx-auto"
-                      width="42%"
-                      alt=""
-                    />
-                    <div class="product-details text-center">
-                      <h2 class="product-title my-2 mb-1 mx-auto">
-                        <a href="product.html">Daniel Amokachi</a>
-                      </h2>
-
-                      <!-- End .product-container -->
-                      <div class="price-box">
-                        <span class="product-price mx-auto"
-                          >&#8358;70,000.00
-                        </span>
-                      </div>
-
-                      <button
-                        class="mt-1 btn mx-auto btn-primary btn-sm rounded"
-                      >
-                        view details
-                      </button>
-                      <!-- End .price-box -->
-                    </div>
-                    <!-- End .product-details -->
-                  </div>
-                </div>
-
-                <div class="col-6 col-md-4">
-                  <div
-                    class="product-default border p-4 bg-white inner-quickview inner-icon"
-                  >
-                    <img
-                      src="assets/images/user-sq.svg"
-                      class="my-5 mb-3 mx-auto"
-                      width="42%"
-                      alt=""
-                    />
-                    <div class="product-details text-center">
-                      <h2 class="product-title my-2 mb-1 mx-auto">
-                        <a href="product.html">Jennifer Hudson</a>
-                      </h2>
-
-                      <!-- End .product-container -->
-                      <div class="price-box">
-                        <span class="product-price mx-auto"
-                          >&#8358;270,000.00
-                        </span>
-                      </div>
-
-                      <button
-                        class="mt-1 btn mx-auto btn-primary btn-sm rounded"
-                      >
-                        view details
-                      </button>
-                      <!-- End .price-box -->
-                    </div>
-                    <!-- End .product-details -->
-                  </div>
+                <div class="col-12">
+                  <hr class="divider-cus" />
                 </div>
               </div>
 
@@ -1803,9 +1914,9 @@
                   <div
                     class="row text-center align-items-center justify-content-center"
                   >
-                    <div class="col-12 col-sm-4 text-center">
+                    <div class="col-12 col-sm-5 text-center">
                       <img
-                        style="max-width: 200px; display: inline;"
+                        style="max-width: 220px; display: inline;"
                         src="assets/images/product.gif"
                       />
                     </div>
@@ -1814,25 +1925,16 @@
                     <div class="col-12 col-sm-6 text-sm-left">
                       <div class="">
                         <div class="">
-                          <h3 class="m-0 mb-1">Share link to your products</h3>
+                          <h4 class="m-0 mb-1 title text-uppercase">
+                            Share your entire store
+                          </h4>
                           <p>
                             Add a product, copy &amp; share link on your social
                             media accounts to reach more buyers.
                           </p>
-                          <div class="social-list">
-                            <span>
-                              <i class="icon icon-linkedin"></i>
-                            </span>
-                            <span>
-                              <i class="icon icon-twitter"></i>
-                            </span>
-                            <span>
-                              <i class="icon icon-instagram"></i>
-                            </span>
-                            <span>
-                              <i class="icon icon-facebook"></i>
-                            </span>
-                          </div>
+                          <button class="btn btn-primary btn-sm">
+                            <i class="fas fa-link mr-2"></i>Copy Link
+                          </button>
                         </div>
                         <!-- End .feature-box-content -->
                       </div>
@@ -2070,7 +2172,7 @@
     <script>
       let currency = document.querySelectorAll(".currency");
 
-      currency.forEach((element) => {
+      currency.forEach(element => {
         currencyFormat = Number(element.innerHTML.trim()).toLocaleString();
         element.innerHTML = `&#8358;${currencyFormat.trim()}`;
       });
@@ -2083,6 +2185,7 @@
 
     <!-- Main JS File -->
     <script src="assets/js/main.min.js"></script>
+    <script src="assets/js/custom.js"></script>
   </body>
 
   <!-- Mirrored from portotheme.com/html/porto_ecommerce/demo_5/checkout-shipping-2.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 29 May 2020 14:36:11 GMT -->
