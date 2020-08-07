@@ -1161,7 +1161,6 @@ figure {
   }
   .btn-ext {
     display: inline-block;
-
     width: auto;
   }
 }
@@ -1215,7 +1214,7 @@ hr.divider-cus {
 
 .footer-left-content span,
 .tiny-font {
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   color: #777;
   font-weight: 500;
 }
@@ -1521,4 +1520,8 @@ textarea.form-control {
   .cata-item .btn {
     width: auto;
   }
+}
+
+.big-price {
+  font-size: 2rem;
 }
