@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <title>Porto - Bootstrap eCommerce Template</title>
+
+    <meta name="keywords" content="HTML5 Template" />
+    <meta name="description" content="Porto - Bootstrap eCommerce Template" />
+    <meta name="author" content="SW-THEMES" />
+
+    <!-- Favicon -->
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="assets/images/icons/favicon.ico"
+    />
+
+    <script type="text/javascript">
+      WebFontConfig = {
+        google: {
+          families: [
+            "Open+Sans:300,400,600,700,800",
+            "Poppins:300,400,500,600,700",
+            "Segoe Script:300,400,500,600,700",
+          ],
+        },
+      };
+      (function (d) {
+        var wf = d.createElement("script"),
+          s = d.scripts[0];
+        wf.src = "assets/js/webfont.js";
+        wf.async = true;
+        s.parentNode.insertBefore(wf, s);
+      })(document);
+    </script>
+
+    <!-- Plugins CSS File -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+
+    <!-- Main CSS File -->
+    <link rel="stylesheet" href="assets/css/style.min.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="assets/vendor/fontawesome-free/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"
+    />
+    <link rel="stylesheet" href="styles/styles.css" />
+  </head>
+
+  <body class="loaded">
+    <div class="container-fluid position-relative">
+      <a
+        href=""
+        style="font-size: 1.5rem;"
+        class="back-btn mt-5 d-inline-block ml-5"
+        ><i class="fas fa-angle-left text-dark"></i>
+        <span class="text-dark pl-3">Back</span></a
+      >
+      <div class="onboard">
+        <div
+          class="onboard-content shadow p-5 show animate__animated animate__fadeInLeft"
+        >
+          <h1 class="text-dark onboard-title font-weight-bold">
+            1. Are you a first time seller?
+          </h1>
+          <div class="row">
+            <div
+              class="d-flex align-items-center justify-content-between col-12 my-4 border bg-light py-5 px-5"
+            >
+              <span class="m-0 py-2" style="color: #777;">
+                No, I have products & I am not selling online
+              </span>
+              <i class="fas fa-angle-right float-right"></i>
+            </div>
+            <div
+              class="d-flex align-items-center justify-content-between btn-response col-12 my-4 border bg-light py-5 px-5"
+            >
+              <span class="m-0 py-2" style="color: #777;">
+                I am new at this, help me set up my store
+              </span>
+
+              <i class="fas fa-angle-right float-right"></i>
+            </div>
+          </div>
+        </div>
+        <div class="onboard-content animate__animated animate__fadeInLeft">
+          <h1 class="text-dark onboard-title font-weight-bold">
+            2. Set Up a Product
+          </h1>
+          <div class="row">
+            <form class="col-12" action="">
+              <div class="form-group required mt-3">
+                <label for="acc-mname">Name of Product</label>
+                <input
+                  type="text"
+                  autocomplete="off"
+                  class="form-control"
+                  id="acc-mname"
+                  name="acc-mname"
+                />
+              </div>
+              <!-- End .form-group -->
+
+              <div class="row">
+                <div class="col-sm-6">
+                  <div class="form-group required mt-3">
+                    <label>Products Category</label>
+                    <div class="select-custom">
+                      <select class="form-control form-control-sm">
+                        <option value="CA">Electronics</option>
+                        <option value="CA">Fashion</option>
+                        <option value="CA">Gadgets</option>
+                        <option value="CA">Phones</option>
+                        <option value="CA">Cosmetics</option>
+                      </select>
+                    </div>
+                    <!-- End .select-custom -->
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="form-group required mt-3">
+                    <label for="acc-mname">Price</label>
+                    <input
+                      type="text"
+                      autocomplete="off"
+                      class="form-control"
+                      id="acc-mname"
+                      name="acc-mname"
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <!-- End .form-group -->
+
+              <div class="form-group required mt-4 mb-3">
+                <label for="acc-mname" class="font-weight-bold mb-1"
+                  >Do you want to sell on credit?</label
+                >
+                <div class="row">
+                  <div class="col-12 col-sm-6 col-md-5">
+                    <input
+                      type="radio"
+                      name="price[1]"
+                      id="outright-p"
+                      value="1"
+                      class="radio no-credit mr-2"
+                      checked
+                    />
+                    <label for="outright-p " class="font-weight-normal"
+                      >No, Outright payment</label
+                    >
+                  </div>
+                  <div class="col-12 col-md-6 col-md-5">
+                    <input
+                      type="radio"
+                      name="price[1]"
+                      id="credit-p"
+                      value="1"
+                      class="radio credit-input mr-2"
+                    />
+                    <label for="credit-p" class="font-weight-normal"
+                      >Yes, Sell on credit</label
+                    >
+                  </div>
+                </div>
+              </div>
+              <!-- End .form-group -->
+
+              <div class="extra-info">
+                <div class="row">
+                  <div class="col-sm-6">
+                    <div class="form-group required">
+                      <label for="acc-mname">How many months ?</label>
+                      <input
+                        type="text"
+                        autocomplete="off"
+                        class="form-control"
+                        id="acc-mname"
+                        name="acc-mname"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="form-group required">
+                      <label for="acc-mname"
+                        >How much does buyers contribute upfront ?</label
+                      >
+                      <input
+                        type="text"
+                        autocomplete="off"
+                        class="form-control"
+                        id="acc-mname"
+                        name="acc-mname"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <button type="submit" class="btn btn-next mt-1 btn-primary">
+                next
+              </button>
+            </form>
+          </div>
+        </div>
+        <div class="onboard-content animate__animated animate__fadeInLeft">
+          <h1 class="text-dark m-0 onboard-title font-weight-bold">
+            3. Add Picture
+          </h1>
+          <div class="row">
+            <form class="col-12" action="">
+              <div class="">
+                <div class="form-group required mt-4">
+                  <input type="file" id="img" name="img" accept="image/*" />
+                  <label for="img" class="d-sm-flex align-items-end"
+                    ><span
+                      class="d-inline-flex align-items-center justify-content-center mr-4 bg-light border image-input-container"
+                    >
+                      <i class="fa fa-camera text-gray"></i>
+                    </span>
+                    <br class="c-br" />
+                    <button class="btn btn-primary btn-md mt-3 add-img-btn">
+                      Add an Image
+                    </button>
+                  </label>
+
+                  <hr class="divider" />
+
+                  <a
+                    href=""
+                    class="btn-next-two d-inline-block mx-auto border-primary border-bottom"
+                  >
+                    Please help me with pictures
+                  </a>
+                </div>
+              </div>
+
+              <!-- End .form-group -->
+            </form>
+          </div>
+        </div>
+        <div
+          class="onboard-content animate__animated animate__fadeInUp search-ui"
+        >
+          <h4 class="text-dark text-center font-weight-light">
+            Search for product name
+          </h4>
+          <div class="row">
+            <div class="col">
+              <div
+                class="input-wrap px-5 py-4 mx-auto d-flex align-items-center justify-content-center shadow"
+              >
+                <input
+                  type="text"
+                  autocomplete="off"
+                  class="form-control custom-input-type mr-2 d-inline-block"
+                  id="acc-mname"
+                  name="acc-mname"
+                  focus
+                />
+                <i
+                  class="icon-search search-btn"
+                  style="font-size: 2.6rem;"
+                ></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="onboard-content animate__animated animate__fadeInLeft search-ui"
+        >
+          <div class="row">
+            <div class="col-12 mb-3">
+              <div
+                class="input-wrap px-5 py-4 mx-auto d-flex align-items-center justify-content-center shadow"
+              >
+                <input
+                  type="text"
+                  autocomplete="off"
+                  class="form-control custom-input-type mr-2 d-inline-block"
+                  id="acc-mname"
+                  name="acc-mname"
+                  focus
+                />
+                <i
+                  class="icon-search search-btn"
+                  style="font-size: 2.6rem;"
+                ></i>
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="col-11 col-sm-12 mx-auto">
+                <div class="position-relative">
+                  <div class="no-resp">
+                    <div class="nav-scr-right">
+                      <i class="icon-angle-right"></i>
+                    </div>
+                    <div class="nav-scr-left">
+                      <i class="icon-angle-left"></i>
+                    </div>
+                  </div>
+                  <div
+                    class="owl-carousel modal-product-slider"
+                    style="display: block;"
+                  >
+                    <div class="border product-item-wrap">
+                      <div class="select-overlay">
+                        <span
+                          class="sel-label text-primary bg-white d-flex bg-priamry shadow justify-content-center align-items-center"
+                        >
+                          <i class="fas fa-check"></i>
+                        </span>
+                      </div>
+                      <div class="modal-product pb-2 position-relative">
+                        <img
+                          src="assets/images/products/product-2.jpg"
+                          alt=""
+                          class="modal-product-item"
+                        />
+                        <button
+                          class="btn btn-sm mx-auto sel-btn btn-block btn-primary"
+                        >
+                          Select
+                        </button>
+                      </div>
+                      <div class="p-2">
+                        <span class="mb-1">Fleece Jacket</span>
+                      </div>
+                    </div>
+
+                    <div class="border product-item-wrap">
+                      <div class="select-overlay">
+                        <span
+                          class="sel-label text-primary bg-white d-flex bg-priamry shadow justify-content-center align-items-center"
+                        >
+                          <i class="fas fa-check"></i>
+                        </span>
+                      </div>
+                      <div class="modal-product pb-2 position-relative">
+                        <img
+                          src="assets/images/products/product-3.jpg"
+                          alt=""
+                          class="modal-product-item"
+                        />
+                        <button
+                          class="btn btn-sm mx-auto sel-btn btn-block btn-primary"
+                        >
+                          Select
+                        </button>
+                      </div>
+                      <div class="p-2">
+                        <span class="mb-1">Jenk Palm</span>
+                      </div>
+                    </div>
+
+                    <div class="border product-item-wrap">
+                      <div class="select-overlay">
+                        <span
+                          class="sel-label text-primary bg-white d-flex bg-priamry shadow justify-content-center align-items-center"
+                        >
+                          <i class="fas fa-check"></i>
+                        </span>
+                      </div>
+                      <div class="modal-product pb-2 position-relative">
+                        <img
+                          src="assets/images/products/product-4.jpg"
+                          alt=""
+                          class="modal-product-item"
+                        />
+                        <button
+                          class="btn btn-sm mx-auto sel-btn btn-block btn-primary"
+                        >
+                          Select
+                        </button>
+                      </div>
+                      <div class="p-2">
+                        <span class="mb-1">Menko Slippers</span>
+                      </div>
+                    </div>
+
+                    <div class="border product-item-wrap">
+                      <div class="select-overlay">
+                        <span
+                          class="sel-label text-primary bg-white d-flex bg-priamry shadow justify-content-center align-items-center"
+                        >
+                          <i class="fas fa-check"></i>
+                        </span>
+                      </div>
+
+                      <div class="modal-product pb-2 position-relative">
+                        <img
+                          src="assets/images/products/product-5.jpg"
+                          alt=""
+                          class="modal-product-item"
+                        />
+                        <button
+                          class="btn btn-sm mx-auto sel-btn btn-block btn-primary"
+                        >
+                          Select
+                        </button>
+                      </div>
+                      <div class="p-2">
+                        <span class="mb-1">JK Cap</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <h5 class="text-dark text-left pt-3">
+                  10 Images found
+                </h5>
+                <a href="" class="btn btn-next-three mt-3 btn-md btn-primary">
+                  Next
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="onboard-content animate__animated animate__fadeInLeft search-ui"
+        >
+          <div class="">
+            <h1 class="text-dark onboard-title font-weight-bold">
+              4. Finally set up your account
+            </h1>
+            <div class="row">
+              <div class="col-12">
+                <div class="">
+                  <div class="form-group required-field">
+                    <label for="acc-email">Email</label>
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="acc-email"
+                      name="acc-email"
+                      required=""
+                      autocomplete="off"
+                    />
+                  </div>
+
+                  <div class="form-group required-field">
+                    <label for="inputPassword6">Password</label>
+                    <input
+                      type="password"
+                      id="inputPassword6"
+                      class="form-control"
+                      aria-describedby="passwordHelpInline"
+                      autocomplete="off"
+                    />
+                    <small id="passwordHelpInline" class="text-muted">
+                      Must be 8-20 characters long.
+                    </small>
+                  </div>
+
+                  <div class="mt-4">
+                    <button
+                      type="submit"
+                      class="btn btn-login btn-block btn-primary btn-resp"
+                    >
+                      Login
+                    </button>
+                    <div
+                      class="d-flex custom-division custom-division--large align-items-center justify-content-between"
+                    >
+                      <div class=""></div>
+                      <small class="text-dark">OR</small>
+                      <div class=""></div>
+                    </div>
+                    <button
+                      type="submit"
+                      class="btn btn-block btn-dark btn-resp"
+                    >
+                      <i class="icon-instagram mr-2"></i>
+                      Login with Instagram
+                    </button>
+                    <button
+                      type="submit"
+                      class="btn btn-primary btn-block text-white btn-md btn-resp-show"
+                    >
+                      Login
+                    </button>
+                    <div
+                      class="d-flex custom-division align-items-center justify-content-between"
+                    >
+                      <div class=""></div>
+                      <small class="text-white or-division">OR</small>
+                      <div class=""></div>
+                    </div>
+                    <button
+                      type="submit"
+                      class="btn bg-white btn-block text-dark btn-md btn-resp-show"
+                    >
+                      <i
+                        class="icon-instagram font-weight-bold mr-2 text-dark"
+                      ></i>
+                      Login with Instagram
+                    </button>
+
+                    <!-- End .custom-checkbox -->
+                  </div>
+
+                  <div class="resp-statement">
+                    <p class="m-0 mt-3">
+                      Don't have an account yet?
+                      <a href="signup.html" class="text-primary" id="login">
+                        Sign Up
+                      </a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="onboard-content animate__animated animate__fadeInLeft search-ui"
+        >
+          <div class="row">
+            <div class="col-12 mb-3"></div>
+            <div class="col-12">
+              <div class="col-11 col-sm-12 mx-auto text-center">
+                <div class="position-relative text-center">
+                  <h2 class="">Congratulations!</h2>
+                  <p class="">
+                    Here is your link <a href="">bit.ly/jj38388337</a>
+                  </p>
+                </div>
+                <img
+                  src="assets/images/box.jpg"
+                  class="mx-auto rounded"
+                  style="max-width: 200px;"
+                  alt=""
+                />
+                <a href="" class="btn mt-3 btn-md mb-3 btn-primary">
+                  Share Link
+                </a>
+                <br class="mt-4" />
+                <a href="items.html">Continue to your store</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="copy-container text-center py-5 font-weight-bold">
+          &COPY; Powered by CreditClan
+        </div>
+      </div>
+    </div>
+    <!-- Plugins JS File -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/plugins.min.js"></script>
+
+    <!-- Main JS File -->
+    <script src="assets/js/main.min.js"></script>
+    <script src="assets/js/board.js"></script>
+    <script src="assets/js/custom.js"></script>
+  </body>
+</html>

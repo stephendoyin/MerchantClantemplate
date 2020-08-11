@@ -1,5 +1,5 @@
 * {
-  font-family: Poppins, sans-serif;
+  /* font-family: Poppins, sans-serif; */
 }
 
 .transaction .main-nav {
@@ -502,7 +502,7 @@ h2.modal-product-title span {
 }
 
 small {
-  font-family: poppins, "sans-serif";
+  /* font-family: poppins, "sans-serif"; */
 }
 
 .modal select.form-control-sm:not([size]):not([multiple]) {
@@ -918,7 +918,7 @@ select.form-control:not([size]):not([multiple]) {
 }
 
 .title {
-  font-family: Poppins, sans-serif;
+  /* font-family: Poppins, sans-serif; */
 }
 
 .float-share {
@@ -937,12 +937,12 @@ select.form-control:not([size]):not([multiple]) {
 #float-btn {
   float: right;
   color: #fff;
-  font-size: 2rem;
+  font-size: 2.5rem;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 50px;
-  width: 50px;
+  height: 58px;
+  width: 58px;
   border-radius: 50%;
   background: --var(primary);
 }
@@ -1524,4 +1524,113 @@ textarea.form-control {
 
 .big-price {
   font-size: 2rem;
+}
+
+.onboard {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.onboard-title {
+  font-size: 3.4rem;
+}
+
+.copy-container {
+  width: 100%;
+}
+
+.onboard-content {
+  display: none;
+}
+
+.onboard-content.show {
+  display: block;
+  width: 100%;
+}
+
+@media only screen and (min-width: 700px) {
+  .onboard-content {
+    min-width: 653px;
+    max-width: 635px;
+  }
+  .input-wrap {
+    min-width: 653px;
+    /* height: 60px;
+    border-radius: 50%; */
+  }
+}
+
+.copy-container {
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+}
+
+.image-input-container {
+  height: 268px;
+  width: 268px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12rem;
+  color: #efefef;
+}
+
+#img {
+  display: none;
+}
+
+.sel-btn {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: none;
+}
+
+.modal-product:hover .sel-btn {
+  display: block;
+}
+
+.select-overlay {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.2);
+  top: 0;
+  left: 0;
+  z-index: 5;
+  display: none;
+}
+
+.select-overlay.show {
+  display: block;
+}
+
+.sel-label {
+  border-radius: 50%;
+  height: 35px;
+  width: 35px;
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  display: none;
+}
+.add-img-btn {
+  display: block;
+}
+
+@media only screen and (min-width: 460px) {
+  .add-img-btn {
+    display: inline-block;
+  }
+}
+
+.back-btn {
+  position: absolute;
+  top: 0;
+  left: 0;
 }
