@@ -57,8 +57,11 @@
     <link rel="stylesheet" href="styles/styles.css" />
   </head>
 
-  <body class="loaded">
-    <div class="container-fluid position-relative">
+  <body class="loaded transaction">
+    <div
+      class="row screen-height"
+      style="padding: 0; min-height: 100vh; overflow: hidden;"
+    >
       <a
         href=""
         style="font-size: 1.5rem;"
@@ -66,11 +69,19 @@
         ><i class="fas fa-angle-left text-dark"></i>
         <span class="text-dark pl-3">Back</span></a
       >
-      <div class="onboard">
+      <div
+        class="col-12 col-md-7"
+        style="
+          min-height: 100vh;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        "
+      >
         <div class="onboard-content show animate__animated animate__fadeInLeft">
-          <h1 class="text-dark onboard-title font-weight-bold">
+          <h2 class="text-dark onboard-title font-weight-bold">
             1. Are you a first time seller?
-          </h1>
+          </h2>
           <div class="row">
             <div
               class="d-flex align-items-center justify-content-between col-12 my-4 border bg-light py-5 px-5"
@@ -92,9 +103,9 @@
           </div>
         </div>
         <div class="onboard-content animate__animated animate__fadeInLeft">
-          <h1 class="text-dark onboard-title font-weight-bold">
+          <h3 class="text-dark onboard-title font-weight-bold">
             2. Set Up a Product
-          </h1>
+          </h3>
           <div class="row">
             <form class="col-12" action="">
               <div class="form-group required mt-3">
@@ -206,16 +217,19 @@
                 </div>
               </div>
 
-              <button type="submit" class="btn btn-next mt-1 btn-primary">
+              <button
+                type="submit"
+                class="btn btn-md btn-next mt-1 btn-primary"
+              >
                 next
               </button>
             </form>
           </div>
         </div>
         <div class="onboard-content animate__animated animate__fadeInLeft">
-          <h1 class="text-dark m-0 onboard-title font-weight-bold">
+          <h3 class="text-dark m-0 onboard-title font-weight-bold">
             3. Add Picture
-          </h1>
+          </h3>
           <div class="row">
             <form class="col-12" action="">
               <div class="">
@@ -428,9 +442,9 @@
           class="onboard-content animate__animated animate__fadeInLeft search-ui"
         >
           <div class="">
-            <h1 class="text-dark onboard-title font-weight-bold">
+            <h3 class="text-dark onboard-title font-weight-bold">
               4. Finally set up your account
-            </h1>
+            </h3>
             <div class="row">
               <div class="col-12">
                 <div class="">
@@ -509,7 +523,7 @@
 
                   <div class="resp-statement">
                     <p class="m-0 mt-3">
-                      Don't have an account yet?
+                      Welcome!!!
                       <a href="signup.html" class="text-primary" id="login">
                         Sign Up
                       </a>
@@ -530,28 +544,19 @@
                 <div class="position-relative text-center">
                   <h2 class="">Congratulations!</h2>
                   <p class="">
-                    Here is your link <a href="">bit.ly/m36trr83</a>
+                    Here is your link <a href="">bit.ly/jj38388337</a>
                   </p>
                 </div>
                 <img
                   src="assets/images/Welcome-amico.svg"
                   class="mx-auto rounded"
-                  style="max-width: 300px;"
                   alt=""
                 />
-
-                <div class="row">
-                  <div class="col-6">
-                    <a href="" class="btn mt-3 btn-md mb-3 btn-primary">
-                      Share Link
-                    </a>
-                  </div>
-                  <div class="col-6">
-                    <a href="items.html">Continue to your store</a>
-                  </div>
-                </div>
-
+                <a href="" class="btn mt-3 btn-md mb-3 btn-primary">
+                  Share Link
+                </a>
                 <br class="mt-4" />
+                <a href="items.html">Continue to your store</a>
               </div>
             </div>
           </div>
@@ -560,7 +565,27 @@
           &COPY; Powered by CreditClan
         </div>
       </div>
+
+      <div class="col-0 col-sm-5 left-content">
+        <div class="text-center">
+          <img
+            src="assets/images/signal.svg"
+            class="mb-2 d-inline"
+            style="width: 50%; margin: auto;"
+            alt=""
+          />
+          <h4 class="text-white title mt-2 mb-1">Welcome to MerchantClan</h4>
+          <p class="text-white mb-2">
+            Join hundreds of merchants using merchantClan<br />
+            to reach more audience and sell on credit
+          </p>
+          <a href="signup.html" class="btn btn-dark">
+            Sign Up
+          </a>
+        </div>
+      </div>
     </div>
+
     <!-- Plugins JS File -->
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/bootstrap.bundle.min.js"></script>
@@ -571,4 +596,6 @@
     <script src="assets/js/board.js"></script>
     <script src="assets/js/custom.js"></script>
   </body>
+
+  <!-- Mirrored from portotheme.com/html/porto_ecommerce/demo_5/checkout-shipping-2.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 29 May 2020 14:36:11 GMT -->
 </html>
