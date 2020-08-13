@@ -70,7 +70,7 @@
         <span class="text-dark pl-3">Back</span></a
       >
       <div
-        class="col-12 col-md-7"
+        class="col-12 col-md-7 added-space"
         style="
           min-height: 100vh;
           display: flex;
@@ -84,7 +84,7 @@
           </h2>
           <div class="row">
             <div
-              class="d-flex align-items-center justify-content-between col-12 my-4 border bg-light py-5 px-5"
+              class="d-flex align-items-center btn-no-response justify-content-between col-12 my-4 border bg-light py-5 px-5"
             >
               <span class="m-0 py-2" style="color: #777;">
                 No, I have products & I am not selling online
@@ -449,15 +449,56 @@
               <div class="col-12">
                 <div class="">
                   <div class="form-group required-field">
-                    <label for="acc-email">Email</label>
+                    <label for="acc-name">Business name</label>
                     <input
-                      type="email"
+                      type="text"
                       class="form-control"
-                      id="acc-email"
-                      name="acc-email"
+                      id="acc-name"
+                      name="acc-name"
                       required=""
                       autocomplete="off"
                     />
+                  </div>
+
+                  <div class="row">
+                    <div class="col-sm-6">
+                      <div class="form-group required-field">
+                        <label for="acc-email">Email</label>
+                        <input
+                          type="email"
+                          class="form-control"
+                          id="acc-email"
+                          name="acc-email"
+                          required=""
+                          autocomplete="off"
+                        />
+                      </div>
+                    </div>
+                    <div class="col-sm-6">
+                      <div class="form-group required-field">
+                        <label for="acc-email">Type of Business</label>
+                        <div class="select-custom">
+                          <select name="orderby" class="form-control">
+                            <option value="menu_order" selected="selected"
+                              >Default sorting</option
+                            >
+                            <option value="popularity"
+                              >Sort by popularity</option
+                            >
+                            <option value="rating"
+                              >Sort by average rating</option
+                            >
+                            <option value="date">Sort by newness</option>
+                            <option value="price"
+                              >Sort by price: low to high</option
+                            >
+                            <option value="price-desc"
+                              >Sort by price: high to low</option
+                            >
+                          </select>
+                        </div>
+                      </div>
+                    </div>
                   </div>
 
                   <div class="form-group required-field">
@@ -477,45 +518,16 @@
                   <div class="mt-4">
                     <button
                       type="submit"
-                      class="btn btn-login btn-block btn-primary btn-resp"
+                      class="btn btn-block btn-login btn-primary btn-resp"
                     >
-                      Login
+                      Sign Up
                     </button>
-                    <div
-                      class="d-flex custom-division custom-division--large align-items-center justify-content-between"
-                    >
-                      <div class=""></div>
-                      <small class="text-dark">OR</small>
-                      <div class=""></div>
-                    </div>
-                    <button
-                      type="submit"
-                      class="btn btn-block btn-dark btn-resp"
-                    >
-                      <i class="icon-instagram mr-2"></i>
-                      Login with Instagram
-                    </button>
+
                     <button
                       type="submit"
                       class="btn btn-primary btn-block text-white btn-md btn-resp-show"
                     >
-                      Login
-                    </button>
-                    <div
-                      class="d-flex custom-division align-items-center justify-content-between"
-                    >
-                      <div class=""></div>
-                      <small class="text-white or-division">OR</small>
-                      <div class=""></div>
-                    </div>
-                    <button
-                      type="submit"
-                      class="btn bg-white btn-block text-dark btn-md btn-resp-show"
-                    >
-                      <i
-                        class="icon-instagram font-weight-bold mr-2 text-dark"
-                      ></i>
-                      Login with Instagram
+                      Sign Up
                     </button>
 
                     <!-- End .custom-checkbox -->
@@ -523,10 +535,10 @@
 
                   <div class="resp-statement">
                     <p class="m-0 mt-3">
-                      Welcome!!!
-                      <a href="signup.html" class="text-primary" id="login">
-                        Sign Up
-                      </a>
+                      Already have an account ?
+                      <a href="signin.html" class="text-primary" id="login"
+                        >Login</a
+                      >
                     </p>
                   </div>
                 </div>
@@ -558,6 +570,174 @@
                 <br class="mt-4" />
                 <a href="items.html">Continue to your store</a>
               </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="onboard-content animate__animated animate__fadeInLeft search-ui"
+        >
+          <div class="row">
+            <div class="col-11 mx-auto">
+              <div class="position-relative">
+                <h2 class="">2. Specify your business interest</h2>
+              </div>
+              <div class="position-relative">
+                <div>
+                  <div class="nav-scr-right nav-scr-right--adjust">
+                    <i class="icon-angle-right"></i>
+                  </div>
+                  <div class="nav-scr-left nav-scr-left--adjust">
+                    <i class="icon-angle-left"></i>
+                  </div>
+                </div>
+                <div class="owl-carousel category-slider">
+                  <div class="border p-4">
+                    <h4>Fashion</h4>
+                    <div class="form-group form-group-custom-control">
+                      <div class="custom-control custom-checkbox">
+                        <input
+                          type="checkbox"
+                          class="custom-control-input"
+                          id="shoes"
+                        />
+                        <label class="custom-control-label" for="shoes"
+                          >Shoes</label
+                        >
+                      </div>
+                      <div class="custom-control custom-checkbox">
+                        <input
+                          type="checkbox"
+                          class="custom-control-input"
+                          id="dress"
+                        />
+                        <label class="custom-control-label" for="dress"
+                          >Dress</label
+                        >
+                      </div>
+                      <div class="custom-control custom-checkbox">
+                        <input
+                          type="checkbox"
+                          class="custom-control-input"
+                          id="bag"
+                        />
+                        <label class="custom-control-label" for="bag"
+                          >Bags</label
+                        >
+                      </div>
+                      <!-- End .custom-checkbox -->
+                    </div>
+                  </div>
+                  <div class="border p-4">
+                    <h4>Computers</h4>
+                    <div class="form-group form-group-custom-control">
+                      <div class="custom-control custom-checkbox">
+                        <input
+                          type="checkbox"
+                          class="custom-control-input"
+                          id="laptop"
+                        />
+                        <label class="custom-control-label" for="laptop"
+                          >Laptop</label
+                        >
+                      </div>
+                      <div class="custom-control custom-checkbox">
+                        <input
+                          type="checkbox"
+                          class="custom-control-input"
+                          id="PC"
+                        />
+                        <label class="custom-control-label" for="pc">PC</label>
+                      </div>
+                      <div class="custom-control custom-checkbox">
+                        <input
+                          type="checkbox"
+                          class="custom-control-input"
+                          id="bag"
+                        />
+                        <label class="custom-control-label" for="bag"
+                          >Chargers</label
+                        >
+                      </div>
+                      <!-- End .custom-checkbox -->
+                    </div>
+                  </div>
+                  <div class="border p-4">
+                    <h4>Fashion</h4>
+                    <div class="form-group form-group-custom-control">
+                      <div class="custom-control custom-checkbox">
+                        <input
+                          type="checkbox"
+                          class="custom-control-input"
+                          id="shoes"
+                        />
+                        <label class="custom-control-label" for="shoes"
+                          >Shoes</label
+                        >
+                      </div>
+                      <div class="custom-control custom-checkbox">
+                        <input
+                          type="checkbox"
+                          class="custom-control-input"
+                          id="dress"
+                        />
+                        <label class="custom-control-label" for="dress"
+                          >Dress</label
+                        >
+                      </div>
+                      <div class="custom-control custom-checkbox">
+                        <input
+                          type="checkbox"
+                          class="custom-control-input"
+                          id="bag"
+                        />
+                        <label class="custom-control-label" for="bag"
+                          >Bags</label
+                        >
+                      </div>
+                      <!-- End .custom-checkbox -->
+                    </div>
+                  </div>
+                  <div class="border p-4">
+                    <h4>Fashion</h4>
+                    <div class="form-group form-group-custom-control">
+                      <div class="custom-control custom-checkbox">
+                        <input
+                          type="checkbox"
+                          class="custom-control-input"
+                          id="shoes"
+                        />
+                        <label class="custom-control-label" for="shoes"
+                          >Shoes</label
+                        >
+                      </div>
+                      <div class="custom-control custom-checkbox">
+                        <input
+                          type="checkbox"
+                          class="custom-control-input"
+                          id="dress"
+                        />
+                        <label class="custom-control-label" for="dress"
+                          >Dress</label
+                        >
+                      </div>
+                      <div class="custom-control custom-checkbox">
+                        <input
+                          type="checkbox"
+                          class="custom-control-input"
+                          id="bag"
+                        />
+                        <label class="custom-control-label" for="bag"
+                          >Bags</label
+                        >
+                      </div>
+                      <!-- End .custom-checkbox -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <button class="btn btn-done btn-primary btn-block btn-md mt-3">
+                Done
+              </button>
             </div>
           </div>
         </div>

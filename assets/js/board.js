@@ -27,6 +27,8 @@ let btnNextTwo = document.querySelector(".btn-next-two");
 let btnNextThree = document.querySelector(".btn-next-three");
 let btnLogin = document.querySelector(".btn-login");
 let searchBtn = document.querySelector(".search-btn");
+let btnNoResponse = document.querySelector(".btn-no-response");
+let btnDone = document.querySelector(".btn-done");
 
 btnResponse.addEventListener("click", function (e) {
   onboardContent[0].classList.remove("animate__fadeInLeft");
@@ -86,4 +88,44 @@ btnLogin.addEventListener("click", function (e) {
     onboardContent[5].classList.remove("show");
     onboardContent[6].classList.add("show");
   }, 500);
+});
+
+btnNoResponse.addEventListener("click", function (e) {
+  onboardContent[0].classList.remove("animate__fadeInLeft");
+  onboardContent[0].classList.add("animate__fadeOutRight");
+
+  setTimeout(function () {
+    onboardContent[0].classList.remove("show");
+    onboardContent[7].classList.add("show");
+  }, 500);
+});
+
+btnDone.addEventListener("click", function (e) {
+  onboardContent[7].classList.remove("animate__fadeInLeft");
+  onboardContent[7].classList.add("animate__fadeOutRight");
+
+  setTimeout(function () {
+    onboardContent[7].classList.remove("show");
+    onboardContent[5].classList.add("show");
+  }, 500);
+});
+
+let categorySlider = $(".category-slider");
+
+categorySlider.owlCarousel({
+  loop: false,
+  margin: 10,
+  nav: false,
+  dots: false,
+  responsive: {
+    0: {
+      items: 1,
+    },
+    500: {
+      items: 2,
+    },
+    640: {
+      items: 3,
+    },
+  },
 });
