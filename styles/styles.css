@@ -1736,3 +1736,49 @@ textarea.form-control {
   background: #eee;
   color: var(--primary);
 }
+
+.big-icon-cart {
+  font-size: 12rem;
+  color: var(--primary);
+}
+
+.number-el {
+  height: 30px;
+  width: 30px;
+  margin-bottom: 0.7rem;
+  border-radius: 50%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background: white;
+}
+
+.left-navigate {
+  position: absolute;
+  top: 50%;
+  font-size: 3rem;
+  z-index: 33;
+  left: 2rem;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.right-navigate {
+  position: absolute;
+  cursor: pointer;
+  top: 50%;
+  font-size: 3rem;
+  z-index: 33;
+  right: 2rem;
+  transform: translateY(-50%);
+}
+
+.tra-item {
+  width: 94%;
+}
+
+@media only screen and (min-width: 575px) {
+  .tra-item {
+    width: 46%;
+  }
+}
