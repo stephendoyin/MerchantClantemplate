@@ -1556,11 +1556,6 @@ textarea.form-control {
     /* min-width: 653px; */
     max-width: 653px;
   }
-  .input-wrap {
-    min-width: 653px;
-    /* height: 60px;
-    border-radius: 50%; */
-  }
 }
 
 .copy-container {
@@ -1781,4 +1776,11 @@ textarea.form-control {
   .tra-item {
     width: 46%;
   }
+}
+
+.c-price {
+  font-size: 2rem;
+  font-weight: 700;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
