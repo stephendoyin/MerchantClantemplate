@@ -54,6 +54,68 @@
   </head>
 
   <body class="loaded transaction">
+
+    <div class="modal modal-prompt  modal-two">
+        <div class="mfp-bg mfp-ajax-product mfp-ready"></div>
+        <div
+          class="mfp-wrap mfp-close-btn-in mfp-auto-cursor mfp-ajax-product mfp-ready"
+          tabindex="-1"
+          style="overflow: hidden auto;"
+        >
+          <div class="mfp-container mfp-ajax-holder">
+            <div class="mfp-content"      style="max-width: 604px;">
+              <div
+                class="product-single-container product-single-default product-quick-view container"
+           
+              >
+               <form action="">
+                <div class="row">
+                    <div class="col-11 mx-auto p-5">
+                        <div class="row">
+                            <div class="col-8">
+                                <h4>Confirm Email Address</h4>
+                                <p>Enter 6 Digit <span class="text-uppercase">otp</span> sent to your email address</p>
+                            </div>
+
+                            <div class="col-6">
+                                <div class="form-group required mt-1">
+                                    <label for="acc-mname" class="text-uppercase">OTP</label>
+                                    <input
+                                      type="text"
+                                      class="form-control"
+                                      id="biz-mname"
+                                      name="biz-mname"
+                                      placeholder="Ex: 123456"
+                                    />
+                                  </div>
+                            </div>
+                               
+                        <div class="col-12 mt-2">
+                            <button class="btn btn-md btn-primary">Confirm Email</button>
+                        </div>
+                        </div>
+                      
+                    </div>
+                    
+                </div>
+   
+               </form>
+            
+                <!-- End .row -->
+                <button title="Close (Esc)" type="button" class="mfp-close">
+                  ×
+                </button>
+              </div>
+              <!-- End .product-single-container -->
+            </div>
+          </div>
+        </div>
+  
+        <!-- end modal -->
+      </div>
+
+
+
     <div class="page-wrapper bg-light">
       <header class="header">
         <div class="header-top">
@@ -251,17 +313,14 @@
                     <div class="col-sm-8">
                       <h3>Business Details</h3>
                       <p style="max-width: 600px;" class="m-0">
-                        Lorem ipsum dolor sit amet consectetur, adipisicing
-                        elit. Molestias dolores vero esse consequuntur quod
-                        reiciendis ut, ea adipisci laboriosam molestiae
-                        voluptate.
+                        Edit your business details
                       </p>
                     </div>
                   </div>
 
                   <form action="" class="mb-0">
                     <div class="row">
-                      <div class="col-sm-5">
+                      <div class="col-sm-4">
                         <div class="form-group required mt-3">
                           <label for="acc-mname">Business Name</label>
                           <input
@@ -273,7 +332,7 @@
                           />
                         </div>
                       </div>
-                      <div class="col-sm-3">
+                      <div class="col-sm-4">
                         <div class="input-group required mt-3">
                           <label
                             for="phone-mname"
@@ -361,33 +420,252 @@
                       </p>
                     </div>
                   </div>
-                  <div class="row">
-                    <div class="col-sm-4">
-                      <div class="form-group required mt-3">
-                        <label for="acc-mname">Name</label>
-                        <input
-                          type="text"
-                          class="form-control"
-                          id="biz-mname"
-                          name="biz-mname"
-                          placeholder="Chigozie Daniels"
-                        />
+                  <form action="" class="mb-0">
+                    <div class="row">
+                      <div class="col-sm-4">
+                        <div class="form-group required mt-3">
+                          <label for="acc-mname">Full Name</label>
+                          <input
+                            type="text"
+                            class="form-control"
+                            id="biz-mname"
+                            name="biz-mname"
+                            placeholder="Chigozie Daniels"
+                          />
+                        </div>
+                      </div>
+                      <div class="col-sm-4">
+                        <div class="form-group required mt-3">
+                          <label for="acc-mname">Email</label>
+                          <input
+                            type="email"
+                            class="form-control"
+                            id="biz-mname"
+                            name="biz-mname"
+                            placeholder="Chigozie@example.com"
+                          />
+                        </div>
                       </div>
                     </div>
-                    <div class="col-sm-4">
-                      <div class="form-group required mt-3">
-                        <label for="acc-mname">Email</label>
-                        <input
-                          type="email"
-                          class="form-control"
-                          id="biz-mname"
-                          name="biz-mname"
-                          placeholder="Chigozie@example.com"
-                        />
+
+                    <div class="row mt-2">
+                      <div class="col-12">
+                        <button class="btn-md btn btn-primary px-5">
+                          SAVE
+                        </button>
                       </div>
+                    </div>
+                  </form>
+                </div>
+                <div class="bg-white p-5 mt-2 shadow">
+                  <div class="row">
+                    <div class="col-sm-8">
+                      <h3>Update Logo</h3>
+                      <p style="max-width: 600px;" class="m-0">
+                        Update your logo to move one today
+                      </p>
                     </div>
                   </div>
+                  <form action="" class="mb-0">
+                    <div class="row">
+                      <div class="col-sm-8">
+                        <label for=""> </label>
+                        <input
+                          type="file"
+                          name="myImage"
+                          accept="image/x-png,image/gif,image/jpeg"
+                          class="my-4"
+                        />
+                      </div>
+                    </div>
+                    <div class="row mt-2">
+                      <div class="col-12">
+                        <button class="btn-md btn btn-primary px-5">
+                          SAVE
+                        </button>
+                      </div>
+                    </div>
+                  </form>
                 </div>
+                <div class="bg-white p-5 mt-2 shadow">
+                  <div class="row">
+                    <div class="col-sm-8">
+                      <h3>Social Media Accounts</h3>
+                      <p style="max-width: 600px;" class="m-0">
+                        Specify your social media accounts
+                      </p>
+                    </div>
+                  </div>
+
+                  <form action="" class="m-0">
+                    <div class="row">
+                      <div class="col-sm-4">
+                        <div class="form-group required mt-3">
+                          <label for="acc-mname"
+                            >
+                            <span class="mr-2"><i class="social-icon social-instagram icon-instagram"></i></span> Instagram</label
+                          >
+                          <input
+                            type="text"
+                            class="form-control"
+                            id="biz-mname"
+                            name="biz-mname"
+                            placeholder="https://www.instagram.com/username"
+                          />
+                        </div>
+                      </div>
+                      <div class="col-sm-4">
+                        <div class="form-group required mt-3">
+                          <label for="acc-mname"
+                            ><span class="mr-2"><i class="social-icon social-facebook icon-facebook"></i></span> Facebook</label
+                          >
+                          <input
+                            type="text"
+                            class="form-control"
+                            id="biz-mname"
+                            name="biz-mname"
+                            placeholder="https://www.facebook.com/page"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <div class="form-group required mt-3">
+                                <label for="acc-mname"
+                                  ><span class="mr-2"><i class="social-icon social-twitter icon-twitter"></i></span></i> Twitter</label
+                                >
+                                <input
+                                  type="text"
+                                  class="form-control"
+                                  id="biz-mname"
+                                  name="biz-mname"
+                                  placeholder="https://www.twitter.com/page"
+                                />
+                              </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="form-group required mt-3">
+                                <label for="acc-mname"
+                                  ><span class="mr-2"><i class="social-icon fa-linkedin-in"></i></span></i> Linkedin</label
+                                >
+                                <input
+                                  type="text"
+                                  class="form-control"
+                                  id="biz-mname"
+                                  name="biz-mname"
+                                  placeholder="https://www.linkedin.com/page"
+                                />
+                              </div>
+                        </div>
+                    </div>
+                    <div class="row mt-2">
+
+                        <div class="col-12">
+                            <button class="btn btn-md btn-primary">
+                                Save
+                            </button>
+                        </div>
+                       
+                    </div>
+                  </form>
+                </div>
+                <div class="bg-white shadow p-5 mt-2">
+                    <div class="row">
+                      <div class="col-sm-8">
+                        <h3>
+                            Change your email address
+                        </h3>
+                        <p>
+                            Enter new email address below to change your existing email address
+                        </p>
+                      </div>
+                    </div>
+  
+                    <form action="" class="mb-0">
+                      <div class="row">
+                        <div class="col-sm-5">
+                          <div class="form-group required mt-3">
+                            <label for="acc-mname">
+                                New Email Address</label>
+                            <input
+                              type="text"
+                              class="form-control"
+                              id="biz-mname"
+                              name="biz-mname"
+                              placeholder="Email"
+                            />
+                          </div>
+                        </div>
+                        
+                      </div>
+                     
+  
+                      <!-- End .form-group -->
+  
+                      <div class="mt-3">
+                        <button class="btn diabled btn-confirm mr-3 px-5 btn-md btn-primary">
+                          Change Email Address
+                        </button>
+                      </div>
+                    </form>
+                  </div>
+                <div class="bg-white shadow p-5 mt-2">
+                    <div class="row">
+                      <div class="col-sm-8">
+                        <h3>
+                            My Store
+                        </h3>
+                        <p>
+                            Edit store details
+                        </p>
+                      </div>
+                    </div>
+  
+                    <form action="" class="mb-0">
+                      <div class="row">
+                        <div class="col-sm-5">
+                          <div class="form-group required mt-3">
+                            <label for="acc-mname">
+                                Store Name</label>
+                            <input
+                              type="text"
+                              class="form-control"
+                              id="biz-mname"
+                              name="biz-mname"
+                              placeholder="Store name"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-sm-5">
+                          <div class="form-group required mt-3">
+                            <label for="acc-mname">
+                                Store Url</label>
+                            <input
+                              type="text"
+                              class="form-control"
+                              id="biz-mname"
+                              name="biz-mname"
+                              placeholder="Store Url"
+                            />
+                          </div>
+                        </div>
+                        
+                      </div>
+                     
+  
+                      <!-- End .form-group -->
+  
+                      <div class="mt-3">
+                        <button class="btn diabled btn-confirm mr-3 px-5 btn-md btn-primary">
+                          Save
+                        </button>
+                      </div>
+                    </form>
+                  </div>
               </div>
             </div>
           </div>
@@ -431,6 +709,15 @@
       </div>
       <!-- End .mobile-menu-wrapper -->
     </div>
+
+    <script>
+        const btnConfirm = document.querySelector(".btn-confirm");
+        const modalPrompt = document.querySelector(".modal-prompt");
+        btnConfirm.addEventListener('click', function(e){
+            e.preventDefault()
+            modalPrompt.classList.add("show");
+        })
+    </script>
 
     <!-- Plugins JS File -->
     <script src="assets/js/jquery.min.js"></script>
